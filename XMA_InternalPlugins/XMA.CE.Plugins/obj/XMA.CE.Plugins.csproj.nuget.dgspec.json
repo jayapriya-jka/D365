@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Arun.Keerthi\\source\\repos\\Incremental.XMA.PowerPlatform\\XMA_Dynamics_Code\\Plugins\\XMA_InternalPlugins\\XMA.CE.Plugins\\XMA.CE.Plugins.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Arun.Keerthi\\source\\repos\\Incremental.XMA.PowerPlatform\\XMA_Dynamics_Code\\Plugins\\XMA_InternalPlugins\\XMA.CE.Plugins\\XMA.CE.Plugins.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Arun.Keerthi\\source\\repos\\Incremental.XMA.PowerPlatform\\XMA_Dynamics_Code\\Plugins\\XMA_InternalPlugins\\XMA.CE.Plugins\\XMA.CE.Plugins.csproj",
+        "projectName": "XMA_QuoteNewAdjustedCostPlugin.XMA_QuoteNewAdjustedCost",
+        "projectPath": "C:\\Users\\Arun.Keerthi\\source\\repos\\Incremental.XMA.PowerPlatform\\XMA_Dynamics_Code\\Plugins\\XMA_InternalPlugins\\XMA.CE.Plugins\\XMA.CE.Plugins.csproj",
+        "packagesPath": "C:\\Users\\Arun.Keerthi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Arun.Keerthi\\source\\repos\\Incremental.XMA.PowerPlatform\\XMA_Dynamics_Code\\Plugins\\XMA_InternalPlugins\\XMA.CE.Plugins\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arun.Keerthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "Microsoft.CrmSdk.CoreAssemblies": {
+              "target": "Package",
+              "version": "[9.0.2.*, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.71.1, )"
+            },
+            "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "NuGet.Build.Tasks.Pack": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>XMA_QuoteNewAdjustedCostPlugin.XMA_QuoteNewAdjustedCost</id>
+    <version>1.0.0</version>
+    <authors>Placeholder</authors>
+    <owners>Placeholder</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Placeholder</description>
+    <tags>plugin</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.1">
+        <dependency id="Microsoft.CrmSdk.CoreAssemblies" version="9.0.2.59" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.71.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.IdentityModel.Clients.ActiveDirectory" version="5.3.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="NuGet.Build.Tasks.Pack" version="5.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Data.DataSetExtensions" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.DirectoryServices.AccountManagement" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.DirectoryServices" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.IdentityModel" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Numerics" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Algorithms" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Encoding" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Primitives" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.X509Certificates" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.ServiceModel.Web" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.7.1" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.7.1" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" target="lib\net471\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <file src="bin\Debug\Microsoft.Identity.Client.dll" target="lib\net471\Microsoft.Identity.Client.dll" />
+    <file src="bin\Debug\Microsoft.IdentityModel.Abstractions.dll" target="lib\net471\Microsoft.IdentityModel.Abstractions.dll" />
+    <file src="bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" target="lib\net471\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <file src="bin\Debug\Newtonsoft.Json.dll" target="lib\net471\Newtonsoft.Json.dll" />
+    <file src="bin\Debug\System.Buffers.dll" target="lib\net471\System.Buffers.dll" />
+    <file src="bin\Debug\System.Diagnostics.DiagnosticSource.dll" target="lib\net471\System.Diagnostics.DiagnosticSource.dll" />
+    <file src="bin\Debug\System.Memory.dll" target="lib\net471\System.Memory.dll" />
+    <file src="bin\Debug\System.Net.Http.dll" target="lib\net471\System.Net.Http.dll" />
+    <file src="bin\Debug\System.Numerics.Vectors.dll" target="lib\net471\System.Numerics.Vectors.dll" />
+    <file src="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" target="lib\net471\System.Runtime.CompilerServices.Unsafe.dll" />
+    <file src="bin\Debug\System.ServiceModel.Http.dll" target="lib\net471\System.ServiceModel.Http.dll" />
+    <file src="bin\Debug\System.ServiceModel.Primitives.dll" target="lib\net471\System.ServiceModel.Primitives.dll" />
+    <file src="bin\Debug\System.Text.Encodings.Web.dll" target="lib\net471\System.Text.Encodings.Web.dll" />
+    <file src="bin\Debug\System.Text.Json.dll" target="lib\net471\System.Text.Json.dll" />
+    <file src="bin\Debug\System.Threading.Tasks.Extensions.dll" target="lib\net471\System.Threading.Tasks.Extensions.dll" />
+    <file src="bin\Debug\System.ValueTuple.dll" target="lib\net471\System.ValueTuple.dll" />
+    <file src="bin\Debug\XMA.CE.Plugin.dll" target="lib\net471\XMA.CE.Plugin.dll" />
+  </files>
+</package>
