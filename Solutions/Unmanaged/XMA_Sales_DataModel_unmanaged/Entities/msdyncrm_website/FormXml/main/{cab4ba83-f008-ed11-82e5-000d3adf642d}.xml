@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{cab4ba83-f008-ed11-82e5-000d3adf642d}</formid>
+    <IntroducedVersion>1.0.0.1305</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab name="GeneralInfo" verticallayout="true" id="{d91e4ad7-b459-4603-ba97-54d1b366cf32}" IsUserDefined="1" locklevel="0" expanded="true" showlabel="true" labelid="{5c5b8a2c-2d66-4d01-a9c7-846ce1800e88}">
+          <labels>
+            <label description="General info" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{fc8e99a0-beae-4b25-85f8-c3de5154ee1d}" height="auto" labelid="{f9908f50-cd69-4a0d-add0-b8fd225b7352}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0c633be9-7895-46e9-9b20-a9e0a4fbb72d}" labelid="{eea335ee-0534-48bd-ac96-766513fd4f8a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78e513c0-dddf-4a21-bbba-e0a60549ef88}" showlabel="true" locklevel="0" labelid="{76b15c2d-c1eb-429b-abbe-3ad0ad9a0b85}">
+                        <labels>
+                          <label description="URL" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_url" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="msdyncrm_url" disabled="false" uniqueid="{d1a6bb96-7a4e-0c6c-2bcc-47651d197eb2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60007619-3498-4dbf-94e0-66f0c5f73759}" showlabel="true" locklevel="0" labelid="{d2a096c7-1709-4bfe-83bc-19f702d92442}">
+                        <labels>
+                          <label description="Created on" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e930337d-7ad3-44a5-beae-fc3b11556809}" showlabel="true" locklevel="0" labelid="{d5b8bf62-3fe4-44e7-8ae1-b9d4f8d845b6}">
+                        <labels>
+                          <label description="Timeout" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_timeout" classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="msdyncrm_timeout" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d7aefd8-0854-4dd5-8432-ca2ae84eb115}" showlabel="true" locklevel="1" availableforphone="true" labelid="{703bea11-dbfe-40d4-a615-ec3944b2d601}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" uniqueid="{803e1c75-bdce-6d00-5e04-77224ba8b351}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a145b252-1b04-4ac1-a3be-2c4d43435976}" showlabel="true" locklevel="1" availableforphone="true" labelid="{431b96fa-e2c0-4c2b-8526-79933739aa75}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{2b6684e0-6da0-1944-71d5-a0d530e309a0}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fd41bc23-e8ee-4de3-aa84-f6b5317139ed}" showlabel="true" locklevel="0" availableforphone="true" rowspan="5" labelid="{78a2dd90-e298-4e95-8df4-8ca93b5cbeff}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msdyncrm_description" disabled="false" uniqueid="{e346568d-7999-4cb9-5413-7e2295cee9e5}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{322bbf4c-aa1f-424f-806f-d0070c54861e}" showlabel="true" locklevel="0" availableforphone="true" rowspan="5" labelid="{b9682282-b918-432f-8f37-9f8fb7526fdf}">
+                        <labels>
+                          <label description="JavaScript code" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_javascriptcode_compound" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_javascriptcode_compound" disabled="true" uniqueid="{db0505a4-a1c3-9624-e4a7-2155bb8e2e62}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{ccec1f60-31fc-4a67-8671-276902d57ca8}" showlabel="true" locklevel="0" availableforphone="true" rowspan="5" labelid="{649e4724-9af6-43f9-8899-13ae12ead1cf}">
+                        <labels>
+                          <label description="Form capture code" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_capturing_code" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_capturing_code" disabled="true" uniqueid="{b5f62928-fa13-4215-8894-0e2b4ef596dd}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{a19ce1b8-6838-8c9e-8602-e8bb3112d978}" showlabel="true" locklevel="0" labelid="{2f379864-cac0-42c8-87e8-f7948c2e5f14}">
+                        <labels>
+                          <label description="Purpose" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_purpose" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_purpose" disabled="false" uniqueid="{ebdc8949-0a9c-986e-e8a7-cd1b0b2db402}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab05191b-2b25-4234-965b-b0b653365a0a}" labelid="{ebc9f59f-4ed0-4845-8b6b-79f2d595715f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9370fa2-43cb-43c4-a314-6c70003ef232}" labelid="{1f31cb06-a333-454e-bfbf-7ff2c2a0fce3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b2e454a-f41b-4ae1-91e2-33e5a04c4bc4}" labelid="{7d139366-c937-424b-ab2c-02279068ea58}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ba5dde5-0c68-4c3b-9815-f48bf482c54f}" labelid="{c6ae87ac-9ec1-417b-9f45-19a26c34544e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="insights" id="{e790f0cb-265a-40fc-a64b-63fdac8dd3c1}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{316ef96b-fbb0-4927-b22b-538fad17872f}">
+          <labels>
+            <label description="Insights" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="insights_section" showlabel="false" showbar="false" locklevel="0" id="{C1A01E04-0069-4283-AD6D-ECA88EC3CD36}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{2d97ea84-f326-4e55-bf08-0b4539356708}">
+                  <labels>
+                    <label description="Insights" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7D55498C-A2EA-41B9-B294-A1F72A5807E3}" showlabel="false" locklevel="0" labelid="{7fb0cb54-147c-4601-bd7b-4fb29963f871}">
+                        <labels>
+                          <label description="Insights" languagecode="1033" />
+                        </labels>
+                        <control id="WebsiteInsightsCtrl" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_insights_placeholder" disabled="false" uniqueid="{10A649C5-B204-447A-A2F0-7928F84C221A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="XMA_CAMPAIGNS" id="a8ccbe20-6e0e-400b-bcdf-b5b411632657" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="XMA Campaigns" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="4752ead0-12b5-4c7f-a6ef-25981deade6c" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{905bc154-2fec-4341-b0b6-9463c52ea35d}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1658432411014" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>igl_xmacampaign</TargetEntityType>
+                            <ViewId>{DFCE6E52-4775-47CC-B085-DE99183F2AB1}</ViewId>
+                            <ViewIds>{DFCE6E52-4775-47CC-B085-DE99183F2AB1}</ViewIds>
+                            <RelationshipName>igl_XMACampaign_msdyncrm_website_msdyncrm</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1025" Text="عام" />
+              <Title LCID="1026" Text="Общо" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Společná" />
+              <Title LCID="1030" Text="Fælles" />
+              <Title LCID="1031" Text="Gemeinsam" />
+              <Title LCID="1032" Text="Κοινός" />
+              <Title LCID="3081" Text="Common" />
+              <Title LCID="4105" Text="Common" />
+              <Title LCID="2057" Text="Common" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Üldine" />
+              <Title LCID="1069" Text="Ohikoak" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="3084" Text="Commun" />
+              <Title LCID="1036" Text="Commun" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1037" Text="‏‫‏‫פריטים נפוצים‬‬‬" />
+              <Title LCID="1050" Text="Uobičajeno" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Umum" />
+              <Title LCID="1040" Text="Elementi comuni" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1042" Text="공통" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Vispārēji" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общие" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Skupno" />
+              <Title LCID="3098" Text="Уобичајено" />
+              <Title LCID="2074" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Standard" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Спільне" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="通用" />
+              <Title LCID="3076" Text="一般" />
+              <Title LCID="1028" Text="一般" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1025" Text="Sales" />
+              <Title LCID="1026" Text="Sales" />
+              <Title LCID="1027" Text="Sales" />
+              <Title LCID="1029" Text="Prodej" />
+              <Title LCID="1030" Text="Sales" />
+              <Title LCID="1031" Text="Sales" />
+              <Title LCID="1032" Text="Sales" />
+              <Title LCID="3081" Text="Sales" />
+              <Title LCID="4105" Text="Sales" />
+              <Title LCID="2057" Text="Sales" />
+              <Title LCID="3082" Text="Sales" />
+              <Title LCID="1061" Text="Sales" />
+              <Title LCID="1069" Text="Sales" />
+              <Title LCID="1035" Text="Sales" />
+              <Title LCID="3084" Text="Sales" />
+              <Title LCID="1036" Text="Sales" />
+              <Title LCID="1110" Text="Sales" />
+              <Title LCID="1037" Text="Sales" />
+              <Title LCID="1050" Text="Sales" />
+              <Title LCID="1038" Text="Sales" />
+              <Title LCID="1057" Text="Sales" />
+              <Title LCID="1040" Text="Sales" />
+              <Title LCID="1041" Text="Sales" />
+              <Title LCID="1042" Text="Sales" />
+              <Title LCID="1063" Text="Sales" />
+              <Title LCID="1062" Text="Sales" />
+              <Title LCID="1044" Text="Sales" />
+              <Title LCID="1043" Text="Sales" />
+              <Title LCID="1045" Text="Sales" />
+              <Title LCID="1046" Text="Sales" />
+              <Title LCID="2070" Text="Sales" />
+              <Title LCID="1048" Text="Sales" />
+              <Title LCID="1049" Text="Sales" />
+              <Title LCID="1051" Text="Sales" />
+              <Title LCID="1060" Text="Sales" />
+              <Title LCID="3098" Text="Sales" />
+              <Title LCID="2074" Text="Sales" />
+              <Title LCID="1053" Text="Sales" />
+              <Title LCID="1054" Text="Sales" />
+              <Title LCID="1055" Text="Sales" />
+              <Title LCID="1058" Text="Sales" />
+              <Title LCID="1066" Text="Sales" />
+              <Title LCID="2052" Text="Sales" />
+              <Title LCID="3076" Text="Sales" />
+              <Title LCID="1028" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1025" Text="خدمة" />
+              <Title LCID="1026" Text="Услуга" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služba" />
+              <Title LCID="1030" Text="Tjeneste" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Υπηρεσία" />
+              <Title LCID="3081" Text="Service" />
+              <Title LCID="4105" Text="Service" />
+              <Title LCID="2057" Text="Service" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Service" />
+              <Title LCID="3084" Text="Service" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1037" Text="שירות" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Aptarnavimas" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługa" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Servicii" />
+              <Title LCID="1049" Text="Service" />
+              <Title LCID="1051" Text="Služba" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="3098" Text="Услуге" />
+              <Title LCID="2074" Text="Usluge" />
+              <Title LCID="1053" Text="Tjänst" />
+              <Title LCID="1054" Text="บริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Послуга" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1025" Text="Marketing" />
+              <Title LCID="1026" Text="Marketing" />
+              <Title LCID="1027" Text="Marketing" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Marketing" />
+              <Title LCID="3081" Text="Marketing" />
+              <Title LCID="4105" Text="Marketing" />
+              <Title LCID="2057" Text="Marketing" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Marketing" />
+              <Title LCID="1069" Text="Marketing" />
+              <Title LCID="1035" Text="Marketing" />
+              <Title LCID="3084" Text="Marketing" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Marketing" />
+              <Title LCID="1037" Text="Marketing" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Marketing" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="Marketing" />
+              <Title LCID="1042" Text="Marketing" />
+              <Title LCID="1063" Text="Marketing" />
+              <Title LCID="1062" Text="Marketing" />
+              <Title LCID="1044" Text="Marketing" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Marketing" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Marketing" />
+              <Title LCID="3098" Text="Marketing" />
+              <Title LCID="2074" Text="Marketing" />
+              <Title LCID="1053" Text="Marketing" />
+              <Title LCID="1054" Text="Marketing" />
+              <Title LCID="1055" Text="Marketing" />
+              <Title LCID="1058" Text="Marketing" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="Marketing" />
+              <Title LCID="3076" Text="Marketing" />
+              <Title LCID="1028" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+              <Title LCID="1025" Text="جلسات عمل العمليات" />
+              <Title LCID="1026" Text="Сесии на процес" />
+              <Title LCID="1027" Text="Sessions del procés" />
+              <Title LCID="1029" Text="Relace procesů" />
+              <Title LCID="1030" Text="Processessioner" />
+              <Title LCID="1031" Text="Sitzungen verarbeiten" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας διεργασίας" />
+              <Title LCID="3081" Text="Process Sessions" />
+              <Title LCID="4105" Text="Process Sessions" />
+              <Title LCID="2057" Text="Process Sessions" />
+              <Title LCID="3082" Text="Sesiones de proceso" />
+              <Title LCID="1061" Text="Protsessiseansid" />
+              <Title LCID="1069" Text="Prozesu-saioak" />
+              <Title LCID="1035" Text="Prosessi-istunnot" />
+              <Title LCID="3084" Text="Sessions de traitement" />
+              <Title LCID="1036" Text="Sessions de traitement" />
+              <Title LCID="1110" Text="Sesións de proceso" />
+              <Title LCID="1037" Text="הפעלות תהליך" />
+              <Title LCID="1050" Text="Sesije procesa" />
+              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
+              <Title LCID="1057" Text="Sesi Proses" />
+              <Title LCID="1040" Text="Sessioni processo" />
+              <Title LCID="1041" Text="プロセス セッション" />
+              <Title LCID="1042" Text="프로세스 세션" />
+              <Title LCID="1063" Text="Proceso seansai" />
+              <Title LCID="1062" Text="Procesa sesijas" />
+              <Title LCID="1044" Text="Behandle delmøter" />
+              <Title LCID="1043" Text="Sessies verwerken" />
+              <Title LCID="1045" Text="Sesje procesów" />
+              <Title LCID="1046" Text="Sessões do Processo" />
+              <Title LCID="2070" Text="Sessões de Processamento" />
+              <Title LCID="1048" Text="Sesiuni de proces" />
+              <Title LCID="1049" Text="Сеансы процессов" />
+              <Title LCID="1051" Text="Relácie procesov" />
+              <Title LCID="1060" Text="Seje obdelave" />
+              <Title LCID="3098" Text="Сесије процеса" />
+              <Title LCID="2074" Text="Sesije procesa" />
+              <Title LCID="1053" Text="Processessioner" />
+              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
+              <Title LCID="1055" Text="İşlem Oturumları" />
+              <Title LCID="1058" Text="Сеанси процесів" />
+              <Title LCID="1066" Text="Phiên xử lý" />
+              <Title LCID="2052" Text="流程会话" />
+              <Title LCID="3076" Text="程序工作階段" />
+              <Title LCID="1028" Text="程序工作階段" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{db0505a4-a1c3-9624-e4a7-2155bb8e2e62}">
+          <customControl formFactor="2" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode_compound</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode_compound</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode_compound</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{b5f62928-fa13-4215-8894-0e2b4ef596dd}">
+          <customControl formFactor="2" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_capturing_code</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_capturing_code</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_capturing_code</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{10A649C5-B204-447A-A2F0-7928F84C221A}">
+          <customControl formFactor="0" name="MscrmControls.InsightsControl.InsightsControl">
+            <parameters>
+              <configuration static="true" type="SingleLine.Text">WebsiteInsights</configuration>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InsightsControl.InsightsControl">
+            <parameters>
+              <configuration static="true" type="SingleLine.Text">WebsiteInsights</configuration>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InsightsControl.InsightsControl">
+            <parameters>
+              <configuration static="true" type="SingleLine.Text">WebsiteInsights</configuration>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="msdyncrm_DynamicsMarketing.CrmWebResource" libraryUniqueId="{9cbe7758-fa66-4d7b-a541-1804849c1fac}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="MSDynCrmMkt.Handlers.handleDisconnectedOrg" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{7892ba21-52c4-4e1f-9cda-55d6b576d1eb}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="MSDynCrmMkt.setDefaultWebsiteVisitTimeout" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{f6cfb615-b062-44fc-a375-23284b3f9960}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="MSDynCrmMkt.MktSvcStageSwitching.preventAutoSave" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{9cbe7758-fa66-4d7b-a541-1804849c1fac}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <header id="{aafd7aee-7648-4a1a-92a0-b116aa1906f9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c4857f54-28cb-40e9-a13a-c3dcb4c2085e}" showlabel="false" labelid="{414f7d63-dd81-405d-86b4-f0af71ebe24d}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{274759df-2f61-471e-bbd4-65f4cf4d5d0f}" showlabel="false" labelid="{7f05f0ea-361b-41ba-97ad-74e9ef5df676}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f52a2481-119c-4ac8-a589-1d726108b4d3}" showlabel="false" labelid="{7262cc82-1ecd-4b89-a5a8-85a7390ead33}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{68fb42fb-6567-4de1-84df-3677c2167a3d}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{cd71995f-731b-4a6c-a46b-c90d6a8d251d}" showlabel="false" labelid="{f894b69e-894e-4ecd-b35a-4cd5ae9282d9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{05ad8af3-e0f2-401b-8834-9b3f56a743a2}" showlabel="false" labelid="{bb5d6a96-53de-41d1-80bc-4afba3dbc783}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{08103e3f-a413-4c63-b51f-6e338a48e24d}" showlabel="false" labelid="{239bd677-9c99-4b67-9f9e-12fba8ab477c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="XMA Marketing Website" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery unmodified="1">
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{185e29de-5c32-42ef-a637-3605e445faf5}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="invoiceid">
+          <cell name="msdyn_company" width="100" />
+          <cell name="msdyn_invoicedate" width="100" />
+          <cell name="msdyn_invoicenumber" width="100" />
+          <cell name="msdyn_ledgervoucher" width="100" />
+          <cell name="name" width="300" />
+          <cell name="statuscode" width="100" />
+          <cell name="totalamount" width="100" />
+          <cell name="customerid" width="150" />
+          <cell name="invoicecustomeridcontactcontactid.emailaddress1" width="150" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="invoice">
+          <order attribute="name" descending="false" />
+          <attribute name="name" />
+          <attribute name="totalamount" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="customerid" />
+          <attribute name="statuscode" />
+          <link-entity alias="invoicecustomeridcontactcontactid" name="contact" from="contactid" to="customerid" link-type="outer" visible="false">
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <attribute name="msdyn_company" />
+          <attribute name="msdyn_invoicenumber" />
+          <attribute name="msdyn_ledgervoucher" />
+          <attribute name="msdyn_invoicedate" />
+          <attribute name="invoiceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Invoices" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

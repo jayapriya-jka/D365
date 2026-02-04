@@ -1,0 +1,2406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.22071.170" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>XMA_Apps</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="XMA_Apps" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1604</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>IncrementalGroup</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Incremental Group" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Publisher Account for Incremental Group Limited." languagecode="1033" />
+      </Descriptions>
+      <EMailAddress>info@incrementalgroup.co.uk</EMailAddress>
+      <SupportingWebsiteUrl>https://incrementalgroup.co.uk</SupportingWebsiteUrl>
+      <CustomizationPrefix>igl</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>28554</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City>Glasgow</City>
+          <County xsi:nil="true"></County>
+          <Country>Scotland</Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1>5th Floor</Line1>
+          <Line2>The Garment Factory</Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode>G1 1RE</PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1>0345 565 3000</Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="62" schemaName="igl_XMAMarketing" behavior="0" />
+      <RootComponent type="62" schemaName="igl_XMASalesMarketingApp" behavior="0" />
+      <RootComponent type="62" schemaName="SalesHubSitemap" behavior="0" />
+      <RootComponent type="80" schemaName="igl_XMAMarketing" behavior="0" />
+      <RootComponent type="80" schemaName="igl_XMASalesMarketingApp" behavior="0" />
+      <RootComponent type="80" schemaName="msdynce_saleshub" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="adminsettingsentity" displayName="admin_settings_entity" solution="msdynce_SalesPatch (9.0.1904.3002)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="dynamicpropertyoptionsetitem" displayName="Property Option Set Item" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_brand" displayName="Brand" solution="Active" />
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_brand" displayName="Brand" solution="Active" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_dealregistrations" displayName="Pricing Support" solution="Active" />
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_dealregistrations" displayName="Pricing Support" solution="Active" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_framework" displayName="Framework" solution="Active" />
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_leadtechnologies" displayName="Lead technologies" solution="Active" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_opportunitycontractperiod" displayName="Opportunity Contract Period" solution="Active" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_xmacampaign" displayName="XMA Campaign" solution="Active" />
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_xmacampaign" displayName="XMA Campaign" solution="Active" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incidentresolution" displayName="Case Resolution" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoicedetail" displayName="Invoice Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_callablecontext" displayName="Playbook Callable Context" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_mkt" displayName="DataAnalyticsReport_MKT" solution="msdyn_DataInsightsAndAnalyticsForMKT (1.1.22124.2)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsreport_mkt" displayName="DataAnalyticsReport_MKT" solution="msdyn_DataInsightsAndAnalyticsForMKT (1.1.22124.2)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecastdefinition" displayName="Forecast definition" solution="msdyn_Forecasting (9.0.22064.10021)">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecastinstance" displayName="Forecast" solution="msdyn_Forecasting (9.0.22064.10021)">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecastinstance" displayName="Forecast" solution="msdyn_Forecasting (9.0.22064.10021)">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecastinstance" displayName="Forecast" solution="msdyn_Forecasting (9.0.22064.10021)">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecastrecurrence" displayName="Forecast recurrence" solution="msdyn_Forecasting (9.0.22064.10021)">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookactivity" displayName="Playbook activity" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookactivityattribute" displayName="Playbook activity attribute" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookcategory" displayName="Playbook category" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookinstance" displayName="Playbook" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookinstance" displayName="Playbook" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbookinstance" displayName="Playbook" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_playbooktemplate" displayName="Playbook template" solution="msdyn_Playbook (9.0.2103.4000 )">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salesassignmentsetting" displayName="Sales Assignment Setting" solution="msdyn_SalesRouting (9.1.2206.4005)">
+          <package>msdyn_AcceleratedSalesAnchor (9.1.22064.10015)</package>
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salesassignmentsetting" displayName="Sales Assignment Setting" solution="msdyn_SalesRouting (9.1.2206.4005)">
+          <package>msdyn_AcceleratedSalesAnchor (9.1.22064.10015)</package>
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workqueuerecord" displayName="Work Queue Record" solution="msdyn_acceleratedsales (9.1.22064.10015)">
+          <package>msdyn_AcceleratedSalesAnchor (9.1.22064.10015)</package>
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workqueuerecord" displayName="Work Queue Record" solution="msdyn_acceleratedsales (9.1.22064.10015)">
+          <package>msdyn_AcceleratedSalesAnchor (9.1.22064.10015)</package>
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_appointmentactivitymarketingtemplate" displayName="Appointment activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_appointmentactivitymarketingtemplate" displayName="Appointment activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_cdsaconnectorconfiguration" displayName="Analytics configuration" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_cdsaconnectorconfiguration" displayName="Analytics configuration" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_contentblock" displayName="Content block" solution="MicrosoftDynamics_ReusableBlocks (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_contentblock" displayName="Content block" solution="MicrosoftDynamics_ReusableBlocks (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_contentsettings" displayName="Content settings" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_contentsettings" displayName="Content settings" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourney" displayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourney" displayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourneytemplate" displayName="Customer journey template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_customerjourneytemplate" displayName="Customer journey template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_defaultmarketingsetting" displayName="Default settings" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_defaultmarketingsetting" displayName="Default settings" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_designerfeatureavailability" displayName="Designer feature protection" solution="MicrosoftDynamics_ReusableBlocks (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_designerfeatureavailability" displayName="Designer feature protection" solution="MicrosoftDynamics_ReusableBlocks (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_file" displayName="Image" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_file" displayName="Image" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_keyword" displayName="Keyword" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_keyword" displayName="Keyword" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_leadscoremodel" displayName="Lead Scoring Model" solution="MicrosoftDynamics_MktLeadManagement (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_leadscoremodel" displayName="Lead Scoring Model" solution="MicrosoftDynamics_MktLeadManagement (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_leadscoringconfiguration" displayName="Scoring configuration" solution="MicrosoftDynamics_MktLeadManagement (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_leadscoringconfiguration" displayName="Scoring configuration" solution="MicrosoftDynamics_MktLeadManagement (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_leadtoopportunity" displayName="Lead to opportunity" solution="MicrosoftDynamics_MktLeadManagement (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinaccount" displayName="LinkedIn Account" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedincampaign" displayName="LinkedIn Campaign" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinfieldmapping" displayName="Field mapping" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinfieldmapping" displayName="Field mapping" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinform" displayName="LinkedIn Lead Gen Form" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinform" displayName="LinkedIn Lead Gen Form" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinformsubmission" displayName="LinkedIn Lead Gen Form Submission" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinformsubmission" displayName="LinkedIn Lead Gen Form Submission" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinleadmatchingstrategy" displayName="LinkedIn matching" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinleadmatchingstrategy" displayName="LinkedIn matching" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinuserprofile" displayName="LinkedIn User Profile" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_linkedinuserprofile" displayName="LinkedIn User Profile" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemail" displayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemail" displayName="Marketing email" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemailtemplate" displayName="Marketing email template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemailtemplate" displayName="Marketing email template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingemailtestsend" displayName="Marketing email test send" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingform" displayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingform" displayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingformfield" displayName="Marketing form field" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingformfield" displayName="Marketing form field" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingformtemplate" displayName="Marketing form template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingformtemplate" displayName="Marketing form template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpage" displayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpage" displayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpageconfiguration" displayName="Landing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpageconfiguration" displayName="Landing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpagetemplate" displayName="Marketing page template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_marketingpagetemplate" displayName="Marketing page template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_matchingstrategy" displayName="Form matching" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_matchingstrategy" displayName="Form matching" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_personalizedpage" displayName="Personalized page" solution="MicrosoftDynamics_PersonalizedPages (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_personalizedpage" displayName="Personalized page" solution="MicrosoftDynamics_PersonalizedPages (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_phonecallactivitymarketingtemplate" displayName="Phone-call activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_phonecallactivitymarketingtemplate" displayName="Phone-call activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_redirecturl" displayName="Redirect URL" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_redirecturl" displayName="Redirect URL" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_segment" displayName="Segment" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_segment" displayName="Segment" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_segmenttemplate" displayName="Segment Template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_segmenttemplate" displayName="Segment Template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_setupdomain" displayName="Domain" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_setupdomain" displayName="Domain" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_socialpost" displayName="Social post" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_socialpost" displayName="Social post" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_socialpostingconfiguration" displayName="Social media account" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_socialpostingconfiguration" displayName="Social media account" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_taskactivitymarketingtemplate" displayName="Task activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_taskactivitymarketingtemplate" displayName="Task activity marketing template" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_video" displayName="Video" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_video" displayName="Video" solution="MicrosoftDynamics_DigitalAssets (1.85.1024.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_website" displayName="Marketing website" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyncrm_website" displayName="Marketing website" solution="MicrosoftDynamics_Marketing (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_contactpointconsent2" displayName="Contact Point Consent" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_contactpointconsent2" displayName="Contact Point Consent" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_contactpointsettings" displayName="Contact Point Settings" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_contactpointsettings" displayName="Contact Point Settings" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_email" displayName="Email" solution="DynamicsMKT_EmailChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_email" displayName="Email" solution="DynamicsMKT_EmailChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_emailtemplate" displayName="Email template" solution="DynamicsMKT_EmailChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_emailtemplate" displayName="Email template" solution="DynamicsMKT_EmailChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_eventmetadata" displayName="Triggers" solution="DynamicsMKT_BaseSolution (1.1.11637.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_eventmetadata" displayName="Triggers" solution="DynamicsMKT_BaseSolution (1.1.11637.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_journey" displayName="Journey" solution="DynamicsMKT_CxpOrchestrationUI (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_journey" displayName="Journey" solution="DynamicsMKT_CxpOrchestrationUI (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_mobileapplication" displayName="Mobile app configuration" solution="DynamicsMKT_PushNotification (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_mobileapplication" displayName="Mobile app configuration" solution="DynamicsMKT_PushNotification (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_pushnotification" displayName="Push notification" solution="DynamicsMKT_PushNotification (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_pushnotification" displayName="Push notification" solution="DynamicsMKT_PushNotification (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_sms" displayName="Text message" solution="DynamicsMKT_SmsChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_sms" displayName="Text message" solution="DynamicsMKT_SmsChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_smsphonenumber" displayName="Text message sender" solution="DynamicsMKT_SmsChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_smsphonenumber" displayName="Text message sender" solution="DynamicsMKT_SmsChannel (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_virtualsegment" displayName="Segment" solution="DynamicsMKT_CxpOrchestrationUI (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdynmkt_virtualsegment" displayName="Segment" solution="DynamicsMKT_CxpOrchestrationUI (1.1.12155.38)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_building" displayName="Building" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_building" displayName="Building" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_checkin" displayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_checkin" displayName="Check-in" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_customregistrationfield" displayName="Custom Registration Field" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_customregistrationfield" displayName="Custom Registration Field" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_event" displayName="Event" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_event" displayName="Event" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventadministration" displayName="Event administration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventadministration" displayName="Event administration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventregistration" displayName="Event Registration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventregistration" displayName="Event Registration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventteammember" displayName="Event Team Member" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventteammember" displayName="Event Team Member" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventvendor" displayName="Event Vendor" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_eventvendor" displayName="Event Vendor" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotel" displayName="Hotel" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotel" displayName="Hotel" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotelroomallocation" displayName="Hotel Room Allocation" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotelroomallocation" displayName="Hotel Room Allocation" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotelroomreservation" displayName="Hotel Room Reservation" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_hotelroomreservation" displayName="Hotel Room Reservation" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_layout" displayName="Layout" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_layout" displayName="Layout" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_room" displayName="Room" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_room" displayName="Room" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_speaker" displayName="Speaker" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_speaker" displayName="Speaker" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_sponsorablearticle" displayName="Sponsorable Article" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_sponsorablearticle" displayName="Sponsorable Article" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_sponsorship" displayName="Sponsorship" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_sponsorship" displayName="Sponsorship" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webapplication" displayName="Web application" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webapplication" displayName="Web application" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webinarconfiguration" displayName="Webinar configuration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webinarconfiguration" displayName="Webinar configuration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webinarprovider" displayName="Webinar provider" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_webinarprovider" displayName="Webinar provider" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_websiteentityconfiguration" displayName="Website table configuration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msevtmgt_websiteentityconfiguration" displayName="Website table configuration" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityclose" displayName="Opportunity Close" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="phonetocaseprocess" displayName="Phone To Case Process" solution="msdynce_Service (9.0.5.56)">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productpricelevel" displayName="Price List Item" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productsubstitute" displayName="Product Relationship" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quoteclose" displayName="Quote Close" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quotedetail" displayName="Quote Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quotedetail" displayName="Quote Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorderdetail" displayName="Order Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorderdetail" displayName="Order Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="territory" displayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uomschedule" displayName="Unit Group" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uomschedule" displayName="Unit Group" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing AI Log Service User" solution="MicrosoftDynamics_MktContentSuggestions (1.84.2011.0)" id="{03d2b58e-438b-eb11-b831-00155d952b23}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="XMA Sales User" solution="Active" id="{126d056c-07eb-ec11-bb3d-000d3adb0650}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Machine Learning Feature Configuration Administrator" solution="MicrosoftDynamics_GwennolFeatureConfiguration (1.84.2011.0)" id="{23d36d22-6a1e-e911-b813-00155d952b18}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="XMA Marketing Agency User" solution="Active" id="{303c07a0-6eed-ec11-bb3d-000d3add76bd}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Manager" solution="msdynce_Marketing (9.0.4.37)" id="{35ae8004-0cc8-41c9-bfc2-a730273f2b39}" parentId="{d9d602db-2761-4170-877f-983494567c08}">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Feature Configuration Services User" solution="MicrosoftDynamics_FeatureConfiguration (1.84.2011.0)" id="{3d4fe57d-1934-419e-bc4a-90f70192d753}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Services User Realtime Role" solution="DynamicsMKT_MarketingAppUserRealtimeLink (1.1.12104.0)" id="{4c3b3177-f6a5-4dbc-ba9a-03ece48376c7}">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="XMA Sales Base" solution="Active" id="{4c8fefca-60eb-ec11-bb3d-000d3adb0650}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Realtime Feature Configuration Services User" solution="DynamicsMKT_FeatureConfiguration (1.1.12104.0)" id="{5d24f5ab-b933-eb11-a813-000d3a8e7ded}">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Services User Extensible Role" solution="MicrosoftDynamics_MarketingAppUser (1.84.2011.0)" id="{6b57e462-4d81-4fd7-84b7-0ca6b41b6673}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Services User" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{7c54ac52-9d1b-e711-80e1-00155d982906}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Sales Team Member" solution="msdyn_SalesTeamMembersApp (9.0.21023.10002)" id="{7e13fe7f-ea02-4a4e-a523-89ed9361961d}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="XMA Marketing Internal User" solution="Active" id="{83cab296-beec-ec11-bb3d-000d3add76bd}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Machine Learning Feature Configuration Reader" solution="MicrosoftDynamics_GwennolFeatureConfiguration (1.84.2011.0)" id="{8a0ff651-691e-e911-b813-00155d952b18}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="XMA Bids User" solution="Active" id="{94407128-60eb-ec11-bb3d-000d3adb0650}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Machine Learning Spam Score Services User" solution="MicrosoftDynamics_GwennolSpamScore (1.84.2011.0)" id="{a46961a5-36df-4201-b77b-668bf7fb553f}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Professional" solution="msdynce_Marketing (9.0.4.37)" id="{a8ee9592-da45-4a94-a7ac-4d8edecb0285}" parentId="{09a25608-d28b-4d47-b57c-79271fe6a525}">
+          <package>msdynce_MarketingAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Manager - Business" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{bf157a3a-cde8-e611-80d8-00155d4b205a}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Sales Enterprise app access" solution="msdyn_SalesApp (9.0.22064.10003)" id="{cad52a75-568c-e611-80d4-00155d42a122}">
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing Professional - Business" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{ce995e5a-cee8-e611-80d8-00155d4b205a}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Marketing, Business App Access" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{e9133cb3-92e5-41c1-a242-9d17098e5f7b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Open Leads" displayName="My Open Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001005}">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Open Leads" displayName="Open Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001006}">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Closed Leads" displayName="Closed Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001009}">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Open Opportunities" displayName="Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003001}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunities Closing Next Month" displayName="Opportunities Closing Next Month" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003002}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunities Opened Last Week" displayName="Opportunities Opened Last Week" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003003}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunities Opened This Week" displayName="Opportunities Opened This Week" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003004}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Closed Opportunities" displayName="Closed Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003006}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Matched Accounts By Number Of Employees" displayName="Matched Accounts By Number Of Employees" parentSchemaName="account" parentDisplayName="Account" solution="dnb_Optimizer (2.5.5.2)" id="{025dc7be-43a4-ea11-a812-000d3ab396de}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Matched Accounts By Location Type" displayName="Matched Accounts By Location Type" parentSchemaName="account" parentDisplayName="Account" solution="dnb_Optimizer (2.5.5.2)" id="{04a06580-45a4-ea11-a812-000d3ab396de}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My active events" displayName="My active events" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{05bf9e5d-6e68-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Team active events" displayName="Team active events" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{1d38c984-6e68-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Leads by Region" displayName="Leads by Region" parentSchemaName="lead" parentDisplayName="Lead" solution="dnb_Optimizer (2.5.5.2)" id="{1dd61bea-21b6-ea11-a812-000d3ab3900c}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active customer journeys (dashboard)" displayName="Active customer journeys (dashboard)" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{2ea656c4-be6b-e711-a826-000d3a337469}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My team active marketing emails" displayName="My team active marketing emails" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{3673a6b4-a468-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All live journeys" displayName="All live journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{37db3ee1-c167-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Contacts I Follow" displayName="Contacts I Follow" parentSchemaName="contact" parentDisplayName="Contact" solution="Active" id="{3a282da1-5d90-e011-95ae-00155d9cfa02}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All leads (dashboard)" displayName="All leads (dashboard)" parentSchemaName="lead" parentDisplayName="Lead" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{3ab4e809-bb6b-e711-a826-000d3a337469}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All leads (dashboard)" displayName="All leads (dashboard)" parentSchemaName="lead" parentDisplayName="Lead" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{3ab4e809-bb6b-e711-a826-000d3a337469}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Currently live marketing emails" displayName="Currently live marketing emails" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{4fdd9f52-a568-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My ready to publish events" displayName="My ready to publish events" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{5a838214-8f68-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Leads" displayName="All Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{5a926b99-3a5f-df11-ae90-00155d2e3002}">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Lost Opportunities" displayName="Lost Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{5bd2527c-a882-de11-9ff3-00155da3b012}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Leads by Number of employees" displayName="Leads by Number of employees" parentSchemaName="lead" parentDisplayName="Lead" solution="dnb_Optimizer (2.5.5.2)" id="{5e9af888-21b6-ea11-a812-000d3ab3900c}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Accounts I Follow" displayName="Accounts I Follow" parentSchemaName="account" parentDisplayName="Account" solution="Active" id="{61273827-328e-e011-95ae-00155d9cfa02}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Accounts" displayName="All Accounts" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Leads I follow (dashboard)" displayName="Leads I follow (dashboard)" parentSchemaName="lead" parentDisplayName="Lead" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{967e17d8-ade4-425d-90e3-4e9b68aa70ad}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All planned journeys" displayName="All planned journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{97fe7b5d-c267-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Matched Accounts By Sales Volume" displayName="Matched Accounts By Sales Volume" parentSchemaName="account" parentDisplayName="Account" solution="dnb_Optimizer (2.5.5.2)" id="{a279759e-41a4-ea11-a812-000d3ab3900c}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Leads: Older Than 6 Months" displayName="Leads: Older Than 6 Months" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{afe23d8a-6651-474d-b8ee-90210a8231f6}">
+          <package>msdynce_LeadManagementAnchor (9.0.22062.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My active marketing emails" displayName="My active marketing emails" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{b2e771a6-a468-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Past, active, and planned journeys" displayName="Past, active, and planned journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{bdef42db-1867-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunities Forecast View" displayName="Opportunities Forecast View" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdyn_Forecasting (9.0.22064.10021)" id="{bf649add-6c30-ea11-a813-000d3a5475f7}">
+          <package>msdyn_SalesIntegrationsAddOns (9.0.22064.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My customer journeys" displayName="My customer journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{c0336e73-c167-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Opportunities" displayName="All Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{c6f6fc1b-1b3e-e711-80e1-00155d871bb4}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All events" displayName="All events" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{cf11fa07-7268-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Team live journeys" displayName="Team live journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{d0670d37-c267-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" solution="Active" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My live journeys" displayName="My live journeys" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{e9800907-c267-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Won Opportunities" displayName="Won Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{f73a5bef-a782-de11-9ff3-00155da3b012}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active marketing emails (dashboard)" displayName="Active marketing emails (dashboard)" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{f93461df-bd6b-e711-a826-000d3a337469}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Prospects" displayName="Prospects" parentSchemaName="account" parentDisplayName="Account" solution="Active" id="{fff124e2-4d03-ed11-82e5-000d3ada298d}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Phone to Case Process" solution="msdynce_Service (9.0.5.56)" id="{0ffbcde4-61c1-4355-aa89-aa1d7b2b8792}">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Lead to Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Marketing email creation over time" displayName="Marketing email creation over time" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{11dd63ba-d367-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Suppression segment utilization" displayName="Suppression segment utilization" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{12501516-1b67-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Customer journeys by purpose" displayName="Customer journeys by purpose" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{24033b1a-1a67-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active marketing emails by owner" displayName="Active marketing emails by owner" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{2adb5a4d-cd67-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active event by primary goal" displayName="Active event by primary goal" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{537cb2dc-7168-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Top 10 active events by check-ins" displayName="Top 10 active events by check-ins" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{55be712d-7468-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Customer journeys by owner" displayName="Customer journeys by owner" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{6945c2f9-1967-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active marketing email by status reason" displayName="Active marketing email by status reason" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{85d6f529-cd67-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active events by primary venue" displayName="Active events by primary venue" parentSchemaName="msevtmgt_event" parentDisplayName="Event" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{85e66d8b-7168-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="LinkedIn campaign utilization" displayName="LinkedIn campaign utilization" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{8ce74cd8-1a67-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Who has modified active marketing emails" displayName="Who has modified active marketing emails" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{9e3eb43b-d467-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Customer journeys starting over time" displayName="Customer journeys starting over time" parentSchemaName="msdyncrm_customerjourney" parentDisplayName="Customer journey" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{b5beeabe-1667-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Marketing email modifications over time" displayName="Marketing email modifications over time" parentSchemaName="msdyncrm_marketingemail" parentDisplayName="Marketing email" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{e3fc47fc-d267-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{092b6496-9d37-4979-9cd0-36edfc5e6960}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Reference Panel" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Marketing Form" parentDisplayName="Marketing form" solution="Active" id="{0b5f09bf-2d09-ed11-82e5-000d3adf69c0}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Contact" parentDisplayName="Contact" solution="Active" id="{1e23fddd-dbc7-ec11-a7b6-000d3adaf5bd}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Contact" parentDisplayName="Contact" solution="Active" id="{1e23fddd-dbc7-ec11-a7b6-000d3adaf5bd}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quote View Form" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)" id="{1e70456a-ccfa-4a29-9e78-0d71724b3377}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick Opportunity View Form" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{24b5ce86-1811-44c3-b1ad-90f7ea02d2d7}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Sales Performance Dashboard" solution="msdynce_Sales (9.0.4.0076)" id="{25b754f5-7563-df11-ae90-00155d2e3002}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Sales Activity Social Dashboard" solution="msdynce_Sales (9.0.4.0076)" id="{2701de60-8f2a-48a4-8262-4a35ca7441fa}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Social post" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)" id="{2c4ab476-4f35-4e0e-b285-3aa0cdaa3162}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick Create for Website" parentDisplayName="Marketing website" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{368fb03c-43a3-4552-b344-4c9d96806654}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick view form for marketing page" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{3801ac36-64ad-4e27-b2b8-43e83a919259}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Personalized page" solution="MicrosoftDynamics_PersonalizedPages (1.84.2011.0)" id="{3c4da016-c2ee-4939-bcc0-69f70e24dd15}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Recent Cases and Entitlements" parentDisplayName="Account" solution="msdynce_Service (9.0.5.56)" id="{43300723-f867-420b-ab28-976a4d12e6c4}">
+          <package>msdynce_ServiceAnchor (9.0.22064.1006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Sales Activity Dashboard" solution="msdynce_Sales (9.0.4.0076)" id="{45f88f83-0e67-443b-bd05-81d49719f6b1}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Marketing: Lead generation dashboard" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{47b7cbc5-f066-e711-a825-000d3a337469}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Marketing: Customer journey dashboard" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{4c04d5c4-1567-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="D&amp;B Account Quick Create" parentDisplayName="Account" solution="dnb_Optimizer (2.5.5.2)" id="{57add43b-6385-4472-8e22-4eace06b30c2}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Order" parentDisplayName="Order" solution="Active" id="{59d7e61f-feb4-ec11-983e-002248998ff4}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick create marketing page" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{5b27a1fd-a56e-4ee5-a686-96664ae8916d}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Lead" parentDisplayName="Lead" solution="Active" id="{621b7d38-e1c7-ec11-a7b6-000d3ada25c6}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Lead" parentDisplayName="Lead" solution="Active" id="{621b7d38-e1c7-ec11-a7b6-000d3ada25c6}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{63982233-9c35-4721-b336-c16dc7856603}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Product Quick Create" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{672e520b-6bbc-47f8-977f-228bfc6d8faf}">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{69c117fe-31c5-408c-8f96-7ee433db4bce}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Insights" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{6e020b0e-3556-4d1b-8717-c2947034eeb8}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Marketing Page" parentDisplayName="Marketing page" solution="Active" id="{754c0249-f408-ed11-82e5-000d3adf69c0}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="App for Outlook Account Quick View" parentDisplayName="Account" solution="AppforOutlookPatch (1.2.386)" id="{76b81f10-2a08-4f1a-9454-ee38bea94eb5}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Social post" solution="MicrosoftDynamics_SocialPosting (1.84.2011.0)" id="{78474cd7-5fd8-4564-b353-432be01aaa86}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Event management dashboard" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{7cc77cae-6d68-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Insights" parentDisplayName="Marketing form" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{816b6070-66f1-47c3-b943-a4e18d508500}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Social Post" parentDisplayName="Social post" solution="Active" id="{82458e91-3208-ed11-82e5-000d3adf642d}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Account" parentDisplayName="Account" solution="Active" id="{8852c70c-fdb4-ec11-983e-002248998172}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Account" parentDisplayName="Account" solution="Active" id="{8852c70c-fdb4-ec11-983e-002248998172}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Lead Quick View Form - submissions" parentDisplayName="Lead" solution="LinkedInLeadGenIntegration (1.45.1010.0)" id="{89e0d275-331f-4a59-860d-f3c15c783041}">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Insights" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{8ada74ec-8388-4a7b-b4f0-854cda4df163}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)" id="{8dd0025e-7d87-4a7b-aaf4-12754b8fbede}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Quick view form" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{905a6603-381d-4002-94bf-68c7e9728a69}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="App for Outlook Lead Quick View" parentDisplayName="Lead" solution="AppforOutlook (1.2.13.0)" id="{95192c4e-f96e-4771-b10a-e6421c908533}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Opportunity" parentDisplayName="Opportunity" solution="Active" id="{9e0129e3-f1b4-ec11-983e-002248998ff4}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{a640be62-63f6-4027-90d7-48c014a7c6f3}">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Marketing: Email marketing dashboard" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)" id="{af155b88-1567-e711-a824-000d3a33777b}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account card" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}">
+          <package>msdynce_AppCommonAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="LeadGen Sync Status" solution="LinkedInLeadGenIntegration (1.45.1010.0)" id="{c97736b7-71e5-e711-80ed-00155d952b03}">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Marketing Website" parentDisplayName="Marketing website" solution="Active" id="{cab4ba83-f008-ed11-82e5-000d3adf642d}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing page" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{cb390226-1a0d-4bf3-a452-3d52c52871a8}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing website" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{cbbe47d7-2520-4a0e-9f48-3b0225732f05}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Order" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)" id="{cc287fab-10d3-44be-b738-1daf50a2aa03}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Sales Dashboard" solution="msdynce_Sales (9.0.4.0076)" id="{d1f511a8-1ead-e211-bb72-00155da9a201}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="App for Outlook Lead Card" parentDisplayName="Lead" solution="AppforOutlook (1.2.13.0)" id="{d228d73e-e56e-48b3-ab95-0a06b1397b03}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Order Quick View Form" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)" id="{d40de9d5-d823-4fb7-8fdc-21be01f61424}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Customer Journey Quick Create" parentDisplayName="Customer journey" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{d7b6dfa2-43dd-4c66-b6a5-bff8e3f69253}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{e3c588ee-8e11-49da-a5fe-3800f3f683de}">
+          <package>msdynce_SalesAnchor (9.0.22064.10006)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="D&amp;B Lead Quick Create" parentDisplayName="Lead" solution="dnb_Optimizer (2.5.5.2)" id="{e6c9acd8-fd09-47c9-b09b-054db03bfb39}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Quote" parentDisplayName="Quote" solution="Active" id="{e7a0ab0e-ffb4-ec11-983e-002248998172}" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Customer Journey" parentDisplayName="Customer journey" solution="Active" id="{e98ef6ce-2bf5-ec11-bb3d-000d3adf226d}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Marketing website" solution="MicrosoftDynamics_Marketing (1.84.2011.0)" id="{f6c14bbd-badd-496b-b3e8-11b16a4d2e3a}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Personalized page" solution="MicrosoftDynamics_PersonalizedPages (1.84.2011.0)" id="{f78acce5-1efc-4fd8-bc5b-379b877c42d1}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="App for Outlook Account Card" parentDisplayName="Account" solution="AppforOutlookPatch (1.2.386)" id="{fb65cc73-181c-468b-9bb3-82ecde306991}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="XMA Personalised Page" parentDisplayName="Personalized page" solution="Active" id="{fbf90d7a-ed08-ed11-82e5-000d3adf69c0}" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Product family Quick Create" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{fd57aeed-ab95-4a32-9c6c-61ae92d2a296}">
+          <package>msdynce_ProductManagementAnchor (9.0.22064.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_ApplicationManagementIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_ApplicationManagementIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_CustomerInsightSyncIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_CustomerInsightSyncIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_DefaultMarketingSettingsIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_DefaultMarketingSettingsIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_FeatureSwitchIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_FeatureSwitchIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_LimitUsageIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_LimitUsageIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_QuotaLimitsIcon.svg" displayName="AppCommon/ControlWS/SummaryPageImages/msdyncrm_QuotaLimitsIcon.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/CustomerInsightsConnector_SubArea.svg" displayName="icon/CustomerInsightsConnector_SubArea.svg" solution="DynamicsMKT_Sitemap (1.1.12122.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/msdynmkt_compliancesettings.svg" displayName="icon/msdynmkt_compliancesettings.svg" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/msdynmkt_contactpointsettings.svg" displayName="icon/msdynmkt_contactpointsettings.svg" solution="DynamicsMKT_Consent (1.1.12124.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/msdynmkt_cxpasset.svg" displayName="icon/msdynmkt_cxpasset.svg" solution="DynamicsMKT_BaseSolution (1.1.11637.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/msdynmkt_ExternalSMSProviersSubArea.svg" displayName="icon/msdynmkt_ExternalSMSProviersSubArea.svg" solution="DynamicsMKT_OcIntegration (1.1.12104.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="icon/msdynmkt_GetStartedSubArea.svg" displayName="icon/msdynmkt_GetStartedSubArea.svg" solution="DynamicsMKT_Sitemap (1.1.12122.0)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Analytics/imgs/MarketingReportIcon.svg" displayName="msdyn_/Analytics/imgs/MarketingReportIcon.svg" solution="msdyn_DataInsightsAndAnalyticsForMKT (1.1.22124.2)">
+          <package>DynamicsMKT_AnchorSolution (1.1.12155.51)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="igl_XMAMarketing" displayName="XMA Marketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="igl_XMASalesMarketingApp" displayName="XMA Sales App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/Area_Default_Icon.png" displayName="msdyn_/Images/Area_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_Dynamics_icons_Sales" displayName="msdyn_Dynamics_icons_Sales" solution="msdyn_SalesApp (9.0.22064.10003)">
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyncrm_/Sitemap/msdyncrm_GetStarted.svg" displayName="msdyncrm_/Sitemap/msdyncrm_GetStarted.svg" solution="MicrosoftDynamics_MktIntegration (1.84.2011.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyncrm_LinkedInLeadGen.Sitemap.Form.png" displayName="msdyncrm_LinkedInLeadGen.Sitemap.Form.png" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyncrm_LinkedInLeadGen.Sitemap.FormSubmission.png" displayName="msdyncrm_LinkedInLeadGen.Sitemap.FormSubmission.png" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyncrm_LinkedInLeadGen.Sitemap.UserProfile.png" displayName="msdyncrm_LinkedInLeadGen.Sitemap.UserProfile.png" solution="LinkedInLeadGenIntegration (1.45.1010.0)">
+          <package>MicrosoftDynamics_LinkedInLeadGenAnchorSolution (1.44.1019.3)</package>
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msevtmgt_/Images/Article" displayName="msevtmgt_/Images/Article" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMASalesMarketingApp" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msevtmgt_/Images/EventManagement" displayName="msevtmgt_/Images/EventManagement" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msevtmgt_/Images/Events" displayName="msevtmgt_/Images/Events" solution="MicrosoftDynamics_EventManagement (1.44.1012.0)">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.84.2011.0)</package>
+        </Required>
+        <Dependent type="62" schemaName="igl_XMAMarketing" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="SalesHubSitemap" solution="msdyn_SalesApp (9.0.22064.10003)">
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="62" schemaName="SalesHubSitemap" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="SalesHubSitemap" solution="msdyn_SalesApp (9.0.22064.10003)">
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" solution="msdyn_SalesApp (9.0.22064.10003)">
+          <package>msdynce_SalesInsightsAnchor (9.0.22064.10007)</package>
+        </Required>
+        <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

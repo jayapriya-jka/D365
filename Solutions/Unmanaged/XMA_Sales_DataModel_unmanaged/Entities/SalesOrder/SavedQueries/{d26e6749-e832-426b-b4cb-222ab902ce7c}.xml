@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d26e6749-e832-426b-b4cb-222ab902ce7c}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="salesorderid">
+          <cell name="msdyn_salesordernumber" width="100" />
+          <cell name="name" width="300" />
+          <cell name="a_fbdcc5b07b924e92929bdd17f7a948b5.msdyn_quotenumber" width="156" />
+          <cell name="customerid" width="150" />
+          <cell name="a_7589f7063cd6439d82a07dd6f3221fe1.accountnumber" width="145" />
+          <cell name="statuscode" width="100" />
+          <cell name="totalamount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="salesorder">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <attribute name="totalamount" />
+          <attribute name="statuscode" />
+          <attribute name="customerid" />
+          <attribute name="salesorderid" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="name" operator="like" value="{0}" />
+            <condition attribute="ordernumber" operator="like" value="{0}" />
+            <condition attribute="customerid" operator="like" value="{0}" />
+            <condition attribute="opportunityid" operator="like" value="{0}" />
+            <condition attribute="msdyn_salesordernumber" operator="like" value="{0}" />
+          </filter>
+          <link-entity alias="a_7589f7063cd6439d82a07dd6f3221fe1" name="account" to="customerid" from="accountid" link-type="outer" visible="false">
+            <attribute name="accountnumber" />
+          </link-entity>
+          <link-entity alias="a_fbdcc5b07b924e92929bdd17f7a948b5" name="quote" to="quoteid" from="quoteid" link-type="outer" visible="false">
+            <attribute name="msdyn_quotenumber" />
+          </link-entity>
+          <attribute name="msdyn_salesordernumber" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find All Orders" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

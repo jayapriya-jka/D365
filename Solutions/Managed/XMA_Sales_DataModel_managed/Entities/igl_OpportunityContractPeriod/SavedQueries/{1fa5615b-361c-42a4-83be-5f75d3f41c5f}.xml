@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1fa5615b-361c-42a4-83be-5f75d3f41c5f}</savedqueryid>
+    <layoutxml>
+      <grid name="igl_opportunitycontractperiods" jump="igl_name" select="1" icon="1" preview="1">
+        <row name="igl_opportunitycontractperiod" id="igl_opportunitycontractperiodid">
+          <cell name="igl_name" width="121" />
+          <cell name="igl_estclosedate" width="153" />
+          <cell name="igl_estrevenue_value" width="100" />
+          <cell name="igl_margin_value" width="100" />
+          <cell name="igl_forecastcategory_code" width="159" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="igl_opportunitycontractperiod">
+          <attribute name="igl_opportunitycontractperiodid" />
+          <attribute name="igl_name" />
+          <attribute name="createdon" />
+          <order attribute="igl_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="igl_estclosedate" />
+          <attribute name="igl_estrevenue_value" />
+          <attribute name="igl_margin_value" />
+          <attribute name="igl_forecastcategory_code" />
+          <attribute name="createdby" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Opportunity Contract Period Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

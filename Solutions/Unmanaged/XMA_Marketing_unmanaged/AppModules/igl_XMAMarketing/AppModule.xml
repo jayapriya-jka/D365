@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>igl_XMAMarketing</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="msdynmkt_eventmetadata" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_customerjourney" />
+    <AppModuleComponent type="26" id="{2ea656c4-be6b-e711-a826-000d3a337469}" />
+    <AppModuleComponent type="26" id="{97fe7b5d-c267-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{37db3ee1-c167-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{e9800907-c267-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{c0336e73-c167-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{d0670d37-c267-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{bdef42db-1867-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="60" id="{e98ef6ce-2bf5-ec11-bb3d-000d3adf226d}" />
+    <AppModuleComponent type="60" id="{6e020b0e-3556-4d1b-8717-c2947034eeb8}" />
+    <AppModuleComponent type="60" id="{905a6603-381d-4002-94bf-68c7e9728a69}" />
+    <AppModuleComponent type="60" id="{d7b6dfa2-43dd-4c66-b6a5-bff8e3f69253}" />
+    <AppModuleComponent type="60" id="{0ba5eaa0-ebd5-4aec-96e6-b6041fe43a1d}" />
+    <AppModuleComponent type="59" id="{24033b1a-1a67-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{6945c2f9-1967-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{b5beeabe-1667-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{12501516-1b67-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{8ce74cd8-1a67-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_segment" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingpageconfiguration" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_hotelroomreservation" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_file" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_sms" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_segmenttemplate" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingemail" />
+    <AppModuleComponent type="26" id="{4fdd9f52-a568-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{f93461df-bd6b-e711-a826-000d3a337469}" />
+    <AppModuleComponent type="26" id="{b2e771a6-a468-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{3673a6b4-a468-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{85d6f529-cd67-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{9e3eb43b-d467-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{e3fc47fc-d267-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{2adb5a4d-cd67-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{11dd63ba-d367-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_keyword" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_speaker" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_contentsettings" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_eventregistration" />
+    <AppModuleComponent type="1" schemaName="opportunity" />
+    <AppModuleComponent type="1" schemaName="lead" />
+    <AppModuleComponent type="26" id="{3ab4e809-bb6b-e711-a826-000d3a337469}" />
+    <AppModuleComponent type="26" id="{967e17d8-ade4-425d-90e3-4e9b68aa70ad}" />
+    <AppModuleComponent type="60" id="{95192c4e-f96e-4771-b10a-e6421c908533}" />
+    <AppModuleComponent type="60" id="{e6c9acd8-fd09-47c9-b09b-054db03bfb39}" />
+    <AppModuleComponent type="60" id="{621b7d38-e1c7-ec11-a7b6-000d3ada25c6}" />
+    <AppModuleComponent type="60" id="{89e0d275-331f-4a59-860d-f3c15c783041}" />
+    <AppModuleComponent type="60" id="{d228d73e-e56e-48b3-ab95-0a06b1397b03}" />
+    <AppModuleComponent type="1" schemaName="quote" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_layout" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_event" />
+    <AppModuleComponent type="26" id="{05bf9e5d-6e68-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{5a838214-8f68-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{1d38c984-6e68-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="26" id="{cf11fa07-7268-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{55be712d-7468-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{85e66d8b-7168-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="59" id="{537cb2dc-7168-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_setupdomain" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_socialpost" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_eventteammember" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_emailtemplate" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_mobileapplication" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="60" id="{1e23fddd-dbc7-ec11-a7b6-000d3adaf5bd}" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinform" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_sponsorship" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinuserprofile" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_webinarprovider" />
+    <AppModuleComponent type="1" schemaName="task" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_phonecallactivitymarketingtemplate" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_sponsorablearticle" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_personalizedpage" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingform" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_room" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedincampaign" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_leadscoremodel" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_contactpointconsent2" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_cdsaconnectorconfiguration" />
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="60" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+    <AppModuleComponent type="60" id="{57add43b-6385-4472-8e22-4eace06b30c2}" />
+    <AppModuleComponent type="60" id="{8852c70c-fdb4-ec11-983e-002248998172}" />
+    <AppModuleComponent type="60" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+    <AppModuleComponent type="60" id="{76b81f10-2a08-4f1a-9454-ee38bea94eb5}" />
+    <AppModuleComponent type="60" id="{fb65cc73-181c-468b-9bb3-82ecde306991}" />
+    <AppModuleComponent type="60" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+    <AppModuleComponent type="60" id="{43300723-f867-420b-ab28-976a4d12e6c4}" />
+    <AppModuleComponent type="60" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_hotel" />
+    <AppModuleComponent type="1" schemaName="salesorderdetail" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingemailtemplate" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_webinarconfiguration" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_contactpointsettings" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_email" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_checkin" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_redirecturl" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_eventvendor" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_leadtoopportunity" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingpage" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_eventadministration" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_designerfeatureavailability" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_website" />
+    <AppModuleComponent type="1" schemaName="msdyn_dataanalyticsreport_mkt" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_virtualsegment" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingformtemplate" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_smsphonenumber" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_defaultmarketingsetting" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinformsubmission" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_building" />
+    <AppModuleComponent type="1" schemaName="salesorder" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingformfield" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_customregistrationfield" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_customerjourneytemplate" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_leadscoringconfiguration" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinaccount" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_matchingstrategy" />
+    <AppModuleComponent type="1" schemaName="list" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_contentblock" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_websiteentityconfiguration" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_hotelroomallocation" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingpagetemplate" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_socialpostingconfiguration" />
+    <AppModuleComponent type="1" schemaName="appointment" />
+    <AppModuleComponent type="1" schemaName="quoteclose" />
+    <AppModuleComponent type="1" schemaName="leadtoopportunitysalesprocess" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_journey" />
+    <AppModuleComponent type="1" schemaName="phonecall" />
+    <AppModuleComponent type="1" schemaName="quotedetail" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_marketingemailtestsend" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinleadmatchingstrategy" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_appointmentactivitymarketingtemplate" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_linkedinfieldmapping" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_taskactivitymarketingtemplate" />
+    <AppModuleComponent type="1" schemaName="msdyncrm_video" />
+    <AppModuleComponent type="1" schemaName="msdynmkt_pushnotification" />
+    <AppModuleComponent type="1" schemaName="msevtmgt_webapplication" />
+    <AppModuleComponent type="60" id="{af155b88-1567-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="60" id="{c97736b7-71e5-e711-80ed-00155d952b03}" />
+    <AppModuleComponent type="60" id="{7cc77cae-6d68-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="60" id="{47b7cbc5-f066-e711-a825-000d3a337469}" />
+    <AppModuleComponent type="60" id="{4c04d5c4-1567-e711-a824-000d3a33777b}" />
+    <AppModuleComponent type="62" schemaName="igl_XMAMarketing" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{03d2b58e-438b-eb11-b831-00155d952b23}" />
+    <Role id="{3d4fe57d-1934-419e-bc4a-90f70192d753}" />
+    <Role id="{23d36d22-6a1e-e911-b813-00155d952b18}" />
+    <Role id="{8a0ff651-691e-e911-b813-00155d952b18}" />
+    <Role id="{a46961a5-36df-4201-b77b-668bf7fb553f}" />
+    <Role id="{d9d602db-2761-4170-877f-983494567c08}" />
+    <Role id="{bf157a3a-cde8-e611-80d8-00155d4b205a}" />
+    <Role id="{09a25608-d28b-4d47-b57c-79271fe6a525}" />
+    <Role id="{ce995e5a-cee8-e611-80d8-00155d4b205a}" />
+    <Role id="{5d24f5ab-b933-eb11-a813-000d3a8e7ded}" />
+    <Role id="{7c54ac52-9d1b-e711-80e1-00155d982906}" />
+    <Role id="{6b57e462-4d81-4fd7-84b7-0ca6b41b6673}" />
+    <Role id="{4c3b3177-f6a5-4dbc-ba9a-03ece48376c7}" />
+    <Role id="{e9133cb3-92e5-41c1-a242-9d17098e5f7b}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{303c07a0-6eed-ec11-bb3d-000d3add76bd}" />
+    <Role id="{83cab296-beec-ec11-bb3d-000d3add76bd}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="XMA Marketing" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="custom XMA marketing app (copy of OOTB marketing app)" languagecode="1033" />
+  </Descriptions>
+</AppModule>

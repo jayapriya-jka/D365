@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3fbfaf33-0ac5-4efb-ab1a-c6c194a96674}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ab58b287-6c6e-4337-9ad6-abf4d3f8ac68}" contenttype="expandAvailableSpace" labelid="{f303e996-0cad-41c8-862a-8e7614d0cde5}" name="email_header" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="section_subject" showlabel="false" showbar="false" locklevel="0" id="{ba482191-b09e-708a-2a47-986b80594018}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{e099bd4a-ace6-42a5-8925-8e3fb2a5a6ed}" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{c61d8ad0-ddb4-4ff4-8935-636963d8f443}" showlabel="true" locklevel="0" visible="true" labelid="{aee5eb92-d92d-4374-b5d7-9cc5eab5197b}" ordinalvalue="10001" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{caf781a2-f214-49d5-83b5-3d9a75e3a109}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{cbb33a40-b206-be0c-9ae2-7808b9ab4b30}" showlabel="true" locklevel="0" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="XMA Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{302BF6A0-1568-4177-A11E-5300F9FF5ECC}" solutionaction="Modified">
+          <customControl formFactor="0" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <statusCode>statuscode</statusCode>
+              <personalizationReadOnlyStatusCodes static="true" type="SingleLine.Text">[2,3]</personalizationReadOnlyStatusCodes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <statusCode>statuscode</statusCode>
+              <personalizationReadOnlyStatusCodes static="true" type="SingleLine.Text">[2,3]</personalizationReadOnlyStatusCodes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <statusCode>statuscode</statusCode>
+              <personalizationReadOnlyStatusCodes static="true" type="SingleLine.Text">[2,3]</personalizationReadOnlyStatusCodes>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <DisplayConditions Order="5" FallbackForm="true" />
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Email header" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The header page for the email entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

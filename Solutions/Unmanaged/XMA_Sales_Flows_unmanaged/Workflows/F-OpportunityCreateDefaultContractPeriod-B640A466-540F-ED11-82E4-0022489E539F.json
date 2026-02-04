@@ -1,0 +1,243 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "igl_sharedcommondataserviceforapps_922c4"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "76d2c122-b65c-485c-b859-61f990a8685c"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "opportunity",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "estimatedclosedate,estimatedvalue,igl_margin,opportunityid,msdyn_forecastcategory",
+              "subscriptionRequest/runas": 3
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "concurrency": {
+              "runs": 1
+            }
+          }
+        }
+      },
+      "actions": {
+        "List_Rows_-_Active_Related_Opp._Contract_Periods": {
+          "runAfter": {
+            "Delay": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0ef7537d-7ac9-466f-8e99-623d4894769a"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "igl_opportunitycontractperiods",
+              "$select": "_igl_opportunity_id_value,statecode ",
+              "$filter": "_igl_opportunity_id_value eq '@{triggerOutputs()?['body/opportunityid']}' and statecode eq 0"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Switch": {
+          "runAfter": {
+            "List_Rows_-_Active_Related_Opp._Contract_Periods": [
+              "Succeeded"
+            ]
+          },
+          "cases": {
+            "No_Active_Opp._Contract_Periods": {
+              "case": 0,
+              "actions": {}
+            },
+            "List_Rows_-_Related_Opp._Contract_Periods": {
+              "case": 1,
+              "actions": {
+                "List_Rows_-_Active_Related_Default_Opps._Contract_Periods": {
+                  "runAfter": {},
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "ListRecords",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "igl_opportunitycontractperiods",
+                      "$select": "_igl_opportunity_id_value,igl_name,igl_opportunitycontractperiodid,statecode ",
+                      "$filter": "_igl_opportunity_id_value eq '@{triggerOutputs()?['body/opportunityid']}' and statecode eq 0 and igl_name eq 'Default'",
+                      "$top": 1
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Condition_check_for_existing_\"Default\"": {
+                  "actions": {
+                    "Terminate_2:_Judgement_Day": {
+                      "runAfter": {},
+                      "type": "Terminate",
+                      "inputs": {
+                        "runStatus": "Succeeded"
+                      }
+                    }
+                  },
+                  "runAfter": {
+                    "List_Rows_-_Active_Related_Default_Opps._Contract_Periods": [
+                      "Succeeded"
+                    ]
+                  },
+                  "else": {
+                    "actions": {
+                      "Apply_to_each": {
+                        "foreach": "@outputs('List_Rows_-_Active_Related_Default_Opps._Contract_Periods')?['body/value']",
+                        "actions": {
+                          "Update_a_row": {
+                            "runAfter": {},
+                            "type": "OpenApiConnection",
+                            "inputs": {
+                              "host": {
+                                "connectionName": "shared_commondataserviceforapps",
+                                "operationId": "UpdateRecord",
+                                "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                              },
+                              "parameters": {
+                                "entityName": "igl_opportunitycontractperiods",
+                                "recordId": "@items('Apply_to_each')?['igl_opportunitycontractperiodid']",
+                                "item/igl_estclosedate": "@triggerOutputs()?['body/estimatedclosedate']",
+                                "item/igl_estrevenue_value": "@triggerOutputs()?['body/estimatedvalue']",
+                                "item/igl_forecastcategory_code": "@triggerOutputs()?['body/msdyn_forecastcategory']",
+                                "item/igl_margin_value": "@triggerOutputs()?['body/igl_margin']"
+                              },
+                              "authentication": "@parameters('$authentication')"
+                            }
+                          }
+                        },
+                        "runAfter": {},
+                        "type": "Foreach"
+                      },
+                      "Terminate_3:_Rise_of_the_Machines": {
+                        "runAfter": {
+                          "Apply_to_each": [
+                            "Succeeded"
+                          ]
+                        },
+                        "type": "Terminate",
+                        "inputs": {
+                          "runStatus": "Succeeded"
+                        }
+                      }
+                    }
+                  },
+                  "expression": {
+                    "equals": [
+                      "@length(outputs('List_Rows_-_Active_Related_Default_Opps._Contract_Periods')?['body/value'])",
+                      0
+                    ]
+                  },
+                  "type": "If"
+                }
+              }
+            }
+          },
+          "default": {
+            "actions": {
+              "The_Terminate": {
+                "runAfter": {},
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Succeeded"
+                }
+              }
+            }
+          },
+          "expression": "@length(outputs('List_Rows_-_Active_Related_Opp._Contract_Periods')?['body/value'])",
+          "metadata": {
+            "operationMetadataId": "a40830b9-2e6f-4f69-a153-733fa61893d5"
+          },
+          "type": "Switch"
+        },
+        "Add_a_new_row": {
+          "runAfter": {
+            "Switch": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "42c6ba4e-3a89-418c-9955-a38394770fec"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "CreateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "igl_opportunitycontractperiods",
+              "item/igl_estclosedate": "@triggerOutputs()?['body/estimatedclosedate']",
+              "item/igl_estrevenue_value": "@triggerOutputs()?['body/estimatedvalue']",
+              "item/igl_margin_value": "@triggerOutputs()?['body/igl_margin']",
+              "item/igl_name": "Default",
+              "item/igl_description": "Created Automatically via Flow",
+              "item/igl_forecastcategory_code": "@triggerOutputs()?['body/msdyn_forecastcategory']",
+              "item/igl_Opportunity_Id@odata.bind": "/opportunities(@{triggerOutputs()?['body/opportunityid']})"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Delay": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "2996938f-fffd-42a8-8a5a-8e8cffaf169a"
+          },
+          "type": "Wait",
+          "inputs": {
+            "interval": {
+              "count": 5,
+              "unit": "Second"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

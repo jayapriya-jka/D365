@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c6f6fc1b-1b3e-e711-80e1-00155d871bb4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="opportunityid">
+          <cell name="name" width="193" />
+          <cell name="customerid" width="182" />
+          <cell name="a_133900ab519646969cf9a00ca3bcc3fd.accountnumber" width="193" />
+          <cell name="emailaddress" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="igl_leadtechnologies_opportunity_lookup" width="100" />
+          <cell name="igl_brand_opportunity_lookup" width="100" />
+          <cell name="actualclosedate" width="100" />
+          <cell name="actualvalue" width="100" />
+          <cell name="estimatedclosedate" width="100" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="igl_margin" width="100" />
+          <cell name="msdyn_forecastcategory" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <attribute name="statecode" />
+          <attribute name="customerid" />
+          <attribute name="estimatedvalue" />
+          <attribute name="estimatedclosedate" />
+          <attribute name="emailaddress" />
+          <attribute name="actualvalue" />
+          <attribute name="actualclosedate" />
+          <attribute name="opportunityid" />
+          <link-entity alias="a_133900ab519646969cf9a00ca3bcc3fd" name="account" to="parentaccountid" from="accountid" link-type="outer" visible="false">
+            <attribute name="accountnumber" />
+          </link-entity>
+          <attribute name="igl_leadtechnologies_opportunity_lookup" />
+          <attribute name="igl_brand_opportunity_lookup" />
+          <attribute name="createdby" />
+          <attribute name="ownerid" />
+          <attribute name="createdon" />
+          <attribute name="msdyn_forecastcategory" />
+          <attribute name="igl_margin" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Opportunities" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Shows all the opportunities" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

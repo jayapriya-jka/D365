@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectionRoles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionRoles>
+    <ConnectionRole>
+      <connectionroleid>{61f9ea9b-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Bid Manager</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{62f9ea9b-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{330014a4-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Board Sponsor</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{340014a4-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{d8db08ae-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Commercial 1</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{d9db08ae-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{bb530bb7-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Commercial 2</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{bc530bb7-29ca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{a106d92c-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Commercial Finance</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a206d92c-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{a406d92c-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Solution owner</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a506d92c-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{74289637-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Service Owner</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{75289637-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{736c933e-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Projects Owner</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{746c933e-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{a78bd045-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>Operation Owner</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{a88bd045-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+    <ConnectionRole>
+      <connectionroleid>{aa8bd045-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleid>
+      <name>SVS Owner</name>
+      <category>824300001</category>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <ConnectionRoleObjectTypeCodes>
+        <ConnectionRoleObjectTypeCode>
+          <connectionroleobjecttypecodeid>{ab8bd045-2bca-ec11-a7b5-000d3ada8fc6}</connectionroleobjecttypecodeid>
+          <associatedobjecttypecode>All</associatedobjecttypecode>
+        </ConnectionRoleObjectTypeCode>
+      </ConnectionRoleObjectTypeCodes>
+    </ConnectionRole>
+  </ConnectionRoles>
+</ConnectionRoles>

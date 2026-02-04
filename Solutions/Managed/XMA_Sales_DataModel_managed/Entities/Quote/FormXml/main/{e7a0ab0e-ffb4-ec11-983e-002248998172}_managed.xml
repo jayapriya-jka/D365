@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e7a0ab0e-ffb4-ec11-983e-002248998172}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <ancestor id="{54076A2D-D043-4A1B-B061-4D06846371A9}" />
+      <hiddencontrols>
+        <data id="pricelevelid" datafieldname="pricelevelid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="Summary_tab" verticallayout="true" id="{0B04E4B1-3339-4288-9FD6-96A1F26E22B9}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true" labelid="{8aa4aace-5054-40e0-a262-76433e81a972}">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="21%">
+              <sections>
+                <section name="quote information" showlabel="false" showbar="false" id="{0196B23E-8DC5-4C2A-B911-FCDE404452C9}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{04d59c3f-5f41-488c-a5b0-21a7bd6a189d}">
+                  <labels>
+                    <label description="QUOTE INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e41fddb9-d3ea-42b9-b18f-e69aeab4420d}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Quote Number" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_quotenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msdyn_quotenumber" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{490D5E8C-F769-4862-9116-4FBF4B218498}" labelid="{4b651af4-baed-4a3b-b97d-1eb858fb0bcc}" visible="false">
+                        <labels>
+                          <label description="Quote ID" languagecode="1033" />
+                        </labels>
+                        <control id="quotenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="quotenumber" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14088632-B634-4B31-8AF0-CB555392A0AC}" labelid="{6f736187-5e92-468f-b7b2-cf333713d8ae}">
+                        <labels>
+                          <label description="Revision ID" languagecode="1033" />
+                        </labels>
+                        <control id="revisionnumber" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="revisionnumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CDF20887-468F-4DE7-A8BD-CA9309820855}" labelid="{eb99eee4-51df-4769-b411-85da97515806}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4D52C08C-A9AE-4859-9A85-6F8B244384CB}" labelid="{316ea451-8acc-48e6-a739-5809ffb9433e}">
+                        <labels>
+                          <label description="Quote Subject" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{C5F773CF-5A7B-42E8-9A8D-451B77BE3372}" labelid="{9afa5b59-633a-475d-aea0-b95d527caed4}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bb5f4d0-7ab9-4dd6-9db0-66837246ba8d}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_language" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msdyn_language" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16462f63-80d6-4885-8638-f9d11d1655c3}" locklevel="1" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Sales Quotation Confirmation Date" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_salesquotationconfirmationdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="msdyn_salesquotationconfirmationdate" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{149D0538-2F20-4631-A6D9-3488066D5144}" labelid="{f73547a9-8692-4897-bead-7008a433b495}" visible="false">
+                        <labels>
+                          <label description="Price List" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.pricelevelid_setadditionalparams" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="6f103b7c-54cb-494d-a65d-906932f568fe" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="transactioncurrencyid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="pricelevelid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="pricelevelid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Summary_tab_section_11" id="cfd8bebe-26b6-4173-9427-5907fae893e8" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Quote Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dfe44059-06d9-49be-a935-80b534eeb4dd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Account Segmentation" languagecode="1033" />
+                        </labels>
+                        <control id="igl_accountsegmentation_code" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_accountsegmentation_code" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a19b07f-75b3-4c8e-8212-7ef403490346}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Estimated Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="igl_estimatedrevenue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_estimatedrevenue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2f9f9e9e-876a-4fc6-814d-f457d0a0f62e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Margin" languagecode="1033" />
+                        </labels>
+                        <control id="igl_margin" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_margin" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5605aee4-11be-4923-906f-24f8950b45f2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Margin Support Required" languagecode="1033" />
+                        </labels>
+                        <control id="igl_marginsupportrequired" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_marginsupportrequired" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{02af877a-6558-4b6c-b05f-3f484101db61}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pricing URL" languagecode="1033" />
+                        </labels>
+                        <control id="igl_pricingurllink" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="igl_pricingurllink" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e93ad61f-f1ec-47b2-a076-e12c34b3fff1}" locklevel="1" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SharePoint URL" languagecode="1033" />
+                        </labels>
+                        <control id="igl_sharepointurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="igl_sharepointurl" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="shipping information" showlabel="true" showbar="false" id="{1CDD1ABB-4B2E-4A34-9BE9-B7B5324BEBF6}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{c4ee1171-27da-4656-8899-4f1b606fe824}">
+                  <labels>
+                    <label description="SHIPPING INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{22F9B372-05FD-46DA-A947-A847EB3FEE6A}" labelid="{795d9857-094c-4eba-97b6-a485005b1a9e}">
+                        <labels>
+                          <label description="Shipping Method" languagecode="1033" />
+                        </labels>
+                        <control id="shippingmethodcode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="shippingmethodcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{13368491-9156-4784-B1B6-4CA90D992F05}" labelid="{fd25198e-dc51-483e-82ac-4bc04136e201}">
+                        <labels>
+                          <label description="Payment Terms" languagecode="1033" />
+                        </labels>
+                        <control id="paymenttermscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="paymenttermscode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47409B13-C592-447A-8080-F4B7E10FB4B7}" labelid="{f98d686f-3553-4bd0-81b9-455bb8abeee0}">
+                        <labels>
+                          <label description="Freight Terms" languagecode="1033" />
+                        </labels>
+                        <control id="freighttermscode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="freighttermscode" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="addresses" showlabel="true" showbar="false" id="{BF9211DB-F76C-4C84-82D3-F86B27A7B63D}" IsUserDefined="0" labelid="{7423a9c1-4e53-4f39-815f-80977ca33e2b}">
+                  <labels>
+                    <label description="ADDRESSES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a74914a1-9fd8-442a-947b-199ae358b93c}" showlabel="true" labelid="{09edd1ea-9ac7-4870-9ead-f8b481c3a04b}">
+                        <labels>
+                          <label description="Bill To Address" languagecode="1033" />
+                        </labels>
+                        <control id="billto_composite" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="billto_composite" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2de18d93-6808-4b2e-a661-285b9cd68200}" showlabel="true" labelid="{0821c4fe-084e-449b-847c-9ec826435337}">
+                        <labels>
+                          <label description="Ship To" languagecode="1033" />
+                        </labels>
+                        <control id="willcall" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="willcall" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{03431395-4ddd-4712-aaf8-e8251eb07090}" showlabel="true" labelid="{39d02dd1-03df-4391-85e0-a01bf3f1704f}">
+                        <labels>
+                          <label description="Ship To Address" languagecode="1033" />
+                        </labels>
+                        <control id="shipto_composite" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="shipto_composite" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="53%">
+              <sections>
+                <section name="products" showlabel="false" showbar="false" id="{760CDC30-0EF9-4F1E-A117-38F60EAC0E86}" IsUserDefined="0" labelid="{0c3af575-a6cb-4797-aa6b-4faf9bf5a1ca}" height="auto">
+                  <labels>
+                    <label description="PRODUCTS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" rowspan="2" showlabel="true" auto="true" id="{09274D2B-B78F-471F-86CB-04F4EF9B88EF}" labelid="{dc3df015-8c51-4e26-816b-9743182938dc}">
+                        <labels>
+                          <label description="PRODUCTS" languagecode="1033" />
+                        </labels>
+                        <control id="quotedetailsGrid" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{d51cad3e-3698-3529-8819-dac260c888e0}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>quotedetail</TargetEntityType>
+                            <ViewId>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewId>
+                            <RelationshipName>quote_details</RelationshipName>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <RecordsPerPage>25</RecordsPerPage>
+                            <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+                            <EnableContextualActions>true</EnableContextualActions>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <ViewIds>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewIds>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row height="auto" />
+                  </rows>
+                </section>
+                <section name="suggestionsection" showlabel="false" showbar="false" locklevel="1" id="{0533552f-c976-4a0c-b880-eb431c9642c9}" IsUserDefined="0" columns="1" labelid="{fb9af338-bc9b-4999-aa18-15169e625530}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ab2998a-2195-484c-b021-2021d924479c}" labelid="{4f04b564-dbdc-4bd5-9837-a4cf7e380ee1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="ProductSuggestions_LinkControl" classid="{DFDF1CDE-837B-4AC9-98CF-AC74361FD89D}">
+                          <parameters>
+                            <LinkControlDefinitionId>{05BEFF64-E55E-4000-A316-7CE46335755D}</LinkControlDefinitionId>
+                            <ShowLinkControlLabel>false</ShowLinkControlLabel>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="DynamicProperties" showlabel="false" showbar="false" locklevel="1" id="{ef428c7a-fd25-4593-a540-38b922fbad57}" IsUserDefined="0" columns="1" labelid="{c6c57d85-f76e-42fc-93fb-b209a574435f}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9cde5f79-0e25-401c-8ec5-32f02347f586}" labelid="{49ebdf9d-f1b6-4265-aaf0-b29f8a7bc767}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="DynamicPropertiesList_LinkControl" classid="{DFDF1CDE-837B-4AC9-98CF-AC74361FD89D}">
+                          <parameters>
+                            <LinkControlDefinitionId>{9E5EEBFC-5883-43C0-A36C-6FCA2615D5CA}</LinkControlDefinitionId>
+                            <ShowLinkControlLabel>false</ShowLinkControlLabel>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="totals" labelwidth="250" showlabel="false" showbar="false" id="{D17282A8-648F-47DF-BECF-3218A56C57B5}" IsUserDefined="0" labelid="{a2b283c9-5a4b-4fde-83b6-bf6d403dd970}">
+                  <labels>
+                    <label description="Product Line Item Totals" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{60240442-E3C1-46BD-9796-1A2306CBFDC6}" labelid="{c99526cd-137e-4cea-8f91-8569642612cd}">
+                        <labels>
+                          <label description="Detail Amount" languagecode="1033" />
+                        </labels>
+                        <control id="totallineitemamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totallineitemamount" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8F98ED2F-A1F4-472D-88E8-157965F63013}" labelid="{474b8163-4f6c-4028-895c-12ac2a387fa5}">
+                        <labels>
+                          <label description="(-) Discount (%)" languagecode="1033" />
+                        </labels>
+                        <control id="discountpercentage" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="discountpercentage" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08B51350-7455-462F-9ADC-5012CCCDCC4D}" labelid="{dcc7231b-4f97-4669-8295-9c06703829bf}">
+                        <labels>
+                          <label description="(-) Discount" languagecode="1033" />
+                        </labels>
+                        <control id="discountamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="discountamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{09C2B2EC-1E8E-4F56-9BC9-A6788FE92210}" labelid="{050cc7ce-8956-4a13-b903-592ccbfeb89e}">
+                        <labels>
+                          <label description="Pre-Freight Amount" languagecode="1033" />
+                        </labels>
+                        <control id="totalamountlessfreight" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalamountlessfreight" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93BEF190-1B37-4BB6-951D-3C3D03FE6114}" labelid="{01fafc85-306d-4b6c-9e8b-085e81f535fb}">
+                        <labels>
+                          <label description="(+) Freight Amount" languagecode="1033" />
+                        </labels>
+                        <control id="freightamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="freightamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{169A480E-E626-44E1-BF92-1C1D06C84638}" labelid="{3868e265-c2c0-4ad3-b9e6-ebbb6bb81c95}">
+                        <labels>
+                          <label description="(+) Total Tax" languagecode="1033" />
+                        </labels>
+                        <control id="totaltax" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totaltax" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{09936002-2191-4B78-860B-057367726B5B}" labelid="{39ffe300-9d6c-4e46-8641-0910c0856dd2}">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="totalamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalamount" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="26%">
+              <sections>
+                <section name="sales_information" showlabel="true" showbar="false" id="{AE74B570-56C3-4FF6-A27B-F3A779A7356B}" IsUserDefined="0" labelid="{96eabf62-49dc-453f-ae4d-b34991dfe757}">
+                  <labels>
+                    <label description="SALES INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{84012BAE-D707-48FB-A439-812FAA831DE3}" labelid="{1f4e3d3c-e715-49d4-abaf-42b148c5b377}">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.opportunityid_setadditionalparams" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="3184b335-9bf2-490b-af06-c42c1c03d4c8" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="transactioncurrencyid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="opportunityid">
+                          <parameters>
+                            <FilterRelationshipName>transactioncurrency_opportunity</FilterRelationshipName>
+                            <DependentAttributeName>quote.transactioncurrencyid</DependentAttributeName>
+                            <DependentAttributeType>transactioncurrency</DependentAttributeType>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c7e434b-8695-d94d-2654-8d02b40a6e7c}" showlabel="true" locklevel="0" labelid="{e95d2a63-9f49-495c-a27f-908689a8dfd7}">
+                        <labels>
+                          <label description="Potential Customer" languagecode="1033" />
+                        </labels>
+                        <control id="customerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="customerid" disabled="false">
+                          <parameters>
+                            <IsInlineNewEnabled>false</IsInlineNewEnabled>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dde7f0c-82e4-49a4-b18c-974a807a2bc1}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Company" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_company" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_company" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="description_section" showlabel="false" showbar="false" locklevel="0" id="{db63a003-5a93-8213-a8db-1b2bae85a4c3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" labelid="{504ff903-e017-4c64-aba8-49c1ae3dc696}">
+                  <labels>
+                    <label description="DESCRIPTION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{13407006-6b61-746d-c99a-317564094a11}" showlabel="true" locklevel="0" rowspan="8" labelid="{8b0fcc8d-7789-4c62-8e45-8c12efcce8df}">
+                        <labels>
+                          <label description="DESCRIPTION" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="details_tab" id="{b188a203-cb26-20a0-6baa-a8eb47ab04b2}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{14851232-49a7-4690-abca-7bc7e512825d}">
+          <labels>
+            <label description="Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%">
+              <sections>
+                <section name="Social Pane" showlabel="false" showbar="false" id="{926EB045-51E2-4B87-9B2C-9238457E7DB3}" IsUserDefined="0" locklevel="0" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{4e5d0671-6370-4be2-b794-1c945120f640}">
+                  <labels>
+                    <label description="SOCIAL PANE" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{36C5711C-1798-41B0-AE7B-1D7C948BB8D1}" colspan="2" rowspan="25" showlabel="false" locklevel="0" labelid="{4d3fa24c-5179-4c4e-9f9d-7b21de792b28}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{452dd200-8bc7-9d01-857b-eb1a52505ac0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" labelid="{3fcbe63a-d27c-49eb-b84f-7836eda40c74}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aaf5c855-15ef-4851-b2f0-012b793ebcc6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{75c20954-d9f6-438b-9d4e-73650bb06bbc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="DOCUMENTS" id="9575548b-478a-4719-a429-7ec3a6edc5c4" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Documents" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="66a216e1-e256-4d34-9713-5c7d40e2174e" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{9e686999-d7d0-4403-9c2a-941ea5b30a3d}" rowspan="4" colspan="1" auto="false" showlabel="true">
+                        <labels>
+                          <label description="Document Associated Grid" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                            <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewIds>
+                            <RelationshipName>Quote_SharepointDocument</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8724B7C3-1449-4D95-8C51-BBDAE21D5F1A}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{c38e6e74-c6cb-a612-edc9-48537b889be0}" showlabel="true" locklevel="0" labelid="{c7ef85d4-1715-4c61-a2e6-00d5392ffd77}">
+              <labels>
+                <label description="Total Amount" languagecode="1033" />
+              </labels>
+              <control id="header_totalamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalamount" disabled="true" />
+            </cell>
+            <cell id="{9B976068-EAA1-47AF-A26B-D4DA5B844EBC}" showlabel="true" labelid="{ebac2be7-3d97-4121-a0dd-65f7b2218ad9}">
+              <labels>
+                <label description="Effective From" languagecode="1033" />
+              </labels>
+              <control id="header_effectivefrom" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="effectivefrom" disabled="false" />
+            </cell>
+            <cell id="{96B55B92-F2CD-4EF1-8384-BF4D826CC681}" labelid="{ca3c1f8c-dce2-461b-bf88-1381d7811fcb}">
+              <labels>
+                <label description="Effective To" languagecode="1033" />
+              </labels>
+              <control id="header_effectiveto" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="effectiveto" disabled="false" />
+            </cell>
+            <cell id="{eb6c80df-c547-4677-a6ca-42fae51b72aa}" locklevel="0" colspan="1" rowspan="1" visible="true">
+              <labels>
+                <label description="Sales Quotation Status" languagecode="1033" />
+              </labels>
+              <control id="header_msdyn_salesquotationstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msdyn_salesquotationstatus" disabled="true" />
+            </cell>
+            <cell id="{3D2548CB-977B-4DAB-8787-5FDE44CCC3F8}" showlabel="true" locklevel="1" labelid="{15c57b4d-6863-4acc-8976-59c2308eac54}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.Form_onload" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="eed3450e-7255-4499-beb2-ed63ce31c17d" enabled="true">
+              <dependencies>
+                <dependency id="effectiveto" />
+                <dependency id="effectivefrom" />
+                <dependency id="willcall" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="QuoteOnLoad" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="{5cf46471-2c13-401e-a933-30d246a3d827}" enabled="true" parameters="&quot;Hello&quot;" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="effectivefrom">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.effectivefrom_onchange" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="453a7cf8-b1c4-45f5-b092-223c28a466e5" enabled="true">
+              <dependencies>
+                <dependency id="effectiveto" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="effectiveto">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.effectiveto_onchange" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="d8bf297f-581f-4c5e-bfd5-b810675fe0c3" enabled="true">
+              <dependencies>
+                <dependency id="effectivefrom" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="willcall">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.willcall_onchange" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="10553dae-e462-49d1-829b-26ee451d98ea" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="transactioncurrencyid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.transactioncurrencyid_onchange" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="831E8BC9-0844-41C3-838D-943E15C0B348" enabled="true">
+              <dependencies>
+                <dependency id="pricelevelid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="customerid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.QuoteMainSystemLibraryWebResource.customerid_onchange" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="831E8BC9-0844-41C3-838D-943E15C0B350" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onrecordselect" application="false" active="false" relationship="" control="quotedetailsGrid">
+          <Handlers>
+            <Handler functionName="Mscrm.onRecordSelect" libraryName="Sales/Quote/Quote_main_system_library.js" handlerUniqueId="{3d685e88-8330-701c-1bad-64a995284320}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Sales/Quote/Quote_main_system_library.js" />
+            <internaljscriptfile src="$webresource:Sales/_static/sfa/quotes/QuoteRibbonActions.js" />
+          </clientincludes>
+          <clientvariables>
+            <internaljscriptvariable name="LOCID_PRICE_LIST_NOT_SELECTED" resourceid="Web.SFA.quotes.edit.aspx_155" />
+            <internaljscriptvariable name="LOCID_EFFECTIVEDATE_TO_LT_FROM" resourceid="Web.SFA.quotes.EffectiveToEarlierThanEffectiveFrom" />
+            <internaljscriptvariable name="LOCID_OFFLINE_CRE_ORD_FROM_QUO" resourceid="Web.SFA.quotes.edit.aspx_340" />
+          </clientvariables>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Quote_SharepointDocument" Sequence="0" Area="Info" Id="navSPDocuments" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Documents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProducts" Sequence="0" Area="Info" Id="navProducts" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Products" />
+              <Title LCID="1025" Text="‏‏المنتجات" />
+              <Title LCID="1026" Text="Продукти" />
+              <Title LCID="1027" Text="Productes" />
+              <Title LCID="1029" Text="Produkty" />
+              <Title LCID="1030" Text="Produkter" />
+              <Title LCID="1031" Text="Produkte" />
+              <Title LCID="1032" Text="Προϊόντα" />
+              <Title LCID="3082" Text="Productos" />
+              <Title LCID="1061" Text="Tooted" />
+              <Title LCID="1069" Text="Produktuak" />
+              <Title LCID="1035" Text="Tuotteet" />
+              <Title LCID="1036" Text="Produits" />
+              <Title LCID="1110" Text="Produtos" />
+              <Title LCID="1037" Text="‏‏מוצרים" />
+              <Title LCID="1081" Text="उत्पाद" />
+              <Title LCID="1050" Text="Proizvodi" />
+              <Title LCID="1038" Text="Termékek" />
+              <Title LCID="1057" Text="Produk" />
+              <Title LCID="1040" Text="Prodotti" />
+              <Title LCID="1041" Text="製品" />
+              <Title LCID="1087" Text="Өнімдер" />
+              <Title LCID="1042" Text="제품" />
+              <Title LCID="1063" Text="Produktai" />
+              <Title LCID="1062" Text="Produkti" />
+              <Title LCID="1086" Text="Produk" />
+              <Title LCID="1044" Text="Produkter" />
+              <Title LCID="1043" Text="Producten" />
+              <Title LCID="1045" Text="Produkty" />
+              <Title LCID="1046" Text="Produtos" />
+              <Title LCID="2070" Text="Produtos" />
+              <Title LCID="1048" Text="Produse" />
+              <Title LCID="1049" Text="Продукты" />
+              <Title LCID="1051" Text="Produkty" />
+              <Title LCID="1060" Text="Izdelki" />
+              <Title LCID="10266" Text="Производи" />
+              <Title LCID="9242" Text="Proizvodi" />
+              <Title LCID="1053" Text="Produkter" />
+              <Title LCID="1054" Text="ผลิตภัณฑ์" />
+              <Title LCID="1055" Text="Ürünler" />
+              <Title LCID="1058" Text="Продукти" />
+              <Title LCID="1066" Text="Các sản phẩm" />
+              <Title LCID="2052" Text="产品" />
+              <Title LCID="3076" Text="產品" />
+              <Title LCID="1028" Text="產品" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{d51cad3e-3698-3529-8819-dac260c888e0}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <TargetEntityType>quotedetail</TargetEntityType>
+              <ViewId>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewId>
+              <RelationshipName>quote_details</RelationshipName>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableJumpBar>false</EnableJumpBar>
+              <RecordsPerPage>25</RecordsPerPage>
+              <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+              <EnableContextualActions>true</EnableContextualActions>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+              <IsUserView>false</IsUserView>
+              <ViewIds>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewIds>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <TargetEntityType>quotedetail</TargetEntityType>
+              <ViewId>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewId>
+              <RelationshipName>quote_details</RelationshipName>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableJumpBar>false</EnableJumpBar>
+              <RecordsPerPage>25</RecordsPerPage>
+              <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+              <EnableContextualActions>true</EnableContextualActions>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+              <IsUserView>false</IsUserView>
+              <ViewIds>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewIds>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>quote_details</RelationshipName>
+                <TargetEntityType>quotedetail</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{CF23F371-4C2E-44DF-BCEF-C8971249BBE0}</FilteredViewIds>
+              </data-set>
+              <data-set name="SubGrid">
+                <ViewId>{F6B7BACD-CA87-4CCE-B4D3-0FF5DC0D43EF}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>quotedetail</TargetEntityType>
+                <SubGridParentId>parentbundleidref</SubGridParentId>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">yes</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="Sales/Quote/Quote_main_system_library.js" libraryUniqueId="{23b5666f-1851-452b-b209-f88467b60626}" />
+        <Library name="igl_XMA_Convert_To_Order" libraryUniqueId="{11cdb286-9159-4f0e-8a2b-e6db948ae2fd}" />
+        <Library name="igl_XMA_JS_Library" libraryUniqueId="{3a784ea5-f972-4c91-9623-fa57efc298e2}" />
+      </formLibraries>
+      <footer id="{2b679859-66b2-4522-824d-872c7582474c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5b27672b-0717-402b-8642-7b0a920d654a}" showlabel="false" labelid="{d00dd8f4-5456-4075-b2c7-506e986fc49b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d035a15f-54bb-4a1a-80e1-3060c3e496e7}" showlabel="false" labelid="{d824c80c-b16c-4c26-992c-c560c2950d92}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2bce3eb4-dd3b-4c30-a0ce-1aa1690a1361}" showlabel="false" labelid="{e1ae0d75-4e00-49ad-b356-607d7ae7e36f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions FallbackForm="true" Order="3">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="XMA Quote" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Quote form" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

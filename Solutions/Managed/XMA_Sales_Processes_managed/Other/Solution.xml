@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.22085.184" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>XMA_Sales_Processes</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="XMA_Processes" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.2030</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>IncrementalGroup</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Incremental Group" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Publisher for Incremental Group" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress>info@incrementalgroup.co.uk</EMailAddress>
+      <SupportingWebsiteUrl>https://incrementalgroup.co.uk</SupportingWebsiteUrl>
+      <CustomizationPrefix>igl</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="29" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" behavior="0" />
+      <RootComponent type="29" id="{1a248bc4-490c-ed11-82e4-0022489e5911}" behavior="0" />
+      <RootComponent type="29" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" behavior="0" />
+      <RootComponent type="29" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" behavior="0" />
+      <RootComponent type="29" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" behavior="0" />
+      <RootComponent type="29" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" behavior="0" />
+      <RootComponent type="29" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" behavior="0" />
+      <RootComponent type="29" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" behavior="0" />
+      <RootComponent type="29" id="{49e08971-3cf2-ec11-bb3d-000d3ab1a9f5}" behavior="0" />
+      <RootComponent type="29" id="{722370fe-89b9-ec11-983f-000d3a663473}" behavior="0" />
+      <RootComponent type="29" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" behavior="0" />
+      <RootComponent type="29" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" behavior="0" />
+      <RootComponent type="29" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" behavior="0" />
+      <RootComponent type="29" id="{934e6685-483b-ed11-9db1-0022489e66c0}" behavior="0" />
+      <RootComponent type="29" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_dualwritedefault" displayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="igl_dualwritedefault" displayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22084.10001)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On U - Populate Bid Close Date" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Email Bid Team" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Connection: On Create or Update - Send Notification Email to Bid Stakeholders" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(On Demand)-Quote: Stamp Confirmation Date" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: On CU- Update Status On F&amp;SCM Status change" id="{49e08971-3cf2-ec11-bb3d-000d3ab1a9f5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="igl_account_DualWriteDefault_Id_igl_dualwrite" displayName="igl_account_DualWriteDefault_Id_igl_dualwrite" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="igl_lead_igl_DualWriteDefault_Id_igl_dualwrit" displayName="igl_lead_igl_DualWriteDefault_Id_igl_dualwrit" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_accountsegmentationcode" displayName="Account Segmentation" parentSchemaName="account" parentDisplayName="Account" solution="Active" />
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_dualwritedefault_id" displayName="Dual Write Default" parentSchemaName="account" parentDisplayName="Account" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_transactionalowner_id" displayName="Transactional Owner" parentSchemaName="account" parentDisplayName="Account" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On CU-Write Owners to Description" id="{1a248bc4-490c-ed11-82e4-0022489e5911}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_billingaccount" displayName="Billing Account" parentSchemaName="account" parentDisplayName="Account" solution="FieldServiceCommon (1.0.0.134)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="account" parentDisplayName="Account" solution="Dynamics365FinanceExtended (2.3.1.15)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="account" parentDisplayName="Account" solution="Dynamics365FinanceExtended (2.3.1.15)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="account" parentDisplayName="Account" solution="Dynamics365FinanceExtended (2.3.1.15)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_customergroupid" displayName="Customer Group Id" parentSchemaName="account" parentDisplayName="Account" solution="Dynamics365FinanceExtended (2.3.1.15)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_salestaxgroup" displayName="Sales Tax Group" parentSchemaName="account" parentDisplayName="Account" solution="Dynamics365FinanceExtended (2.3.1.15)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_company_id" displayName="Company" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_company_id" displayName="Company" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_customergroup_id" displayName="Customer Group ID" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_dualwritedefaultid" displayName="Dual Write Default" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_dualwritedefaultid" displayName="Dual Write Default" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_name" displayName="Name" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_name" displayName="Name" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_salestaxgroup_id" displayName="Sales Tax Group" parentSchemaName="igl_dualwritedefault" parentDisplayName="Dual Write Default" solution="Active" />
+        <Dependent type="29" displayName="(S)-Account: On C - Populate Dual Write Fields" id="{1b754b3a-feeb-ec11-bb3d-000d3add76bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="invoiceid" displayName="Invoice" parentSchemaName="invoice" parentDisplayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Name" parentSchemaName="invoice" parentDisplayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="invoice" parentDisplayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="salesorderid" displayName="Order" parentSchemaName="invoice" parentDisplayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="fullname" displayName="Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22084.10001)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_igl_dualwritedefault_id" displayName="Duale Write Default" parentSchemaName="lead" parentDisplayName="Lead" solution="Active" />
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="leadid" displayName="Lead" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package>msdynce_LeadManagementAnchor (9.0.22084.10001)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="lead" parentDisplayName="Lead" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Lead: On C - Populate Dual Write Fields" id="{85811cf9-41f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidclosedate" displayName="Bid Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: On U - Populate Bid Close Date" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidinitiated" displayName="BidInitiated" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidlead_lookup" displayName="Bid Lead" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Connection: On Create or Update - Send Notification Email to Bid Stakeholders" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidoriginatorid" displayName="Bid Originator" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidstatuscode" displayName="Bid Status" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: On U - Populate Bid Close Date" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_bidteam" displayName="Bid Team" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: Email Bid Team" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_evaluationcriteriaprice" displayName="Evaluation Criteria Price %" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_evaluationcriteriaquality" displayName="Evaluation Criteria Quality %" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_evaluationsvs" displayName="Evaluation SV&amp;S %" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_evaluationtotalcalc" displayName="Evaluation Total Calc" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_opportunitytype_code" displayName="Opportunity Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Email Bid Team" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On U - Populate Bid Close Date" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Email Bid Team" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Connection: On Create or Update - Send Notification Email to Bid Stakeholders" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On U - Populate Bid Close Date" id="{22cac5c7-4703-ed11-82e5-000d3adafaa0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Email Bid Team" id="{339c2faf-2ccd-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: Assign Bid Originator" id="{37c8948e-d5c7-ec11-a7b6-000d3adaf5bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Connection: On Create or Update - Send Notification Email to Bid Stakeholders" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: ThrowErrorWhenEvalTotalNot100" id="{8dcdd862-d6c8-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentaccountid" displayName="Account" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Opportunity: On C - Populate Dual Write Fields" id="{06af2434-02ec-ec11-bb3d-000d3adb0650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentaccountid" displayName="Account" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Connection: On Create or Update - Send Notification Email to Bid Stakeholders" id="{89a48761-24ca-ec11-a7b5-000d3ada826f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="igl_accountsegmentation_code" displayName="Account Segmentation" parentSchemaName="quote" parentDisplayName="Quote" solution="Active" />
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_company" displayName="Company" parentSchemaName="quote" parentDisplayName="Quote" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_invoicecustomer" displayName="Invoice Customer" parentSchemaName="quote" parentDisplayName="Quote" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_invoicecustomerid" displayName="Invoice Customer" parentSchemaName="quote" parentDisplayName="Quote" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_salesquotationconfirmationdate" displayName="Sales Quotation Confirmation Date" parentSchemaName="quote" parentDisplayName="Quote" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(On Demand)-Quote: Stamp Confirmation Date" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_salesquotationstatus" displayName="Sales Quotation Status" parentSchemaName="quote" parentDisplayName="Quote" solution="Dynamics365SupplyChainExtended (2.3.3.2)">
+          <package>Dynamics365FinanceAndOperationsAnchor (2.3.3.2)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: On CU- Update Status On F&amp;SCM Status change" id="{49e08971-3cf2-ec11-bb3d-000d3ab1a9f5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Quote Subject" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Quote Subject" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(On Demand)-Quote: Stamp Confirmation Date" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Quote Subject" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: On CU- Update Status On F&amp;SCM Status change" id="{49e08971-3cf2-ec11-bb3d-000d3ab1a9f5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Quote Subject" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Quote Subject" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(NOT REQUIRED........)(S)-Quote: On CU - Populate Dual Write Fields" id="{382827a0-58f1-ec11-bb3d-000d3ab3ae16}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(On Demand)-Quote: Stamp Confirmation Date" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: On CU- Update Status On F&amp;SCM Status change" id="{49e08971-3cf2-ec11-bb3d-000d3ab1a9f5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Quote: GetRelatedAccountSegmentation" id="{722370fe-89b9-ec11-983f-000d3a663473}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(On Demand)-Quote: Stamp Confirmation Date" id="{3bbc2a11-64f8-ec11-bb3d-000d3adf209d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Name" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Name" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="quoteid" displayName="Quote" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="salesorderid" displayName="Order" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Order: On CU - Populate Opportunity on Order" id="{934e6685-483b-ed11-9db1-0022489e66c0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="salesorderid" displayName="Order" parentSchemaName="salesorder" parentDisplayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.22084.10003)</package>
+        </Required>
+        <Dependent type="29" displayName="(S)-Invoice: On CU - Populate Opportunity on Invoice" id="{df8ceb20-493b-ed11-9db1-000d3ad812b5}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

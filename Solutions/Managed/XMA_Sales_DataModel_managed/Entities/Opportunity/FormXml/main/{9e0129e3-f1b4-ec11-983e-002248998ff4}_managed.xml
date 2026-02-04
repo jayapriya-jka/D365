@@ -1,0 +1,2688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9e0129e3-f1b4-ec11-983e-002248998ff4}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <ancestor id="{a837e4a7-01b8-4f82-a475-be9abd67e667}" />
+      <hiddencontrols>
+        <data id="pricelevelid" datafieldname="pricelevelid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="statecode" datafieldname="statecode" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="Summary" verticallayout="true" id="{b6a005fd-5964-4427-b39b-6750e1a5fa6f}" IsUserDefined="0" expanded="true" locklevel="0" showlabel="true" labelid="{c49984f4-a35b-4e9a-a37d-7f89e1dc2868}">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section name="opportunity_information" showlabel="false" showbar="false" id="{5d1cf874-b807-4158-b230-1a13c1db73ad}" columns="1" IsUserDefined="0" labelid="{181a9465-8bd2-40f5-928b-f41ce7ff04cf}">
+                  <labels>
+                    <label description="Opportunity information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="1" id="{439e0732-3f3a-409d-98ba-83d3251cb64b}" labelid="{d0cf8ad1-126a-4ec4-b16e-ee9a69b7129a}">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{181e7f45-3819-40c3-bdf3-1c892d53f35d}" labelid="{6130695d-6997-4e8d-b81b-fb6e79cad156}">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="parentcontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentcontactid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b060498e-5853-4382-8ea2-26ba7883f4da}" labelid="{54064e3d-f9fa-4cf5-8d4a-00a7f965eaa6}">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentaccountid">
+                          <parameters>
+                            <IsInlineNewEnabled>false</IsInlineNewEnabled>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7159962f-4e7d-42aa-ad69-86caa176b1ad}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Company" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_company" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_company" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7f5a51a0-115c-4f72-a2f3-7d963e7fa664}" labelid="{2581c225-ce5a-4c1b-8fca-e3ef9e8db5d1}">
+                        <labels>
+                          <label description="Purchase Timeframe" languagecode="1033" />
+                        </labels>
+                        <control id="purchasetimeframe" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="purchasetimeframe" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c69d917-e84e-4c9d-ba14-f7bb5bc0a51f}" labelid="{d6a07b12-5ece-4cb6-9ffc-f10ebc182b3c}">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0e21400-f671-46d7-a9c3-1a6c61e4ef1c}" labelid="{4a072241-6ad4-4770-8c57-c307acf8fbcd}">
+                        <labels>
+                          <label description="Budget Amount" languagecode="1033" />
+                        </labels>
+                        <control id="budgetamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="budgetamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f9bdae13-ecd5-4eb7-b71f-f14b9619f7c5}" labelid="{eb9d0e1a-2122-4748-b229-827fa9cd4b9c}">
+                        <labels>
+                          <label description="Purchase Process" languagecode="1033" />
+                        </labels>
+                        <control id="purchaseprocess" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="purchaseprocess" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c664bce8-b574-9c22-35db-cb4d1a5dcaa2}" showlabel="true" locklevel="0" visible="true" labelid="{d161cf97-7ead-4e16-ba93-997593a602cb}">
+                        <labels>
+                          <label description="Forecast Category" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_forecastcategory" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyn_forecastcategory" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2cee855d-be6b-786d-e781-8ccbd1858cb5}" showlabel="true" locklevel="0" rowspan="5" labelid="{f9d0e410-2eaa-4151-9ae1-21a9b3bf41f0}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{363beb77-2bae-461d-9d99-fd7493e446f2}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="BidInitiated" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidinitiated" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_bidinitiated" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Summary_section_8" id="d4ff6cf4-d031-4c28-ab38-0693b35f741e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Additional Support Request" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1c1d28f5-df72-4e46-967a-f2c50f51e570}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Service Delivery/Support" languagecode="1033" />
+                        </labels>
+                        <control id="igl_servicedeliverysupport" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_servicedeliverysupport" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e478a6c7-6027-42ad-ae00-a508fdfd4c5d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Solution Design" languagecode="1033" />
+                        </labels>
+                        <control id="igl_solutiondesign" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_solutiondesign" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bb78d75-fb70-471f-a4d5-bc45d51c3486}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Team" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidteam" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_bidteam" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e34f935c-2557-4043-aafa-69acdfdbcc8b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Transitions and Projects" languagecode="1033" />
+                        </labels>
+                        <control id="igl_projectmanagement" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_projectmanagement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c3e71a2d-7327-480d-adfe-501e9d4f6045}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project Code" languagecode="1033" />
+                        </labels>
+                        <control id="igl_projectscode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_projectscode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Opportunity_details" showlabel="false" showbar="false" id="{f961b0a9-2637-4fd3-a4d7-8e55b5246727}" layout="varwidth" columns="1" celllabelposition="Top" IsUserDefined="0" labelid="{a7421c03-c9fa-4d6e-8260-b8ff7c340104}">
+                  <labels>
+                    <label description="Opportunity details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1bc21bed-1e7d-49b7-8223-72ba1cda8019}" showlabel="false" userspacer="true" labelid="{ad6b6225-587b-4a91-8393-79421d752715}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74794dae-95cf-413e-9472-699e76e1e1a0}" rowspan="3" labelid="{a97a50b8-4e0b-4598-a36c-56f7f6f0c24a}">
+                        <labels>
+                          <label description="Current Situation" languagecode="1033" />
+                        </labels>
+                        <control id="currentsituation" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="currentsituation" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{ee5d4aa4-e0b5-4822-ba14-49c1c8430a86}" rowspan="3" labelid="{5513642a-a60a-4143-b526-e4f4475f5433}">
+                        <labels>
+                          <label description="Customer Need" languagecode="1033" />
+                        </labels>
+                        <control id="customerneed" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="customerneed" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{6862197e-b146-47ce-afc2-3f02b06ca0c4}" rowspan="3" labelid="{ba708f1d-d034-4ef4-a2f6-1ed32ce51936}">
+                        <labels>
+                          <label description="Proposed Solution" languagecode="1033" />
+                        </labels>
+                        <control id="proposedsolution" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="proposedsolution" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="42%">
+              <sections>
+                <section name="Summary_CadenceWidget" showlabel="false" showbar="false" locklevel="0" id="{90647cab-2b12-415a-b909-ae9c23ec13b2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{eafcb8f8-f6c6-4814-b72e-03e160489ed7}">
+                  <labels>
+                    <label description="Up next" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{70945505-2b1f-42fd-9dbf-b678b2c8fa8a}" showlabel="false" colspan="1" rowspan="6" labelid="{083cd4c3-a9b8-4b8e-9cf8-4dfdbd8d6c6e}">
+                        <labels>
+                          <label description="Up next" languagecode="1033" />
+                        </labels>
+                        <control id="CadenceWidgetControl" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{bfc8c218-98bb-4d12-8212-2e1617cbb772}" isunbound="true">
+                          <parameters />
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Notes_pane" showlabel="false" showbar="false" id="{cbe1fe44-90c3-40f3-9307-2e72bdefe443}" layout="varwidth" columns="11" celllabelposition="Top" locklevel="0" labelwidth="115" IsUserDefined="0" labelid="{21521405-682e-4791-9cd7-73ce4913ac94}">
+                  <labels>
+                    <label description="Notes pane" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" showlabel="false" rowspan="20" auto="false" id="{17a95e0e-476c-43cf-b6e9-c112fa6c25ec}" locklevel="0" labelid="{9528e659-c99a-479d-a971-7f22af9ee4ad}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="25%">
+              <sections>
+                <section name="Summary_section_6" showlabel="false" showbar="false" locklevel="0" id="{ea3bb0a6-b9dc-1b0e-5e7d-74a380ee79a3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{8540b71a-0b31-47b9-8b05-8bd6b6258627}">
+                  <labels>
+                    <label description="Assistant" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9D5B59C2-3DF3-4437-AC5D-3A6E36866000}" showlabel="false" rowspan="6" auto="false" colspan="1" labelid="{a59f6edf-c19f-4f36-a9f1-245adb50bca3}">
+                        <labels>
+                          <label description="Assistant" languagecode="1033" />
+                        </labels>
+                        <control id="ActionCards" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{3ff9a528-dd50-4aca-8f10-2e5ed73513ad}" disabled="false">
+                          <parameters>
+                            <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName />
+                            <TargetEntityType>actioncard</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Summary_section_9" id="d4b3db9c-8156-49e4-9d7b-2336b71a9958" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Opportunity Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8ec4a598-842c-4732-9c3f-599c02ddd9ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity Type" languagecode="1033" />
+                        </labels>
+                        <control id="igl_opportunitytype_code" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_opportunitytype_code" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e7f0d75-7244-43b0-9698-ce269e118922}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Lead" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidlead_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_bidlead_lookup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ac2782c9-baa7-4fb3-bd12-1f7fb2d57367}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Brand" languagecode="1033" />
+                        </labels>
+                        <control id="igl_brand_opportunity_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_brand_opportunity_lookup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d23d05bc-3053-41c1-8ffe-7ece6852eb11}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Lead Technology" languagecode="1033" />
+                        </labels>
+                        <control id="igl_leadtechnologies_opportunity_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_leadtechnologies_opportunity_lookup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55fabd29-4c75-4309-b1b3-8343200ce33e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Framework" languagecode="1033" />
+                        </labels>
+                        <control id="igl_framework_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_framework_lookup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6410189-2886-4fa5-b9f3-dce1ad6d75b3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pricing URL Link" languagecode="1033" />
+                        </labels>
+                        <control id="igl_pricingurllink" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="igl_pricingurllink" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Social_pane" showlabel="false" showbar="false" locklevel="0" id="{c03918d8-d714-7b95-3083-443db3e303c8}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{432f9644-ae31-4502-8a31-94f6bb555552}">
+                  <labels>
+                    <label description="Social pane" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{798de0be-acfe-4480-b3f7-69312505588a}" colspan="1" auto="false" rowspan="6" showlabel="true" labelid="{ab8cd8c5-d3fd-43f3-aa35-4a29aa5fae15}">
+                        <labels>
+                          <label description="Stakeholders" languagecode="1033" />
+                        </labels>
+                        <control id="Stakeholders" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{36D5BB4F-04A4-4885-86A7-2E60EBCC03F2}">
+                          <parameters>
+                            <ViewId>{4E3600FA-B9C8-49F4-B69A-51EBA06D9BDF}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>opportunity_connections1</RelationshipName>
+                            <TargetEntityType>connection</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <HeaderColorCode />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{09519ff9-e8b9-4f1b-949a-fe6a1c0b0ddc}" showlabel="false" userspacer="true" labelid="{7c555a73-0ab8-44e1-a0c6-91d09b5facdf}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92822c63-42c0-4b31-8cb5-8ce123553796}" colspan="1" auto="false" rowspan="6" showlabel="true" labelid="{5a222a92-ae2c-4f8b-8349-0491eddb5f19}">
+                        <labels>
+                          <label description="Sales/Bids Team Members" languagecode="1033" />
+                        </labels>
+                        <control id="Pursuit_Team" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{74D56A28-6093-4345-8F1D-B1BCE70AA0A0}">
+                          <parameters>
+                            <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>opportunity_connections1</RelationshipName>
+                            <TargetEntityType>connection</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F},{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6},{FE4BC089-8901-466C-A41B-1C1090F204D4},{4E3600FA-B9C8-49F4-B69A-51EBA06D9BDF},{BA3387BF-382D-4376-A538-5B02467925D3},{CF3AA82E-635B-E611-810B-00155DBD6A1D},{DDB43BE7-F7DA-4D90-845F-06552A446DA0},{23FB1036-E41D-4D75-8AA7-27569B5B6512},{4C0E2477-FEC0-47B4-BE3E-E5FFAFFCB651}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <HeaderColorCode />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{9a29c680-0d68-409e-9657-ea87cfca3b85}" showlabel="false" userspacer="true" labelid="{005bc824-9683-4409-83c5-66aae62eaaa4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05a38f4d-1649-4741-84b6-d6de2db78048}" colspan="1" auto="false" rowspan="6" showlabel="true" labelid="{297d297f-77e4-492a-97f7-9eed7f928f8a}">
+                        <labels>
+                          <label description="Competitors" languagecode="1033" />
+                        </labels>
+                        <control id="Competitors" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{57BCA9AC-87A0-4C28-ADC8-2D0A4645F29E}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>opportunitycompetitors_association</RelationshipName>
+                            <TargetEntityType>competitor</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="BidTab" id="3fad9979-cdfd-4d5a-aa7d-75b8dd32b5b3" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Bid" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="40%">
+              <sections>
+                <section name="tab_5_section_1" id="99fca1ef-419a-4730-bba9-7a4b88f3ca35" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Bid" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{036b9fc6-1177-406e-aa27-0774c01839bb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Title" languagecode="1033" />
+                        </labels>
+                        <control id="igl_contracttitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_contracttitle" disabled="false" />
+                      </cell>
+                      <cell id="{e7480db7-3381-45f7-82d3-df9c4bd9c1e8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer Vision" languagecode="1033" />
+                        </labels>
+                        <control id="customerneed" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="customerneed" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{57ce53dc-31c2-4269-84c3-409173482904}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is this a Framework?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_isthisaframeworkcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_isthisaframeworkcode" disabled="false" />
+                      </cell>
+                      <cell id="{3789a540-d51e-4c09-89e3-57e2acc55772}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Originator" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidoriginatorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_bidoriginatorid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8995a9c-a376-4467-9658-6d63b8f17e3f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Framework" languagecode="1033" />
+                        </labels>
+                        <control id="igl_framework_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_framework_lookup" disabled="false" />
+                      </cell>
+                      <cell id="{6df187de-114b-41f3-8d19-b368b1ed50be}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Lead" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidlead_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_bidlead_lookup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{eafd6b54-8a21-4ae2-83a1-835cca44c5e2}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1657724465525" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1657724465525" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="igl_framework_lookup">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="igl_framework"&gt;c432b013-fe75-4590-bb6d-fae804bda33b&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{77caa0e0-5632-44e4-9ce9-a63cc9bf03da}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Designation" languagecode="1033" />
+                        </labels>
+                        <control id="igl_designationcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_designationcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e57663c8-cf77-48c2-9989-2495f1874108}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Industry" languagecode="1033" />
+                        </labels>
+                        <control id="igl_industrycode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_industrycode" disabled="false" />
+                      </cell>
+                      <cell id="{2d5e3f5f-6692-42a6-abe6-91d161abc278}" locklevel="0" colspan="1" rowspan="1" auto="true">
+                        <labels>
+                          <label description="Current Status Report" languagecode="1033" />
+                        </labels>
+                        <control id="igl_currentstatusreport" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_currentstatusreport" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48e97cc0-c12e-4323-b22d-0cb7b7713448}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Geography" languagecode="1033" />
+                        </labels>
+                        <control id="igl_geographycode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_geographycode" disabled="false" />
+                      </cell>
+                      <cell id="{db53c20d-3295-4018-838e-03e752077c39}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Evaluation Criteria Price %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_evaluationcriteriaprice" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_evaluationcriteriaprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5eaf5da4-d38b-4c08-aec7-6573b6c72da0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scope\Lot Structure" languagecode="1033" />
+                        </labels>
+                        <control id="igl_scopelotstructure" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_scopelotstructure" disabled="false" />
+                      </cell>
+                      <cell id="{e1e4734e-e1e2-4acd-bea9-3fe0b63f4a51}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Evaluation Criteria Quality %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_evaluationcriteriaquality" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_evaluationcriteriaquality" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55b743e3-585d-4d96-b9a4-21aef70e1e72}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tender Type" languagecode="1033" />
+                        </labels>
+                        <control id="igl_tendertypecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_tendertypecode" disabled="false" />
+                      </cell>
+                      <cell id="{fc1d0061-5c96-412e-bff8-974ca76bc726}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Evaluation SV&amp;S %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_evaluationsvs" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_evaluationsvs" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6b04d3bb-207c-42b8-ad8c-4d000c046a84}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Escalation" languagecode="1033" />
+                        </labels>
+                        <control id="igl_escalationcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_escalationcode" disabled="false" />
+                      </cell>
+                      <cell id="{8bc2acee-9ed9-4ed3-a280-f8b76460716d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Requires SV&amp;S contractual commitments?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_requiressvscontractualcommitmentscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_requiressvscontractualcommitmentscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9150d1ac-9560-4004-88cd-73634f830bd5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Submission Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_tendersubmissiondate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_tendersubmissiondate" disabled="false" />
+                      </cell>
+                      <cell id="{8e7ab4ac-badd-47f5-8179-c57973fe8b5a}" locklevel="0" colspan="1" rowspan="3">
+                        <labels>
+                          <label description="SV&amp;S notes" languagecode="1033" />
+                        </labels>
+                        <control id="igl_svsnotes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_svsnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3060e8d1-9eb1-4a0c-9c3e-6d691ddad1e9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Priority" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidprioritycode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_bidprioritycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9b7e8e2-6d81-4536-982c-9bfe1f2a74b5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Treatment" languagecode="1033" />
+                        </labels>
+                        <control id="igl_treatmentcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_treatmentcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12fb8eda-210f-4dbf-974a-f143290e91bc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid TCV" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidvaluecurr" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_bidvaluecurr" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{3c934de4-ca2e-4790-9148-1119aac1bb99}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{424303b6-ec4e-4d82-be9b-d725b9828a3f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Margin" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidmargincurr" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_bidmargincurr" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{4284c590-e894-4804-8b48-111747f45a64}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb249021-255b-4676-8373-caa050d899bd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Margin %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidmarginpercent_calc" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_bidmarginpercent_calc" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{dcbbca98-4e96-4201-9b0c-7b550c26078d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{857457e4-d7cc-4041-88ea-b3b547112b70}" rowspan="1" colspan="2" auto="false" showlabel="true">
+                        <labels>
+                          <label description="Sales/Bids Team Members" languagecode="1033" />
+                        </labels>
+                        <control id="Subgrid_2" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{1e353105-3485-145b-4202-80693a31a767}">
+                          <parameters>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>connection</TargetEntityType>
+                            <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                            <ViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F},{FE4BC089-8901-466C-A41B-1C1090F204D4},{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewIds>
+                            <RelationshipName>opportunity_connections1</RelationshipName>
+                            <HeaderColorCode>#F6FBF7</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_56" id="595c9e1a-c2c1-4591-b25d-3abef32bca3d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Bid Result" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7450cd5b-8f2e-44ab-a7d8-21d7b4295933}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Status" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidstatuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_bidstatuscode" disabled="false" />
+                      </cell>
+                      <cell id="{cb3940e6-107f-4059-b8b1-c5641d1a3486}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a496dc87-4087-485c-9946-5931ace8be53}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Close Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidclosedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_bidclosedate" disabled="true" />
+                      </cell>
+                      <cell id="{ec045086-7585-4edb-99dc-e190b5bdc81d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f90d8a8-2d24-46b2-a893-1142a8f543f6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Result" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidresultcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_bidresultcode" disabled="false" />
+                      </cell>
+                      <cell id="{c592ec3d-d7b1-4ea1-b709-f863898d51ab}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e8e425de-718e-4454-b789-9bfb7aa6cc61}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Post Sub Clarification - Return Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_postsubclarificationreturndate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_postsubclarificationreturndate" disabled="false" />
+                      </cell>
+                      <cell id="{62229e0e-fdbb-4872-be36-892ca0de91ca}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0646b5c3-6c82-430f-8820-d565401c863e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Result Reason" languagecode="1033" />
+                        </labels>
+                        <control id="igl_resultreasoncode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_resultreasoncode" disabled="false" />
+                      </cell>
+                      <cell id="{3a811946-a41e-4425-b0c2-e0a5abbc2af1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winner (if not XMA)" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winnerifnotxma" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_winnerifnotxma" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a782a18-bdd1-474f-ab2e-e300614d7d40}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Result Narrative" languagecode="1033" />
+                        </labels>
+                        <control id="igl_resultnarrative" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_resultnarrative" disabled="false" />
+                      </cell>
+                      <cell id="{238fe513-38f0-4453-b1ee-d5feb9bdf5c4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning Price Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winningpricescore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winningpricescore" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be9366a3-1ab1-4453-9cfd-17e0e932cadb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="No Bid Price Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_nobidpricefeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_nobidpricefeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{14c897c4-54c0-4ac7-be61-8609e7d3cccd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning Price %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winningprice" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winningprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59a6b5ba-12e6-44fd-928f-8828d6196551}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="No Bid Quality Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_nobidqualityfeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_nobidqualityfeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{4947f28e-63f8-444b-b5b2-897581065473}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning Quality Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winningqualityscore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winningqualityscore" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9715d9df-61af-4695-84f6-8972e8bb45c3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lost Price Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_lostpricefeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_lostpricefeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{b9cbe51b-53ea-4de9-a882-9c4fa08d87eb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning Quality %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winningquality" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winningquality" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6ce98c4f-a65f-458d-be1f-7c18b3d74f97}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lost Quality Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_lostqualityfeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_lostqualityfeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{da72e8a7-6d28-41db-b68d-cf20b0bcd46e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning SV&amp;S Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winnersvsscore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winnersvsscore" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{759dcee8-faa1-4a17-b220-c5f09646c8da}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Won Price Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_wonpricefeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_wonpricefeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{6fe2e014-563b-4adc-b56a-3b057c72b5ca}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Winning SV&amp;S %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_winnersvs" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_winnersvs" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8c78290-fe7f-4b83-940c-30c5d5c20f3b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Won Quality Feedback" languagecode="1033" />
+                        </labels>
+                        <control id="igl_wonqualityfeedbackcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_wonqualityfeedbackcode" disabled="false" />
+                      </cell>
+                      <cell id="{84ce2ee9-5c06-49ba-9977-043e9cbe9627}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Bid Lead Actual Days" languagecode="1033" />
+                        </labels>
+                        <control id="igl_bidleadactualdays" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_bidleadactualdays" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{09fb5fb5-90e4-446b-9629-a9e4e5cb30ee}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Other Specification" languagecode="1033" />
+                        </labels>
+                        <control id="igl_otherspecification" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_otherspecification" disabled="false" />
+                      </cell>
+                      <cell id="{e5fc742c-d039-4753-8083-002b7f85ed0a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_contractstartdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_contractstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{854910f3-2469-4d92-8dea-8af3ae9230f4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Price Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_pricescore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_pricescore" disabled="false" />
+                      </cell>
+                      <cell id="{427ecfad-0668-4efd-b453-0874545dabad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract End Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_contractenddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_contractenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3929eadf-62d2-45ba-8008-28b5cbad5837}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Price %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_price" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_price" disabled="false" />
+                      </cell>
+                      <cell id="{69158e2c-b570-41bd-9da2-bdb0e00d7dd7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reference Created" languagecode="1033" />
+                        </labels>
+                        <control id="igl_referencecreatedcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_referencecreatedcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d6b6303f-db2c-48b9-9a8c-826bbe9dc583}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quality Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_qualityscore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_qualityscore" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{6ab44263-96a9-418d-9ab2-35beb6debd62}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{174802e4-52a9-4ef2-8922-1445ab990706}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quality %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_quality" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_quality" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{16e9365a-d07d-4665-bb15-bbe4e8822c74}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38e7e384-39f3-4411-a2d4-ec9b1d02c0b0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SV&amp;S Score" languagecode="1033" />
+                        </labels>
+                        <control id="igl_svsscore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_svsscore" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{ce219e90-0bd1-44b6-a5e3-3932f898767d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{52647a4b-9d79-4578-8400-5e1245542d1e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SV&amp;S %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_svs" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_svs" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{56c0d1fd-545b-4c05-a2a9-9b36e413990b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="25%">
+              <sections>
+                <section name="tab_5_section_3" id="d89c4f2e-50e0-4aa0-9fb3-8ae06beb3ca8" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Qualification" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{da510b0d-74f5-47a5-a9b2-b80b5e08bc96}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Qualification Score %" languagecode="1033" />
+                        </labels>
+                        <control id="igl_qualificationscore" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="igl_qualificationscore" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ac455b36-4761-4d97-9981-e3081793a488}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Existing XMA Relationship?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_existingxmarelationshipcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_existingxmarelationshipcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{af09fe06-3fa2-4136-8a64-d306f92a7ea3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Existing XMA Relationship Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_existingxmarelationshipdetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_existingxmarelationshipdetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b59914d-faba-4260-96af-2363e6f5fc14}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Existing Competition Relationship?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_existingcompetitionrelationshipcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_existingcompetitionrelationshipcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46ce2a8a-e313-4115-8c8c-d78ff9dd0e3d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Existing Competition Relationship Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_existingcompetitiondetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_existingcompetitiondetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05ef5e8d-44aa-488f-9335-4799a93a2c5e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Any pre-engagement on this tender?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_anypreengagementonthistendercode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_anypreengagementonthistendercode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d7eab35-4be9-4588-8bc8-5f1fdc49c669}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pre-engagement on this tender Details/Comments " languagecode="1033" />
+                        </labels>
+                        <control id="igl_preengagementonthistenderdetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_preengagementonthistenderdetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6ef8f3ff-9912-4aab-b8bd-6a748bf20232}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Tender Scope within our Capability?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_istenderscopewithinourcapabilitycode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_istenderscopewithinourcapabilitycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0c0d739-de91-4eef-ae0c-028ad31c636c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tender Scope within Capability Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_tenderscopewithincapabilitydetailscomment" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_tenderscopewithincapabilitydetailscomment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{83af0442-bd0e-428c-96bc-cabfd71051f5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Can we be compliant with requirements?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_canwebecompliantwithrequirementscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_canwebecompliantwithrequirementscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fa00ba78-8902-4981-965d-8000baf9c0c8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Compliant with requirements Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_compliantwithrequirementsdetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_compliantwithrequirementsdetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d2c4d26-dacf-4a01-85be-00e33ee5a080}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Companywide Resource Estimation?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_companywideresourceestimationcode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_companywideresourceestimationcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{61bebcf0-f0b1-4362-a9c7-b0b520aada6b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Companywide Resource Estimation Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_companyresourceestimationdetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_companyresourceestimationdetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a74ff52f-b61c-4340-b22a-55debc138320}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Our Commercial Position (Price Response)?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_commercialpositionpriceresponsecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_commercialpositionpriceresponsecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62cea4db-2eda-4e0f-ac43-9b0266ab6d31}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Commercial Position Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_commercialpositiondetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_commercialpositiondetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e9d8505-ad8a-4c63-9d16-05853f9f8857}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="How strong is our solution/Service Response?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_strengthofsolutionserviceresponsecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_strengthofsolutionserviceresponsecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c0cc084b-0e5a-445f-be71-4d4f3fbd200a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Solution Response Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_solutionserviceresponsedetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_solutionserviceresponsedetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ffaae95-3306-4333-8870-b9fb1e5c9e05}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="What is our Risk Position?" languagecode="1033" />
+                        </labels>
+                        <control id="igl_whatisourriskpositioncode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_whatisourriskpositioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1baf567b-46fb-4e59-bfd1-a25919531502}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="What is our Risk Position Details/Comments" languagecode="1033" />
+                        </labels>
+                        <control id="igl_whatisourriskpositiondetailscomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_whatisourriskpositiondetailscomments" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Product_Line_Items" verticallayout="true" id="{79548060-31f7-4646-8c08-0296ecd4113b}" visible="true" expanded="true" IsUserDefined="0" showlabel="true" labelid="{e0f95374-4246-4055-997b-9f722d2e7688}">
+          <labels>
+            <label description="Products" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="opportunityproducts" showlabel="false" showbar="false" id="{2b1ed7f7-3ebb-42f3-809f-94eba9f94fb2}" height="auto" IsUserDefined="0" layout="varheight" columns="11" labelid="{98be4f09-7e53-4d37-ba40-5660177ce16d}">
+                  <labels>
+                    <label description="Opportunity products" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ba131dc7-aa7c-4d8b-9c94-421ed8a7ddaf}" labelid="{3bf887dd-8f56-41b9-977a-315835795e80}" visible="false">
+                        <labels>
+                          <label description="Price List" languagecode="1033" />
+                        </labels>
+                        <events>
+                          <event name="setAdditionalParams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="Mscrm.pricelevelid_setadditionalparams" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="1191cc10-3daa-4368-9615-e3fb183f2189" enabled="true" passExecutionContext="true">
+                                <dependencies>
+                                  <dependency id="transactioncurrencyid" />
+                                </dependencies>
+                              </Handler>
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="pricelevelid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="pricelevelid" />
+                      </cell>
+                      <cell id="{a236691e-a64a-4125-a380-6f59c1ca5eca}" showlabel="false" labelid="{f5459650-62f1-416e-88a8-664ffa7895b4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0B8DF861-AE32-4C79-9C4E-2ECAA9F74712}" labelid="{57b4f379-22ea-4d43-9d29-7c42a12fe5ae}">
+                        <labels>
+                          <label description="Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="isrevenuesystemcalculated" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="isrevenuesystemcalculated" />
+                      </cell>
+                      <cell id="{9B6E1519-AB19-4AD6-976E-8A0D5754AE0C}" showlabel="false" labelid="{c32ec3da-d1a7-4de4-94d1-c4faf0bd38e3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="2" rowspan="4" showlabel="false" auto="true" id="{22177595-7784-43da-9af2-50e9115b956e}" labelid="{e97e086e-c23d-4fcf-82be-a7f3c5a05214}">
+                        <labels>
+                          <label description="Opportunity products" languagecode="1033" />
+                        </labels>
+                        <control id="opportunityproductsGrid" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{393b71b2-4997-7135-242b-b0ac80dd1194}" indicationOfSubgrid="true">
+                          <parameters>
+                            <TargetEntityType>opportunityproduct</TargetEntityType>
+                            <ViewId>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewId>
+                            <RelationshipName>product_opportunities</RelationshipName>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <RecordsPerPage>25</RecordsPerPage>
+                            <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <ViewIds>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewIds>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+                <section name="suggestionsection" showlabel="false" showbar="false" locklevel="1" id="{ea88f7fa-aa19-4995-9b04-f1c724b52e39}" IsUserDefined="0" columns="1" labelid="{4ffec558-1826-40a8-918b-15bc27332978}">
+                  <labels>
+                    <label description="Suggestions" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7ee1bca7-43e9-4bf7-bbdd-32df7279d236}" labelid="{39d636d0-c907-40b9-ba1d-684745dee508}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="ProductSuggestions_LinkControl" classid="{DFDF1CDE-837B-4AC9-98CF-AC74361FD89D}">
+                          <parameters>
+                            <LinkControlDefinitionId>{05BEFF64-E55E-4000-A316-7CE46335755D}</LinkControlDefinitionId>
+                            <ShowLinkControlLabel>false</ShowLinkControlLabel>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="DynamicProperties" showlabel="false" showbar="false" locklevel="1" id="{05f0b856-e494-4522-b6cc-355391ac5c87}" IsUserDefined="0" columns="1" labelid="{8e698587-2103-4778-a0e7-ddff019659fa}">
+                  <labels>
+                    <label description="Dynamic properties" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6200bb3e-dec8-4f40-bf00-f2aec26058d3}" labelid="{90af9a68-724d-47eb-b883-3d28af02614b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="DynamicPropertiesList_LinkControl" classid="{DFDF1CDE-837B-4AC9-98CF-AC74361FD89D}">
+                          <parameters>
+                            <LinkControlDefinitionId>{9E5EEBFC-5883-43C0-A36C-6FCA2615D5CA}</LinkControlDefinitionId>
+                            <ShowLinkControlLabel>false</ShowLinkControlLabel>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="totals" showlabel="false" showbar="false" locklevel="0" id="{736e5dc8-6758-42ee-8e28-812ec6f75abd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{3940aac0-82cd-41c5-acd0-e6f180b2bd7c}">
+                  <labels>
+                    <label description="Product line item totals" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{91C4D5D8-FDBC-4F1A-8A91-753A1AE4E376}" labelid="{ec272235-9228-4f3f-b204-a360a8acb5bb}">
+                        <labels>
+                          <label description="Detail amount" languagecode="1033" />
+                        </labels>
+                        <control id="totallineitemamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totallineitemamount" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EFE4D5AB-D23D-4C88-A906-4646F3B28B45}" labelid="{372bc79b-fdec-445d-9716-384afa2c3b67}">
+                        <labels>
+                          <label description="(-) Discount (%)" languagecode="1033" />
+                        </labels>
+                        <control id="discountpercentage" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="discountpercentage" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6BD9F746-A850-4D84-8716-748AA91EC1BC}" labelid="{95c2adf7-9855-406f-93a8-8e57d3722655}">
+                        <labels>
+                          <label description="(-) Discount" languagecode="1033" />
+                        </labels>
+                        <control id="discountamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="discountamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75F85D03-7267-4C05-B5DE-B00C49595864}" labelid="{86a892a1-40a8-4ddb-bf2a-dcb689788c22}">
+                        <labels>
+                          <label description="Pre-Freight Amount" languagecode="1033" />
+                        </labels>
+                        <control id="totalamountlessfreight" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalamountlessfreight" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E91D45ED-89A7-48A2-8B9E-B16EF4DE2815}" labelid="{95eb542d-1558-4356-935c-c50176741e38}">
+                        <labels>
+                          <label description="(+) Freight Amount" languagecode="1033" />
+                        </labels>
+                        <control id="freightamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="freightamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E59C312B-32A1-4441-9E54-4F4292E8E60C}" labelid="{92754e7c-c877-4766-913b-9273fc4a5799}">
+                        <labels>
+                          <label description="(+) Total Tax" languagecode="1033" />
+                        </labels>
+                        <control id="totaltax" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totaltax" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D96BA356-1581-46E0-937C-49033D55E3A2}" labelid="{02823539-db92-4946-b5bc-2cc4fef80893}">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="totalamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="totalamount" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="QUOTES" verticallayout="true" id="{af8380da-5492-4a69-8a36-b1beff121e95}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{0f5dce06-f19d-4168-8c03-6ff2da164979}">
+          <labels>
+            <label description="Quotes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="opportunityquotes" showlabel="false" showbar="false" id="{40e2e47e-716a-4fe8-9fc0-e0341303c7a3}" height="auto" IsUserDefined="0" layout="varheight" columns="11" labelid="{18867e68-27d4-44d5-92a5-a951c28b6584}">
+                  <labels>
+                    <label description="Quotes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="2" rowspan="4" showlabel="false" auto="true" id="{dcb63b8d-f689-44b1-a009-292bff328340}" labelid="{d073d7fd-6cf5-4f72-8b72-271cd919efae}">
+                        <labels>
+                          <label description="Action Cards" languagecode="1033" />
+                        </labels>
+                        <control id="quote" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <TargetEntityType>quote</TargetEntityType>
+                            <ViewId>{61A4C932-D775-E211-B420-00155D806600}</ViewId>
+                            <RelationshipName>opportunity_quotes</RelationshipName>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <ChartGridMode>Grid</ChartGridMode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="PRICING SUPPORT" id="cd476922-956a-4843-b84c-80e77c7eec4e" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Pricing Support" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_7_section_1" id="440e49d3-d43e-4442-bfd8-aaf0896a0507" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{1bc7ae40-e364-42ea-8247-febba89607fa}" rowspan="1" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="Deal Registrations" languagecode="1033" />
+                        </labels>
+                        <control id="Subgrid_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <TargetEntityType>igl_dealregistrations</TargetEntityType>
+                            <ViewId>{58311A63-6F57-4F71-974F-BD8A2EF5BCE3}</ViewId>
+                            <ViewIds>{58311A63-6F57-4F71-974F-BD8A2EF5BCE3}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>igl_DealRegistrations_Opportunity_Opportu</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="1b9388cb-9e68-4915-92ba-ad366c24e834" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Contract Periods" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" id="bf28a60b-8e44-4792-9d43-9ed472118f46" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ef9cf41a-0bfd-4a37-a158-f5526b7f1660}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Period" languagecode="1033" />
+                        </labels>
+                        <control id="igl_contractperiod_code" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_contractperiod_code" disabled="false" />
+                      </cell>
+                      <cell id="{d48288db-c51b-4588-8fc8-30db64e98f4d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2d86a015-2188-471b-9285-35bd8af6e993}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{a4a21b3d-9714-40c7-be71-66d474a3acea}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{7bcc68e7-fc97-4e84-9d27-5e068ed65205}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Total Est. Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="igl_totalrevenue_calcvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_totalrevenue_calcvalue" disabled="true" />
+                      </cell>
+                      <cell locklevel="0" id="{66329c9c-b1c0-46d1-8d54-6e3607c0ed56}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d4b230cb-f59b-4f19-9a9c-fda5a7c51958}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2df426a5-d212-4f1a-82f9-953e89d0a28f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Total Margin" languagecode="1033" />
+                        </labels>
+                        <control id="igl_totalmargin_calcvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_totalmargin_calcvalue" disabled="true" />
+                      </cell>
+                      <cell id="{89c68584-833d-41d8-9fbe-914d12835dcb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoiced To Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_invoicedtodate_calcvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_invoicedtodate_calcvalue" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_6_section_3" id="66fa6524-2f42-444c-a33b-d97dc3196f63" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Opportunity Contract Periods" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{15ea6960-42fe-4f91-a4bd-aaee1ff0b008}" rowspan="4" colspan="1" auto="true" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1657017533385" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{37513b6d-9673-8adc-b3bc-9112a7d063e9}">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>igl_opportunitycontractperiod</TargetEntityType>
+                            <ViewId>{3E33AAE4-9943-4945-84DA-8917A1221473}</ViewId>
+                            <ViewIds>{3E33AAE4-9943-4945-84DA-8917A1221473}</ViewIds>
+                            <RelationshipName>igl_opportunitycontractperiod_Opportunity</RelationshipName>
+                            <HeaderColorCode>#F6FBF7</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="documents_sharepoint" id="{2A23BF76-D291-43BA-980B-738D39C68770}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{a3cf0241-5a99-4023-9b89-9eadbc584aa0}">
+          <labels>
+            <label description="Documents" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="documents_sharepoint_section" showlabel="false" showbar="false" locklevel="0" id="{C135BCE8-68E2-4026-8C6B-FB68F795075B}" IsUserDefined="0" layout="varwidth" columns="1" labelid="{84aa3180-8220-4679-9a21-385841015c3d}" height="auto">
+                  <labels>
+                    <label description="Documents Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{17DDB15C-EF7D-4BCA-AE50-B3FE2ADC175B}" showlabel="true" colspan="1" auto="true" rowspan="5" labelid="{585fa720-5d87-481f-88bd-5ab92cdb2882}">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                        </labels>
+                        <control id="DocumentsSubGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{D23E9C21-11C4-4971-800C-E48FA6545D6C}">
+                          <parameters>
+                            <ViewId>{0016F9F3-41CC-4276-9D11-04308D15858D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>Opportunity_SharepointDocument</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>20</RecordsPerPage>
+                            <HeaderColorCode>#F6FBF7</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ee909091-5a89-403e-bf82-f34512080f08}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{e8813fe3-3ad9-4afd-94c2-52e8d1627a59}" labelid="{50142b27-aaa4-471a-bd75-2072b543a556}">
+              <labels>
+                <label description="Est. Close Date" languagecode="1033" />
+              </labels>
+              <control id="header_estimatedclosedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="estimatedclosedate" />
+            </cell>
+            <cell id="{4343680f-7e56-4968-90fe-814e52f6e2a7}" labelid="{54f0d2ce-b4bd-45ca-a272-4665a2752ab6}">
+              <labels>
+                <label description="Est. Revenue" languagecode="1033" />
+              </labels>
+              <control id="header_estimatedvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="estimatedvalue" />
+            </cell>
+            <cell id="{1728a0e8-ff6e-4be8-85d9-fd436d7fa1cc}" locklevel="0" colspan="1" rowspan="1" visible="true">
+              <labels>
+                <label description="Margin" languagecode="1033" />
+              </labels>
+              <control id="header_igl_margin" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_margin" disabled="false" />
+            </cell>
+            <cell id="{cb71ebc2-bee9-740e-2b29-09278aaad258}" showlabel="true" locklevel="0" labelid="{c7c04d3a-4a26-481a-af77-a14908f57fa8}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+            <cell id="{d9002ebe-3d57-445d-8fb7-459cfb40f437}" labelid="{d7ce1ff7-c51c-491b-be05-7ad3f6287a8b}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Opportunity_SharepointDocument" Id="navSPDocuments" Show="false" Sequence="1" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Documents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_playbookinstance_opportunity" Sequence="2" Area="Info" Id="navPlaybooks">
+            <Titles>
+              <Title LCID="1033" Text="Playbooks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProducts" Sequence="3" Area="Info" Id="navProducts">
+            <Titles>
+              <Title LCID="1033" Text="Products" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_quotes" Id="navQuotes" Show="true" Sequence="20" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Quotes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_sales_orders" Id="navOrders" Show="true" Sequence="21" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Orders" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_customer_opportunity_roles" Id="navRelationship" TitleResourceId="Tab_Label_Relationship" Area="Info" Show="false" Sequence="22">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadCustomerOpportunityRole" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Relationships" />
+              <Title LCID="1025" Text="العلاقات" />
+              <Title LCID="1026" Text="Релации" />
+              <Title LCID="1027" Text="Relacions" />
+              <Title LCID="1029" Text="Vztahy" />
+              <Title LCID="1030" Text="Relationer" />
+              <Title LCID="1031" Text="Beziehungen" />
+              <Title LCID="1032" Text="Σχέσεις" />
+              <Title LCID="3082" Text="Relaciones" />
+              <Title LCID="1061" Text="Seosed" />
+              <Title LCID="1069" Text="Erlazioak" />
+              <Title LCID="1035" Text="Suhteet" />
+              <Title LCID="1036" Text="Relations" />
+              <Title LCID="1110" Text="Relacións" />
+              <Title LCID="1037" Text="קשרים" />
+              <Title LCID="1081" Text="संबंध" />
+              <Title LCID="1050" Text="Odnosi" />
+              <Title LCID="1038" Text="Kapcsolatok" />
+              <Title LCID="1057" Text="Relasi" />
+              <Title LCID="1040" Text="Relazioni" />
+              <Title LCID="1041" Text="リレーションシップ" />
+              <Title LCID="1087" Text="Қатынастар" />
+              <Title LCID="1042" Text="관계" />
+              <Title LCID="1063" Text="Ryšiai" />
+              <Title LCID="1062" Text="Relācijas" />
+              <Title LCID="1086" Text="Perhubungan" />
+              <Title LCID="1044" Text="Relasjoner" />
+              <Title LCID="1043" Text="Relaties" />
+              <Title LCID="1045" Text="Relacje" />
+              <Title LCID="1046" Text="Relacionamentos" />
+              <Title LCID="2070" Text="Relações" />
+              <Title LCID="1048" Text="Relații" />
+              <Title LCID="1049" Text="Отношения" />
+              <Title LCID="1051" Text="Vzťahy" />
+              <Title LCID="1060" Text="Odnosi" />
+              <Title LCID="10266" Text="Односи" />
+              <Title LCID="9242" Text="Odnosi" />
+              <Title LCID="1053" Text="Relationer" />
+              <Title LCID="1054" Text="ความสัมพันธ์" />
+              <Title LCID="1055" Text="İlişkiler" />
+              <Title LCID="1058" Text="Зв’язки" />
+              <Title LCID="1066" Text="Mối quan hệ" />
+              <Title LCID="2052" Text="关系" />
+              <Title LCID="3076" Text="關聯" />
+              <Title LCID="1028" Text="關聯" />
+              <Title LCID="3098" Text="Односи" />
+              <Title LCID="2074" Text="Odnosi" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_invoices" Id="navInvoices" Show="true" Sequence="23" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Invoices" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Opportunity_ActivityPointers" Id="navActivities" Icon="/_imgs/ico_18_act.gif" Sequence="24" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+              <Title LCID="1025" Text="أنشطة" />
+              <Title LCID="1026" Text="Дейности" />
+              <Title LCID="1027" Text="Activitats" />
+              <Title LCID="1029" Text="Aktivity" />
+              <Title LCID="1030" Text="Aktiviteter" />
+              <Title LCID="1031" Text="Aktivitäten" />
+              <Title LCID="1032" Text="Δραστηριότητες" />
+              <Title LCID="3082" Text="Actividades" />
+              <Title LCID="1061" Text="Tegevused" />
+              <Title LCID="1069" Text="Jarduerak" />
+              <Title LCID="1035" Text="Aktiviteetit" />
+              <Title LCID="1036" Text="Activités" />
+              <Title LCID="1110" Text="Actividades" />
+              <Title LCID="1037" Text="פעילויות" />
+              <Title LCID="1081" Text="गतिविधियाँ" />
+              <Title LCID="1050" Text="Aktivnosti" />
+              <Title LCID="1038" Text="Tevékenységek" />
+              <Title LCID="1057" Text="Aktivitas" />
+              <Title LCID="1040" Text="Impegni" />
+              <Title LCID="1041" Text="活動" />
+              <Title LCID="1087" Text="Әрекеттер" />
+              <Title LCID="1042" Text="활동" />
+              <Title LCID="1063" Text="Veikla" />
+              <Title LCID="1062" Text="Darbības" />
+              <Title LCID="1086" Text="Aktiviti" />
+              <Title LCID="1044" Text="Aktiviteter" />
+              <Title LCID="1043" Text="Activiteiten" />
+              <Title LCID="1045" Text="Działania" />
+              <Title LCID="1046" Text="Atividades" />
+              <Title LCID="2070" Text="Atividades" />
+              <Title LCID="1048" Text="Activități" />
+              <Title LCID="1049" Text="Действия" />
+              <Title LCID="1051" Text="Aktivity" />
+              <Title LCID="1060" Text="Dejavnosti" />
+              <Title LCID="10266" Text="Активности" />
+              <Title LCID="9242" Text="Aktivnosti" />
+              <Title LCID="1053" Text="Aktiviteter" />
+              <Title LCID="1054" Text="กิจกรรม" />
+              <Title LCID="1055" Text="Etkinlikler" />
+              <Title LCID="1058" Text="Справи" />
+              <Title LCID="1066" Text="Hoạt động" />
+              <Title LCID="2052" Text="活动" />
+              <Title LCID="3076" Text="活動" />
+              <Title LCID="1028" Text="活動" />
+              <Title LCID="3098" Text="Активности" />
+              <Title LCID="2074" Text="Aktivnosti" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunitycompetitors_association" Sequence="40" Area="Sales" Id="navComp" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Competitors" />
+              <Title LCID="1025" Text="المنافسون" />
+              <Title LCID="1026" Text="Конкуренти" />
+              <Title LCID="1027" Text="Competidors" />
+              <Title LCID="1029" Text="Konkurence" />
+              <Title LCID="1030" Text="Konkurrenter" />
+              <Title LCID="1031" Text="Mitbewerber" />
+              <Title LCID="1032" Text="Ανταγωνιστές" />
+              <Title LCID="3082" Text="Competidores" />
+              <Title LCID="1061" Text="Konkurendid" />
+              <Title LCID="1069" Text="Lehiakideak" />
+              <Title LCID="1035" Text="Kilpailijat" />
+              <Title LCID="1036" Text="Concurrents" />
+              <Title LCID="1110" Text="Competidores" />
+              <Title LCID="1037" Text="מתחרים" />
+              <Title LCID="1081" Text="प्रतिस्पर्धी" />
+              <Title LCID="1050" Text="Konkurenti" />
+              <Title LCID="1038" Text="Versenytársak" />
+              <Title LCID="1057" Text="Pesaing" />
+              <Title LCID="1040" Text="Concorrenti" />
+              <Title LCID="1041" Text="競合企業" />
+              <Title LCID="1087" Text="Бәсекелестер" />
+              <Title LCID="1042" Text="경쟁 업체" />
+              <Title LCID="1063" Text="Konkurentai" />
+              <Title LCID="1062" Text="Konkurenti" />
+              <Title LCID="1086" Text="Pesaing" />
+              <Title LCID="1044" Text="Konkurrenter" />
+              <Title LCID="1043" Text="Concurrenten" />
+              <Title LCID="1045" Text="Konkurenci" />
+              <Title LCID="1046" Text="Concorrentes" />
+              <Title LCID="2070" Text="Concorrentes" />
+              <Title LCID="1048" Text="Concurenți" />
+              <Title LCID="1049" Text="Конкуренты" />
+              <Title LCID="1051" Text="Konkurenti" />
+              <Title LCID="1060" Text="Konkurenčna podjetja" />
+              <Title LCID="10266" Text="Конкуренти" />
+              <Title LCID="9242" Text="Konkurenti" />
+              <Title LCID="1053" Text="Konkurrenter" />
+              <Title LCID="1054" Text="คู่แข่ง" />
+              <Title LCID="1055" Text="Rakipler" />
+              <Title LCID="1058" Text="Конкуренти" />
+              <Title LCID="1066" Text="Đối thủ cạnh tranh" />
+              <Title LCID="2052" Text="竞争对手" />
+              <Title LCID="3076" Text="競爭對手" />
+              <Title LCID="1028" Text="競爭對手" />
+              <Title LCID="3098" Text="Конкуренти" />
+              <Title LCID="2074" Text="Konkurenti" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Sequence="9500" Area="ProcessCenter" Id="navAsyncOperations" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Workflows" />
+              <Title LCID="1025" Text="عمليات سير العمل" />
+              <Title LCID="1026" Text="Работни потоци" />
+              <Title LCID="1027" Text="Fluxos de treball" />
+              <Title LCID="1029" Text="Pracovní postupy" />
+              <Title LCID="1030" Text="Arbejdsprocesser" />
+              <Title LCID="1031" Text="Workflows" />
+              <Title LCID="1032" Text="Ροές εργασιών" />
+              <Title LCID="3082" Text="Flujos de trabajo" />
+              <Title LCID="1061" Text="Töövood" />
+              <Title LCID="1069" Text="Lan-fluxuak" />
+              <Title LCID="1035" Text="Työnkulut" />
+              <Title LCID="1036" Text="Workflows" />
+              <Title LCID="1110" Text="Fluxos de traballo" />
+              <Title LCID="1037" Text="זרימות עבודה" />
+              <Title LCID="1081" Text="कार्य प्रवाह" />
+              <Title LCID="1050" Text="Tjekovi rada" />
+              <Title LCID="1038" Text="Munkafolyamatok" />
+              <Title LCID="1057" Text="Alur Kerja" />
+              <Title LCID="1040" Text="Flussi di lavoro" />
+              <Title LCID="1041" Text="ワークフロー" />
+              <Title LCID="1087" Text="Жұмыс ағындары" />
+              <Title LCID="1042" Text="워크플로" />
+              <Title LCID="1063" Text="Darbo eigos" />
+              <Title LCID="1062" Text="Darbplūsmas" />
+              <Title LCID="1086" Text="Aliran Kerja" />
+              <Title LCID="1044" Text="Arbeidsflyter" />
+              <Title LCID="1043" Text="Werkstromen" />
+              <Title LCID="1045" Text="Przepływy pracy" />
+              <Title LCID="1046" Text="Fluxos de Trabalho" />
+              <Title LCID="2070" Text="Fluxos de Trabalho" />
+              <Title LCID="1048" Text="Fluxuri de lucru" />
+              <Title LCID="1049" Text="Бизнес-процессы" />
+              <Title LCID="1051" Text="Pracovné postupy" />
+              <Title LCID="1060" Text="Poteki dela" />
+              <Title LCID="10266" Text="Токови посла" />
+              <Title LCID="9242" Text="Tokovi posla" />
+              <Title LCID="1053" Text="Arbetsflöden" />
+              <Title LCID="1054" Text="เวิร์กโฟลว์" />
+              <Title LCID="1055" Text="İş Akışları" />
+              <Title LCID="1058" Text="Робочі цикли" />
+              <Title LCID="1066" Text="Quy trình làm việc" />
+              <Title LCID="2052" Text="工作流" />
+              <Title LCID="3076" Text="工作流程" />
+              <Title LCID="1028" Text="工作流程" />
+              <Title LCID="3098" Text="Токови посла" />
+              <Title LCID="2074" Text="Tokovi posla" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navConnections" Id="navConnections" Sequence="9600" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Connections" />
+              <Title LCID="1025" Text="الاتصالات" />
+              <Title LCID="1026" Text="Връзки" />
+              <Title LCID="1027" Text="Connexions" />
+              <Title LCID="1029" Text="Propojení" />
+              <Title LCID="1030" Text="Forbindelser" />
+              <Title LCID="1031" Text="Verbindungen" />
+              <Title LCID="1032" Text="Συνδέσεις" />
+              <Title LCID="3082" Text="Conexiones" />
+              <Title LCID="1061" Text="Ühendused" />
+              <Title LCID="1069" Text="Konexioak" />
+              <Title LCID="1035" Text="Yhteydet" />
+              <Title LCID="1036" Text="Connexions" />
+              <Title LCID="1110" Text="Conexións" />
+              <Title LCID="1037" Text="חיבורים" />
+              <Title LCID="1081" Text="कनेक्शन" />
+              <Title LCID="1050" Text="Veze" />
+              <Title LCID="1038" Text="Kapcsolatok" />
+              <Title LCID="1057" Text="Sambungan" />
+              <Title LCID="1040" Text="Connessioni" />
+              <Title LCID="1041" Text="つながり" />
+              <Title LCID="1087" Text="Қосылымдар" />
+              <Title LCID="1042" Text="연결" />
+              <Title LCID="1063" Text="Ryšiai" />
+              <Title LCID="1062" Text="Savienojumi" />
+              <Title LCID="1086" Text="Sambungan" />
+              <Title LCID="1044" Text="Tilkoblinger" />
+              <Title LCID="1043" Text="Verbindingen" />
+              <Title LCID="1045" Text="Połączenia" />
+              <Title LCID="1046" Text="Conexões" />
+              <Title LCID="2070" Text="Ligações" />
+              <Title LCID="1048" Text="Conexiuni" />
+              <Title LCID="1049" Text="Подключения" />
+              <Title LCID="1051" Text="Kontaktné osoby" />
+              <Title LCID="1060" Text="Povezave" />
+              <Title LCID="10266" Text="Везе" />
+              <Title LCID="9242" Text="Veze" />
+              <Title LCID="1053" Text="Anslutningar" />
+              <Title LCID="1054" Text="การเชื่อมต่อ" />
+              <Title LCID="1055" Text="Bağlantılar" />
+              <Title LCID="1058" Text="Підключення" />
+              <Title LCID="1066" Text="Kết nối" />
+              <Title LCID="2052" Text="连接" />
+              <Title LCID="3076" Text="人脈" />
+              <Title LCID="1028" Text="人脈" />
+              <Title LCID="3098" Text="Везе" />
+              <Title LCID="2074" Text="Veze" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Area="Info" Id="navAudit" Sequence="9601">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+              <Title LCID="1025" Text="محفوظات التدقيق" />
+              <Title LCID="1026" Text="Хронология на проверка" />
+              <Title LCID="1027" Text="Historial de l'auditoria" />
+              <Title LCID="1029" Text="Historie auditu" />
+              <Title LCID="1030" Text="Oversigt over overvågning" />
+              <Title LCID="1031" Text="Überwachungsverlauf" />
+              <Title LCID="1032" Text="Ιστορικό ελέγχου" />
+              <Title LCID="3082" Text="Historial de auditoría" />
+              <Title LCID="1061" Text="Auditeerimisajalugu" />
+              <Title LCID="1069" Text="Auditoretza-historia" />
+              <Title LCID="1035" Text="Seurantahistoria" />
+              <Title LCID="1036" Text="Historique d'audit" />
+              <Title LCID="1110" Text="Historial de auditoría" />
+              <Title LCID="1037" Text="היסטוריית ביקורת" />
+              <Title LCID="1081" Text="ऑडिट इतिहास" />
+              <Title LCID="1050" Text="Povijest nadzora" />
+              <Title LCID="1038" Text="Auditnapló előzményei" />
+              <Title LCID="1057" Text="Riwayat Audit" />
+              <Title LCID="1040" Text="Cronologia controllo" />
+              <Title LCID="1041" Text="監査履歴" />
+              <Title LCID="1087" Text="Тексеру журналы" />
+              <Title LCID="1042" Text="감사 기록" />
+              <Title LCID="1063" Text="Tikrinimo retrospektyva" />
+              <Title LCID="1062" Text="Audita vēsture" />
+              <Title LCID="1086" Text="Sejarah Audit" />
+              <Title LCID="1044" Text="Logg for sporing av endringer" />
+              <Title LCID="1043" Text="Controlegeschiedenis" />
+              <Title LCID="1045" Text="Historia inspekcji" />
+              <Title LCID="1046" Text="Histórico de Auditoria" />
+              <Title LCID="2070" Text="Histórico de Auditoria" />
+              <Title LCID="1048" Text="Istoric auditare" />
+              <Title LCID="1049" Text="Журнал аудита" />
+              <Title LCID="1051" Text="História auditov" />
+              <Title LCID="1060" Text="Zgodovina spremljanja sprememb" />
+              <Title LCID="10266" Text="Историја надгледања" />
+              <Title LCID="9242" Text="Istorija nadgledanja" />
+              <Title LCID="1053" Text="Granskningshistorik" />
+              <Title LCID="1054" Text="ประวัติการตรวจสอบ" />
+              <Title LCID="1055" Text="Denetim Geçmişi" />
+              <Title LCID="1058" Text="Журнал відстеження" />
+              <Title LCID="1066" Text="Lịch sử Kiểm tra" />
+              <Title LCID="2052" Text="审核历史记录" />
+              <Title LCID="3076" Text="稽核歷程記錄" />
+              <Title LCID="1028" Text="稽核歷程記錄" />
+              <Title LCID="3098" Text="Историја надгледања" />
+              <Title LCID="2074" Text="Istorija nadgledanja" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProcessSessions" Sequence="9700" Area="ProcessCenter" Id="navProcessSessions" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Dialog Sessions" />
+              <Title LCID="1025" Text="جلسات عمل الحوار" />
+              <Title LCID="1026" Text="Диалогови сесии" />
+              <Title LCID="1027" Text="Sessions de diàleg" />
+              <Title LCID="1029" Text="Relace dialogů" />
+              <Title LCID="1030" Text="Dialogsessioner" />
+              <Title LCID="1031" Text="Dialogsitzungen" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας παραθύρου διαλόγου" />
+              <Title LCID="3082" Text="Sesiones de diálogo" />
+              <Title LCID="1061" Text="Dialoogiseansid" />
+              <Title LCID="1069" Text="Elkarrizketa-saioak" />
+              <Title LCID="1035" Text="Dialogi-istunnot" />
+              <Title LCID="1036" Text="Sessions de dialogue" />
+              <Title LCID="1110" Text="Sesións de diálogo" />
+              <Title LCID="1037" Text="הפעלות דו-שיח" />
+              <Title LCID="1081" Text="संवाद सत्र" />
+              <Title LCID="1050" Text="Sesije dijaloga" />
+              <Title LCID="1038" Text="Párbeszéd-munkamenetek" />
+              <Title LCID="1057" Text="Sesi Dialog" />
+              <Title LCID="1040" Text="Sessioni di interazione" />
+              <Title LCID="1041" Text="ダイアログ セッション" />
+              <Title LCID="1087" Text="Диалогтық сеанстар" />
+              <Title LCID="1042" Text="대화 세션" />
+              <Title LCID="1063" Text="Dialogo seansai" />
+              <Title LCID="1062" Text="Dialogu sesijas" />
+              <Title LCID="1086" Text="Sesi Dialog" />
+              <Title LCID="1044" Text="Dialogøkter" />
+              <Title LCID="1043" Text="Dialoogvenstersessies" />
+              <Title LCID="1045" Text="Sesje dialogowe" />
+              <Title LCID="1046" Text="Sessões de Diálogo" />
+              <Title LCID="2070" Text="Sessões de Diálogo" />
+              <Title LCID="1048" Text="Sesiuni de dialog" />
+              <Title LCID="1049" Text="Сеансы диалогового окна" />
+              <Title LCID="1051" Text="Relácie dialógového okna" />
+              <Title LCID="1060" Text="Seje dialoga" />
+              <Title LCID="10266" Text="Сесије дијалога" />
+              <Title LCID="9242" Text="Sesije dijaloga" />
+              <Title LCID="1053" Text="Dialogsessioner" />
+              <Title LCID="1054" Text="เซสชันของกล่องโต้ตอบ" />
+              <Title LCID="1055" Text="Diyalog Oturumları" />
+              <Title LCID="1058" Text="Сеанси діалогу" />
+              <Title LCID="1066" Text="Phiên hộp thoại" />
+              <Title LCID="2052" Text="对话会话" />
+              <Title LCID="3076" Text="對話方塊工作階段" />
+              <Title LCID="1028" Text="對話方塊工作階段" />
+              <Title LCID="3098" Text="Сесије дијалога" />
+              <Title LCID="2074" Text="Sesije dijaloga" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyncrm_opportunity_msdyncrm_leadtoopportunity" Sequence="10003" Area="Info" Id="nav_msdyncrm_opportunity_msdyncrm_leadtoopportunity">
+            <Titles>
+              <Title LCID="1033" Text="opportunity" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msdyn_opportunity_msdyn_timespent_opplookup" Sequence="10004" Area="Info" Id="nav_msdyn_opportunity_msdyn_timespent_opplookup">
+            <Titles>
+              <Title LCID="1033" Text="timespents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="igl_DealRegistrations_Opportunity_Opportu" Sequence="10005" Area="Info" Id="nav_igl_DealRegistrations_Opportunity_Opportu">
+            <Titles>
+              <Title LCID="1033" Text="Deal Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="igl_opportunitycontractperiod_Opportunity" Sequence="10006" Area="Info" Id="nav_igl_opportunitycontractperiod_Opportunity">
+            <Titles>
+              <Title LCID="1033" Text="Opportunity Contract Periods" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1025" Text="عام" />
+              <Title LCID="1026" Text="Обща информация" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Společné" />
+              <Title LCID="1030" Text="Fælles" />
+              <Title LCID="1031" Text="Gemeinsam verwendet" />
+              <Title LCID="1032" Text="Κοινό" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Ühised" />
+              <Title LCID="1069" Text="Ohikoak" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="1036" Text="Éléments communs" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1037" Text="פריטים נפוצים" />
+              <Title LCID="1081" Text="सामान्य" />
+              <Title LCID="1050" Text="Zajednički" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Biasa" />
+              <Title LCID="1040" Text="Elementi comuni" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1087" Text="Байланысты" />
+              <Title LCID="1042" Text="일반" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Kopējs" />
+              <Title LCID="1086" Text="Biasa" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общие" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Splošno" />
+              <Title LCID="10266" Text="Уобичајено" />
+              <Title LCID="9242" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Gemensamt" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Спільні" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="公共" />
+              <Title LCID="3076" Text="通用" />
+              <Title LCID="1028" Text="通用" />
+              <Title LCID="3098" Text="Уобичајено" />
+              <Title LCID="2074" Text="Uobičajeno" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1025" Text="مبيعات" />
+              <Title LCID="1026" Text="Продажби" />
+              <Title LCID="1027" Text="Vendes" />
+              <Title LCID="1029" Text="Prodej" />
+              <Title LCID="1030" Text="Salg" />
+              <Title LCID="1031" Text="Vertrieb" />
+              <Title LCID="1032" Text="Πωλήσεις" />
+              <Title LCID="3082" Text="Ventas" />
+              <Title LCID="1061" Text="Müük" />
+              <Title LCID="1069" Text="Salmentak" />
+              <Title LCID="1035" Text="Myynti" />
+              <Title LCID="1036" Text="Ventes" />
+              <Title LCID="1110" Text="Vendas" />
+              <Title LCID="1037" Text="מכירות" />
+              <Title LCID="1081" Text="विक्रय" />
+              <Title LCID="1050" Text="Prodaja" />
+              <Title LCID="1038" Text="Értékesítés" />
+              <Title LCID="1057" Text="Penjualan" />
+              <Title LCID="1040" Text="Vendite" />
+              <Title LCID="1041" Text="営業" />
+              <Title LCID="1087" Text="Сатылым" />
+              <Title LCID="1042" Text="영업" />
+              <Title LCID="1063" Text="Pardavimas" />
+              <Title LCID="1062" Text="Pārdošana" />
+              <Title LCID="1086" Text="Jualan" />
+              <Title LCID="1044" Text="Salg" />
+              <Title LCID="1043" Text="Verkoop" />
+              <Title LCID="1045" Text="Sprzedaż" />
+              <Title LCID="1046" Text="Vendas" />
+              <Title LCID="2070" Text="Vendas" />
+              <Title LCID="1048" Text="Vânzări" />
+              <Title LCID="1049" Text="Продажи" />
+              <Title LCID="1051" Text="Predaj" />
+              <Title LCID="1060" Text="Prodaja" />
+              <Title LCID="10266" Text="Продаја" />
+              <Title LCID="9242" Text="Prodaja" />
+              <Title LCID="1053" Text="Försäljning" />
+              <Title LCID="1054" Text="การขาย" />
+              <Title LCID="1055" Text="Satış" />
+              <Title LCID="1058" Text="Збут" />
+              <Title LCID="1066" Text="Bán hàng" />
+              <Title LCID="2052" Text="销售​" />
+              <Title LCID="3076" Text="銷售" />
+              <Title LCID="1028" Text="銷售" />
+              <Title LCID="3098" Text="Продаја" />
+              <Title LCID="2074" Text="Prodaja" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1025" Text="خدمة" />
+              <Title LCID="1026" Text="Услуга" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1030" Text="Service" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Εξυπηρέτηση" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1037" Text="שירות" />
+              <Title LCID="1081" Text="सेवा" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1087" Text="Қызмет" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Aptarnavimas" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1086" Text="Perkhidmatan" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługa" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Serviciu" />
+              <Title LCID="1049" Text="Сервис" />
+              <Title LCID="1051" Text="Služba" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="10266" Text="Услуга" />
+              <Title LCID="9242" Text="Usluga" />
+              <Title LCID="1053" Text="Service" />
+              <Title LCID="1054" Text="การบริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Обслуговування" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+              <Title LCID="3098" Text="Услуга" />
+              <Title LCID="2074" Text="Usluga" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1025" Text="التسويق" />
+              <Title LCID="1026" Text="Маркетинг" />
+              <Title LCID="1027" Text="Màrqueting" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Μάρκετινγκ" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Turundus" />
+              <Title LCID="1069" Text="Marketina" />
+              <Title LCID="1035" Text="Markkinointi" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Márketing" />
+              <Title LCID="1037" Text="שיווק" />
+              <Title LCID="1081" Text="मार्केटिंग" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Pemasaran" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="マーケティング" />
+              <Title LCID="1087" Text="Маркетинг" />
+              <Title LCID="1042" Text="마케팅" />
+              <Title LCID="1063" Text="Rinkodara" />
+              <Title LCID="1062" Text="Mārketings" />
+              <Title LCID="1086" Text="Pemasaran" />
+              <Title LCID="1044" Text="Markedsføring" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Маркетинг" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Trženje" />
+              <Title LCID="10266" Text="Маркетинг" />
+              <Title LCID="9242" Text="Marketing" />
+              <Title LCID="1053" Text="Marknadsföring" />
+              <Title LCID="1054" Text="การตลาด" />
+              <Title LCID="1055" Text="Pazarlama" />
+              <Title LCID="1058" Text="Маркетинг" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="市场营销" />
+              <Title LCID="3076" Text="行銷" />
+              <Title LCID="1028" Text="行銷" />
+              <Title LCID="3098" Text="Маркетинг" />
+              <Title LCID="2074" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Processes" />
+              <Title LCID="1025" Text="العمليات" />
+              <Title LCID="1026" Text="Процеси" />
+              <Title LCID="1027" Text="Processos" />
+              <Title LCID="1029" Text="Procesy" />
+              <Title LCID="1030" Text="Processer" />
+              <Title LCID="1031" Text="Prozesse" />
+              <Title LCID="1032" Text="Διεργασίες" />
+              <Title LCID="3082" Text="Procesos" />
+              <Title LCID="1061" Text="Protsessid" />
+              <Title LCID="1069" Text="Prozesuak" />
+              <Title LCID="1035" Text="Prosessit" />
+              <Title LCID="1036" Text="Processus" />
+              <Title LCID="1110" Text="Procesos" />
+              <Title LCID="1037" Text="תהליכים" />
+              <Title LCID="1081" Text="प्रक्रियाएँ" />
+              <Title LCID="1050" Text="Procesi" />
+              <Title LCID="1038" Text="Folyamatok" />
+              <Title LCID="1057" Text="Proses" />
+              <Title LCID="1040" Text="Processi" />
+              <Title LCID="1041" Text="プロセス" />
+              <Title LCID="1087" Text="Процестер" />
+              <Title LCID="1042" Text="프로세스" />
+              <Title LCID="1063" Text="Procesai" />
+              <Title LCID="1062" Text="Procesi" />
+              <Title LCID="1086" Text="Proses" />
+              <Title LCID="1044" Text="Prosesser" />
+              <Title LCID="1043" Text="Processen" />
+              <Title LCID="1045" Text="Procesy" />
+              <Title LCID="1046" Text="Processos" />
+              <Title LCID="2070" Text="Processos" />
+              <Title LCID="1048" Text="Procese" />
+              <Title LCID="1049" Text="Процессы" />
+              <Title LCID="1051" Text="Procesy" />
+              <Title LCID="1060" Text="Procesi" />
+              <Title LCID="10266" Text="Процеси" />
+              <Title LCID="9242" Text="Procesi" />
+              <Title LCID="1053" Text="Processer" />
+              <Title LCID="1054" Text="กระบวนการ" />
+              <Title LCID="1055" Text="İşlemler" />
+              <Title LCID="1058" Text="Процеси" />
+              <Title LCID="1066" Text="Quy trình" />
+              <Title LCID="2052" Text="流程" />
+              <Title LCID="3076" Text="程序" />
+              <Title LCID="1028" Text="程序" />
+              <Title LCID="3098" Text="Процеси" />
+              <Title LCID="2074" Text="Procesi" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{3ff9a528-dd50-4aca-8f10-2e5ed73513ad}">
+          <customControl formFactor="2" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AfD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode static="true" type="Decimal">3</EntityTypeCode>
+              <Location static="true" type="Decimal">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AfD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode static="true" type="Decimal">3</EntityTypeCode>
+              <Location static="true" type="Decimal">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.CardFeedContainer.CardFeedContainer">
+            <parameters>
+              <data-set name="SubGrid">
+                <ViewId>{92AFD454-0F2E-4397-A1C8-05E37C6AD699}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>actioncard</TargetEntityType>
+                <FilteredViewIds>{92AFD454-0F2E-4397-A1C8-05E37C6AfD699}</FilteredViewIds>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EntityTypeCode static="true" type="Decimal">3</EntityTypeCode>
+              <Location static="true" type="Decimal">1</Location>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{393b71b2-4997-7135-242b-b0ac80dd1194}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <TargetEntityType>opportunityproduct</TargetEntityType>
+              <ViewId>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewId>
+              <RelationshipName>product_opportunities</RelationshipName>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableJumpBar>false</EnableJumpBar>
+              <RecordsPerPage>25</RecordsPerPage>
+              <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+              <IsUserView>false</IsUserView>
+              <ViewIds>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewIds>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <TargetEntityType>opportunityproduct</TargetEntityType>
+              <ViewId>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewId>
+              <RelationshipName>product_opportunities</RelationshipName>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableJumpBar>false</EnableJumpBar>
+              <RecordsPerPage>25</RecordsPerPage>
+              <MaxRowsBeforeScroll>8</MaxRowsBeforeScroll>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+              <IsUserView>false</IsUserView>
+              <ViewIds>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewIds>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>product_opportunities</RelationshipName>
+                <TargetEntityType>opportunityproduct</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{01010DE7-749E-4FE6-8037-ACA560A4FCBE}</FilteredViewIds>
+              </data-set>
+              <data-set name="SubGrid">
+                <ViewId>{E175DFBF-8EAE-4AF2-9DD2-68C43C14D40F}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>opportunityproduct</TargetEntityType>
+                <SubGridParentId>parentbundleidref</SubGridParentId>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">yes</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{36D5BB4F-04A4-4885-86A7-2E60EBCC03F2}">
+          <customControl formFactor="0" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{4E3600FA-B9C8-49F4-B69A-51EBA06D9BDF}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{4E3600FA-B9C8-49F4-B69A-51EBA06D9BDF}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{4E3600FA-B9C8-49F4-B69A-51EBA06D9BDF}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{74D56A28-6093-4345-8F1D-B1BCE70AA0A0}">
+          <customControl formFactor="0" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+              </data-set>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{bfc8c218-98bb-4d12-8212-2e1617cbb772}">
+          <customControl formFactor="2" name="MscrmControls.AcceleratedSales.CadenceWidgetControl">
+            <parameters />
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.AcceleratedSales.CadenceWidgetControl">
+            <parameters />
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.AcceleratedSales.CadenceWidgetControl">
+            <parameters />
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{1e353105-3485-145b-4202-80693a31a767}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters />
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F},{FE4BC089-8901-466C-A41B-1C1090F204D4}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">no</EnableFiltering>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F},{FE4BC089-8901-466C-A41B-1C1090F204D4}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">no</EnableFiltering>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.ReadOnlyGrid">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{A48F715E-2CCA-EC11-A7B5-000D3ADA8FC6}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>opportunity_connections1</RelationshipName>
+                <TargetEntityType>connection</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F},{FE4BC089-8901-466C-A41B-1C1090F204D4}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">no</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">no</EnableFiltering>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{37513b6d-9673-8adc-b3bc-9112a7d063e9}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" formFactor="0">
+            <parameters />
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{3E33AAE4-9943-4945-84DA-8917A1221473}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>igl_opportunitycontractperiod_Opportunity</RelationshipName>
+                <TargetEntityType>igl_opportunitycontractperiod</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{3E33AAE4-9943-4945-84DA-8917A1221473}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{3E33AAE4-9943-4945-84DA-8917A1221473}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>igl_opportunitycontractperiod_Opportunity</RelationshipName>
+                <TargetEntityType>igl_opportunitycontractperiod</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{3E33AAE4-9943-4945-84DA-8917A1221473}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Sales/Opportunity/Opportunity_main_system_library.js" />
+            <internaljscriptfile src="$webresource:Sales/ClientCommon/Sales_ClientCommon.js" />
+            <internaljscriptfile src="$webresource:Forecasting/Opportunity/Opportunity_Forecast_MainSystemLibrary.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <footer id="{d822b6de-2acb-4f59-b8e6-cd78a57c5bae}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{53f9dc5f-51f3-4001-8b32-bd1c288a2365}" showlabel="false" labelid="{b1e3eb96-ef4a-4546-b00d-4ed7649cc3ba}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d77a7834-1d42-4c36-95e0-be68d271a000}" showlabel="false" labelid="{39b1be95-d7e1-4613-ae8b-cc4a4fa6dd1e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3e9b00de-5a14-4069-9d64-7f255331263e}" showlabel="false" labelid="{3452259b-5332-4d0e-9b59-84a4fe2005e2}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <formLibraries>
+        <Library name="Sales/Opportunity/Opportunity_main_system_library.js" libraryUniqueId="{2cbe0022-0929-11e7-93ae-92361f002671}" />
+        <Library name="Forecasting/Opportunity/Opportunity_Forecast_MainSystemLibrary.js" libraryUniqueId="{85640c20-938b-41e2-897f-fa8a476c6f6d}" />
+        <Library name="igl_XMA_JS_Library" libraryUniqueId="{0e62564d-44fe-4879-85d5-5fb75771ce01}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.OpportunityMainSystemLibraryWebResource.Form_onload" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="228e5887-18c6-4d90-8d6e-bae09af2d977" enabled="true">
+              <dependencies>
+                <dependency id="estimatedvalue" />
+                <dependency id="isrevenuesystemcalculated" />
+              </dependencies>
+            </Handler>
+            <Handler functionName="Forecasting.Opportunity.Instance.FormOnLoad" libraryName="Forecasting/Opportunity/Opportunity_Forecast_MainSystemLibrary.js" handlerUniqueId="b6fa9e8d-124f-41dc-8a44-aec8709e7cdd" enabled="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="Sales.DocumentsTabController.shouldShowDocumentsTab" libraryName="Sales/ClientCommon/Sales_ClientCommon.js" handlerUniqueId="{2CC3E36C-7046-4699-8F58-8D8FAE2AA810}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="OpportunityOnLoad" libraryName="igl_XMA_JS_Library" handlerUniqueId="{b22c29ab-9ca4-40f3-b138-3182bf2c91df}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" attribute="isrevenuesystemcalculated" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.isrevenuesystemcalculated_onchange" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="3b6c5880-6469-48bc-9642-f5350374785b" enabled="true">
+              <dependencies>
+                <dependency id="estimatedvalue" />
+                <dependency id="totalamount" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="transactioncurrencyid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.transactioncurrencyid_onchange" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="151544F6-720A-4606-820D-60E0DB0D2606" enabled="true">
+              <dependencies>
+                <dependency id="pricelevelid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onrecordselect" application="false" active="false" relationship="" control="opportunityproductsGrid">
+          <Handlers>
+            <Handler functionName="Mscrm.onRecordSelect" libraryName="Sales/Opportunity/Opportunity_main_system_library.js" handlerUniqueId="{77823148-e9b0-4027-5315-ba3dabe77bba}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions FallbackForm="true" Order="5">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="XMA Opportunity" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Opportunity form" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

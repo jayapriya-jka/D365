@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c0336e73-c167-e711-a824-000d3a33777b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msdyncrm_name">
+        <row id="msdyncrm_customerjourneyid" name="result">
+          <cell name="msdyncrm_name" width="150" />
+          <cell name="statuscode" width="100" />
+          <cell name="igl_brand_id" width="100" />
+          <cell name="igl_xmacampaign_id" width="100" />
+          <cell name="msdyncrm_type" width="100" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="modifiedby" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="msdyncrm_startdatetime" width="100" />
+          <cell name="msdyncrm_enddatetime" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msdyncrm_customerjourney">
+          <attribute name="msdyncrm_name" />
+          <order descending="false" attribute="msdyncrm_name" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="msdyncrm_type" />
+          <attribute name="statuscode" />
+          <attribute name="msdyncrm_startdatetime" />
+          <attribute name="modifiedon" />
+          <attribute name="modifiedby" />
+          <attribute name="msdyncrm_enddatetime" />
+          <attribute name="createdon" />
+          <attribute name="createdby" />
+          <attribute name="msdyncrm_customerjourneyid" />
+          <attribute name="igl_brand_id" />
+          <attribute name="igl_xmacampaign_id" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My customer journeys" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

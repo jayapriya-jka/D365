@@ -1,0 +1,330 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "igl_sharedsharepointonline_7454f"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "igl_sharedcommondataserviceforapps_922c4"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "SharePoint Integration JSON (igl_SharePointIntegrationJSON)": {
+          "defaultValue": {
+            "sharepointURL": "https://xmalimited.sharepoint.com/sites/DynamicsXMADev",
+            "dynamicsBaseURL": "https://xma-dev.crm4.dynamics.com",
+            "bidFolderNames": [
+              "Clarification",
+              "Control Docs",
+              "Our Response",
+              "Post Submission Clarification",
+              "Decision and Feedback",
+              "Handover"
+            ]
+          },
+          "type": "Object",
+          "metadata": {
+            "schemaName": "igl_SharePointIntegrationJSON"
+          }
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "574ff933-6817-4613-9a81-f13456526e87"
+          },
+          "type": "Request",
+          "kind": "Button",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text_1": {
+                  "title": "TrigOppID",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Apply_to_each": {
+          "foreach": "@variables('BidFolderNameArray')",
+          "actions": {
+            "Create_new_folder": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "0edf8055-1027-494d-93bb-ad447a143f71"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline",
+                  "operationId": "CreateNewFolder",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "@parameters('SharePoint Integration JSON (igl_SharePointIntegrationJSON)')['sharepointURL']",
+                  "table": "@'Account'",
+                  "parameters/path": "@{variables('partialFolderPath')}@{items('Apply_to_each')}"
+                },
+                "authentication": {
+                  "type": "Raw",
+                  "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Initialize_variable_BidFolderNameArray": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5b8a525a-44cd-4a69-95b1-96e31e127ad7"
+          },
+          "type": "Foreach"
+        },
+        "Initialize_variable_BidFolderNameArray": {
+          "runAfter": {
+            "Initialize_variable_partialFolderPath": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f91a4124-c483-4c09-bb0b-4136e102e018"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "BidFolderNameArray",
+                "type": "array",
+                "value": "@parameters('SharePoint Integration JSON (igl_SharePointIntegrationJSON)')['bidFolderNames']"
+              }
+            ]
+          }
+        },
+        "Get_Opportunity_by_ID": {
+          "runAfter": {
+            "Initialize_variable_Replace_OppID_Dashes": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "bb1c7cd5-e029-488a-8228-71aec91b81f6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "opportunities",
+              "recordId": "@triggerBody()['text_1']",
+              "$expand": "Opportunity_SharepointDocumentLocation($filter=name eq 'Documents on Default Site 1';$orderby=createdon asc)"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable_partialFolderPath": {
+          "runAfter": {
+            "Get_DocLoc_of_relativeurl_account_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "71937d75-207f-47a3-9a06-0ff04ad0591a"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "partialFolderPath",
+                "type": "string",
+                "value": "@{outputs('Get_DocLoc_of_relativeurl_account_by_ID')?['body/relativeurl']}/@{outputs('Get_DocLoc_of_relativeurl_opportunity_by_ID')?['body/relativeurl']}/@{outputs('Get_Opportunity_by_ID')?['body']['Opportunity_SharepointDocumentLocation'][0]['relativeurl']}/"
+              }
+            ]
+          }
+        },
+        "Initialize_variable_Replace_OppID_Dashes": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "a0617413-ae74-49ca-aeb4-b63c13764bc6"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Replace OppID Dashes",
+                "type": "string",
+                "value": "@{replace(triggerBody()['text_1'],'-','')}"
+              }
+            ]
+          }
+        },
+        "Get_DocLoc_of_relativeurl_opportunity_by_ID": {
+          "runAfter": {
+            "Get_Opportunity_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c1b39d5a-c377-40cb-a3ca-91d5826a5db2"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "recordId": "@outputs('Get_Opportunity_by_ID')?['body']['Opportunity_SharepointDocumentLocation'][0]['_parentsiteorlocation_value']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_DocLoc_of_relativeurl_account_by_ID": {
+          "runAfter": {
+            "Get_DocLoc_of_relativeurl_opportunity_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "14e5b26f-9aa3-4e29-993b-3fb01ffa6ed8"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "recordId": "@outputs('Get_DocLoc_of_relativeurl_opportunity_by_ID')?['body/_parentsiteorlocation_value']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Terminate": {
+          "runAfter": {
+            "Respond_to_a_PowerApp_or_flow": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "878ba7d2-b11e-4d82-a152-03baa25e9428"
+          },
+          "type": "Terminate",
+          "inputs": {
+            "runStatus": "Succeeded"
+          }
+        },
+        "Respond_to_a_PowerApp_or_flow": {
+          "runAfter": {
+            "Create_One_New_Bid_DocLoc": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1509f65b-59d3-46ce-b067-a616b19441aa"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "success": true
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": {
+                  "title": "success",
+                  "x-ms-dynamically-added": true,
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "Create_One_New_Bid_DocLoc": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "85b7b4be-5f0b-4be4-89bb-8337490f32a3"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "CreateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "item/name": "RelatedOpp_@{outputs('Get_Opportunity_by_ID')?['body/opportunityid']}",
+              "item/servicetype": 0,
+              "item/description": "This record is used so we can detect whether the bid folders have been created",
+              "item/locationtype": 0,
+              "item/parentsiteorlocation_sharepointdocumentlocation@odata.bind": "sharepointdocumentlocations(@{outputs('Get_Opportunity_by_ID')?['body']['Opportunity_SharepointDocumentLocation'][0]['sharepointdocumentlocationid']})",
+              "item/relativeurl": "NoCorrespondingSharepointLocation"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

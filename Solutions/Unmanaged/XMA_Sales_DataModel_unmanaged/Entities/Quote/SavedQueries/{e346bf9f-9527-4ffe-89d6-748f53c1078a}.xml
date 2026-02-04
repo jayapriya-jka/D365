@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e346bf9f-9527-4ffe-89d6-748f53c1078a}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="quoteid">
+          <cell name="name" width="300" />
+          <cell name="customerid" width="150" />
+          <cell name="a_e46f64e5859248e0a8536e9b6b446509.accountnumber" width="144" />
+          <cell name="statecode" width="100" />
+          <cell name="totalamount" width="100" />
+          <cell name="createdon" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="quote">
+          <attribute name="name" />
+          <attribute name="totalamount" />
+          <order attribute="name" descending="false" />
+          <attribute name="statecode" />
+          <attribute name="createdon" />
+          <attribute name="customerid" />
+          <attribute name="quoteid" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="name" operator="like" value="{0}" />
+            <condition attribute="quotenumber" operator="like" value="{0}" />
+            <condition attribute="customerid" operator="like" value="{0}" />
+            <condition attribute="emailaddress" operator="like" value="{0}" />
+            <condition attribute="opportunityid" operator="like" value="{0}" />
+            <condition attribute="msdyn_quotenumber" operator="like" value="{0}" />
+          </filter>
+          <link-entity alias="a_e46f64e5859248e0a8536e9b6b446509" name="account" to="customerid" from="accountid" link-type="outer" visible="false">
+            <attribute name="accountnumber" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find All Quotes" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

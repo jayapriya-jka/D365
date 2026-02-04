@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_jobfunction" localizedName="Job Function_Choice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Job Function_Choice" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="Communications " languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="Customer Service" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="Education" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="Engineering" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004" ExternalValue="">
+      <labels>
+        <label description="Finance" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300005" ExternalValue="">
+      <labels>
+        <label description="Health Professional" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300006" ExternalValue="">
+      <labels>
+        <label description="Human Resources" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300007" ExternalValue="">
+      <labels>
+        <label description="Information Technology" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300008" ExternalValue="">
+      <labels>
+        <label description="Leadership" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300009" ExternalValue="">
+      <labels>
+        <label description="Legal" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300010" ExternalValue="">
+      <labels>
+        <label description="Marketing" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300011" ExternalValue="">
+      <labels>
+        <label description="Operations" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300012" ExternalValue="">
+      <labels>
+        <label description="Product" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300013" ExternalValue="">
+      <labels>
+        <label description="Public Relations" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300014" ExternalValue="">
+      <labels>
+        <label description="Real Estate" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300015" ExternalValue="">
+      <labels>
+        <label description="Recruiting" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300016" ExternalValue="">
+      <labels>
+        <label description="Research" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300017" ExternalValue="">
+      <labels>
+        <label description="Sales" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

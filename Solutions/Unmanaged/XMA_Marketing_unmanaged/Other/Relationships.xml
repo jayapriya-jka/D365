@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_igl_brand" />
+  <EntityRelationship Name="igl_msdyncrm_customerjourney_BrandId" />
+  <EntityRelationship Name="lk_igl_brand_createdby" />
+  <EntityRelationship Name="lk_igl_brand_modifiedby" />
+  <EntityRelationship Name="owner_igl_brand" />
+  <EntityRelationship Name="team_igl_brand" />
+  <EntityRelationship Name="user_igl_brand" />
+</EntityRelationships>

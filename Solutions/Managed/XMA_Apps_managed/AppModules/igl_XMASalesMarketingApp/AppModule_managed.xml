@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>igl_XMASalesMarketingApp</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001001}" />
+    <AppModuleComponent type="26" id="{61273827-328e-e011-95ae-00155d9cfa02}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001002}" />
+    <AppModuleComponent type="26" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+    <AppModuleComponent type="26" id="{04a06580-45a4-ea11-a812-000d3ab396de}" />
+    <AppModuleComponent type="26" id="{025dc7be-43a4-ea11-a812-000d3ab396de}" />
+    <AppModuleComponent type="26" id="{a279759e-41a4-ea11-a812-000d3ab3900c}" />
+    <AppModuleComponent type="26" id="{fff124e2-4d03-ed11-82e5-000d3ada298d}" />
+    <AppModuleComponent type="60" id="{8852c70c-fdb4-ec11-983e-002248998172}" />
+    <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="1" schemaName="igl_brand" />
+    <AppModuleComponent type="1" schemaName="campaign" />
+    <AppModuleComponent type="1" schemaName="competitor" />
+    <AppModuleComponent type="1" schemaName="connection" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001003}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001004}" />
+    <AppModuleComponent type="26" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+    <AppModuleComponent type="26" id="{3a282da1-5d90-e011-95ae-00155d9cfa02}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001033}" />
+    <AppModuleComponent type="60" id="{1e23fddd-dbc7-ec11-a7b6-000d3adaf5bd}" />
+    <AppModuleComponent type="1" schemaName="igl_dealregistrations" />
+    <AppModuleComponent type="1" schemaName="msdyn_forecastinstance" />
+    <AppModuleComponent type="1" schemaName="goal" />
+    <AppModuleComponent type="1" schemaName="invoice" />
+    <AppModuleComponent type="1" schemaName="lead" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001005}" />
+    <AppModuleComponent type="26" id="{5a926b99-3a5f-df11-ae90-00155d2e3002}" />
+    <AppModuleComponent type="26" id="{3ab4e809-bb6b-e711-a826-000d3a337469}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001009}" />
+    <AppModuleComponent type="26" id="{5e9af888-21b6-ea11-a812-000d3ab3900c}" />
+    <AppModuleComponent type="26" id="{1dd61bea-21b6-ea11-a812-000d3ab3900c}" />
+    <AppModuleComponent type="26" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+    <AppModuleComponent type="26" id="{afe23d8a-6651-474d-b8ee-90210a8231f6}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001006}" />
+    <AppModuleComponent type="60" id="{621b7d38-e1c7-ec11-a7b6-000d3ada25c6}" />
+    <AppModuleComponent type="1" schemaName="igl_leadtechnologies" />
+    <AppModuleComponent type="1" schemaName="list" />
+    <AppModuleComponent type="1" schemaName="opportunity" />
+    <AppModuleComponent type="26" id="{c6f6fc1b-1b3e-e711-80e1-00155d871bb4}" />
+    <AppModuleComponent type="26" id="{5bd2527c-a882-de11-9ff3-00155da3b012}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003000}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003006}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003001}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003002}" />
+    <AppModuleComponent type="26" id="{bf649add-6c30-ea11-a813-000d3a5475f7}" />
+    <AppModuleComponent type="26" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003003}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010003004}" />
+    <AppModuleComponent type="26" id="{f73a5bef-a782-de11-9ff3-00155da3b012}" />
+    <AppModuleComponent type="60" id="{e3c588ee-8e11-49da-a5fe-3800f3f683de}" />
+    <AppModuleComponent type="60" id="{24b5ce86-1811-44c3-b1ad-90f7ea02d2d7}" />
+    <AppModuleComponent type="60" id="{9e0129e3-f1b4-ec11-983e-002248998ff4}" />
+    <AppModuleComponent type="1" schemaName="opportunityproduct" />
+    <AppModuleComponent type="1" schemaName="salesorder" />
+    <AppModuleComponent type="60" id="{cc287fab-10d3-44be-b738-1daf50a2aa03}" />
+    <AppModuleComponent type="60" id="{d40de9d5-d823-4fb7-8fdc-21be01f61424}" />
+    <AppModuleComponent type="60" id="{59d7e61f-feb4-ec11-983e-002248998ff4}" />
+    <AppModuleComponent type="1" schemaName="msdyn_playbookinstance" />
+    <AppModuleComponent type="1" schemaName="product" />
+    <AppModuleComponent type="60" id="{a640be62-63f6-4027-90d7-48c014a7c6f3}" />
+    <AppModuleComponent type="60" id="{fd57aeed-ab95-4a32-9c6c-61ae92d2a296}" />
+    <AppModuleComponent type="60" id="{672e520b-6bbc-47f8-977f-228bfc6d8faf}" />
+    <AppModuleComponent type="1" schemaName="quote" />
+    <AppModuleComponent type="60" id="{8dd0025e-7d87-4a7b-aaf4-12754b8fbede}" />
+    <AppModuleComponent type="60" id="{1e70456a-ccfa-4a29-9e78-0d71724b3377}" />
+    <AppModuleComponent type="60" id="{e7a0ab0e-ffb4-ec11-983e-002248998172}" />
+    <AppModuleComponent type="1" schemaName="msdyn_salesassignmentsetting" />
+    <AppModuleComponent type="1" schemaName="uom" />
+    <AppModuleComponent type="1" schemaName="uomschedule" />
+    <AppModuleComponent type="1" schemaName="msdyn_workqueuerecord" />
+    <AppModuleComponent type="1" schemaName="igl_opportunitycontractperiod" />
+    <AppModuleComponent type="62" schemaName="igl_XMASalesMarketingApp" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{cad52a75-568c-e611-80d4-00155d42a122}" />
+    <Role id="{7e13fe7f-ea02-4a4e-a523-89ed9361961d}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{94407128-60eb-ec11-bb3d-000d3adb0650}" />
+    <Role id="{4c8fefca-60eb-ec11-bb3d-000d3adb0650}" />
+    <Role id="{126d056c-07eb-ec11-bb3d-000d3adb0650}" />
+  </AppModuleRoleMaps>
+  <EventHandlers>
+    <EventHandler eventname="onload" functionname="TeamsDialer.PanelManager.initializeSidePanel" libraryname="msdyn_/TeamsSidePanel.js" parameters="" enable="true" />
+  </EventHandlers>
+  <LocalizedNames>
+    <LocalizedName description="XMA Sales App" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

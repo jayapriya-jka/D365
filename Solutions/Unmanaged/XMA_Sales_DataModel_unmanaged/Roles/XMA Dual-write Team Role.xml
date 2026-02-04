@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{7f8cbe24-6a4f-eb11-a813-000d3a23cc7b}" name="XMA Dual-write Team Role" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvReadAccount" level="Basic" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Local" />
+    <RolePrivilege name="prvReadcdm_company" level="Basic" />
+    <RolePrivilege name="prvReadcdm_worker" level="Basic" />
+    <RolePrivilege name="prvReadContact" level="Basic" />
+    <RolePrivilege name="prvReadInvoice" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_currencyexchangerate" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_currencyexchangeratepair" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_customergroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_customerpaymentmethod" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_exchangeratetype" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_globalproduct" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_inventorylocation" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_nameaffix" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_operationalsite" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_paymentday" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_paymentdayline" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_paymentschedule" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_paymentscheduleline" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_paymentterm" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_pricecustomergroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productcategory" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productcategoryassignment" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productcategoryhierarchy" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productcategoryhierarchyrole" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productcolor" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productconfiguration" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productdefaultordersetting" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productdimensiongroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productgroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productsize" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productspecificdefaultordersetting" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productspecificunitofmeasureconversion" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productstoragedimensiongroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_productstyle" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_producttrackingdimensiongroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_salesorderorigin" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_sharedproductcolor" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_sharedproductconfiguration" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_sharedproductdetail" level="Global" />
+    <RolePrivilege name="prvReadmsdyn_sharedproductsize" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_sharedproductstyle" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_shipvia" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_taxgroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_taxitemgroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_taxpostinggroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_termsofdelivery" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_unitofmeasureconversion" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_vendor" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_vendorgroup" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_vendorpaymentmethod" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_warehouse" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_warehouseaisle" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_warehousezone" level="Basic" />
+    <RolePrivilege name="prvReadmsdyn_warehousezonegroup" level="Basic" />
+    <RolePrivilege name="prvReadOpportunity" level="Basic" />
+    <RolePrivilege name="prvReadOrder" level="Basic" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadProduct" level="Global" />
+    <RolePrivilege name="prvReadQuote" level="Basic" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadTransactionCurrency" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

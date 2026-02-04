@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1aa93c16-e1e3-45cc-a9ae-83d9ec18ff9c}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="productid">
+          <cell name="name" width="300" />
+          <cell name="msdyn_itemnumber" width="170" />
+          <cell name="msdyn_productnumber" width="151" />
+          <cell name="hierarchypath" width="300" />
+          <cell name="producttypecode" width="170" />
+          <cell name="description" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="productstructure" width="186" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="product">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <attribute name="hierarchypath" />
+          <attribute name="producttypecode" />
+          <attribute name="description" />
+          <attribute name="statecode" />
+          <attribute name="productstructure" />
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msdyn_productnumber" operator="like" value="{0}" />
+            <condition attribute="name" operator="like" value="{0}" />
+            <condition attribute="description" operator="like" value="{0}" />
+            <condition attribute="msdyn_itemnumber" operator="like" value="{0}" />
+          </filter>
+          <attribute name="msdyn_productnumber" />
+          <attribute name="productid" />
+          <attribute name="msdyn_itemnumber" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find All Products" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9036d0ba-91d0-4483-8c7e-ffdfb016dde0}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" solutionaction="Modified">
+      <tabs>
+        <tab id="{bd95ad53-8b06-49fb-bc90-bb60d74c1195}" name="Settings" showlabel="false" expanded="true" locklevel="0" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="tab_1_section_2" showlabel="false" showbar="false" locklevel="0" id="{485d1636-41a2-e997-760a-2b4da8dbb6d1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{1ac2ab5d-5be7-6dad-6126-31c6ddd71dec}" showlabel="true" locklevel="0" ordinalvalue="10001" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{27e053d1-2b40-212d-3302-9ada88387332}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{ac539da4-47ec-b439-a405-8ca7ec065190}" showlabel="true" locklevel="0" colspan="1" rowspan="1" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="XMA Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Email settings" showlabel="true" showbar="false" locklevel="0" id="{31c60a2e-a274-21ba-a42d-4c2eac71a689}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="2">
+                  <rows>
+                    <row>
+                      <cell id="{727c6954-7203-406f-8276-b70c4bc2f249}" showlabel="false" locklevel="0" visible="false" ordinalvalue="10004">
+                        <labels>
+                          <label description="Test Configuration" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ee36b0af-ccc4-40dd-9ece-1e37c61d6790}" columns="111" labelwidth="250" celllabelalignment="Left" celllabelposition="Top">
+        <rows>
+          <row>
+            <cell id="{abda0939-82dc-4746-89b8-e3cabddbf5e8}" ordinalvalue="10000" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b5d3b2cc-5071-42ed-a39a-f6234cbbf4c7}" ordinalvalue="20001" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2ce72947-1b29-42d3-928f-86b0f3a96af1}" ordinalvalue="30002" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar />
+      </Navigation>
+      <footer id="{aa91aecb-be40-4258-8494-032d737ebdd8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left" solutionaction="Added">
+        <rows>
+          <row>
+            <cell id="{b2a43c1b-e8eb-4b95-8318-640148e5792e}" showlabel="false" ordinalvalue="10000">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{84b62969-ebc4-4cfe-afae-5abf9e373693}" showlabel="false" ordinalvalue="20001">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc4d0783-6005-40fc-ae81-4632ebbc873e}" showlabel="false" ordinalvalue="30002">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Email Properties" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

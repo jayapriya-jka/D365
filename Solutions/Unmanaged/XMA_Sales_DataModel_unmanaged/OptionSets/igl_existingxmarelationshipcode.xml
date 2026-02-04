@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_existingxmarelationshipcode" localizedName="Existing XMA Relationship?" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Existing XMA Relationship?" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="🟢 5 - Yes buying account this year" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="🟡 3 - Yes Buying account last 3 years" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="🟠 1 - Quoted in last 3 years" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="🔴 0 - No" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

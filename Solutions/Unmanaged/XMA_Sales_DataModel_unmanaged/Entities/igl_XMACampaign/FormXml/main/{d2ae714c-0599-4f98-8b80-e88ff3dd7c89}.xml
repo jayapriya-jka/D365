@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d2ae714c-0599-4f98-8b80-e88ff3dd7c89}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab name="SUMMARY" id="de94a2cf-a1a6-4595-9009-da3a5201d50a" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{18605e40-b089-405c-af72-5bb9e63cdb85}" columns="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5ea49ca0-299b-42b9-8865-0cf873294235}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="igl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="igl_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{44ef1d32-e6f2-4e36-a66a-bd993726564d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Brand" languagecode="1033" />
+                        </labels>
+                        <control id="igl_brand_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_brand_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa79e60c-4191-45d0-bed2-8d6c61cd6f45}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_start_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_start_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2faccbb6-8367-474a-bce2-ce473165f8ce}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_end_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_end_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ef703dd-69ad-4b59-a272-b2809f415703}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="igl_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8fe4aafb-7e24-4e6e-a170-1306a82f86ea}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8086ac39-41c4-4ef4-ad00-34a0732fa2a5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_404" id="41042c6c-c555-4096-b46c-8d619af2ad73" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{0509272e-30ee-40d0-b808-0b33af755d3e}" rowspan="15" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="OUTBOUND_MARKETING" id="28de2a7a-c64e-46da-afd2-3f381fd05c9f" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Outbound Marketing" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="MARKETING_EXECUTION" id="7d0ab6ca-bf8e-4e4d-99c9-3525e07589ab" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Marketing Execution" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{25377138-584a-4f1f-b345-0d8ca8df3da1}" rowspan="4" colspan="1">
+                        <labels>
+                          <label description="Customer Journey" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="CUSTOMER_JOURNEY" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_customerjourney</TargetEntityType>
+                            <ViewId>{E5DE2B42-5462-4940-943F-D88771AAA609}</ViewId>
+                            <ViewIds>{E5DE2B42-5462-4940-943F-D88771AAA609}</ViewIds>
+                            <RelationshipName>igl_msdyncrm_customerjourney_XMACampaign_Id_i</RelationshipName>
+                            <VisualizationId>{6945C2F9-1967-E711-A824-000D3A33777B}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{f53e27bf-d59d-474d-a684-04da451a3e13}" rowspan="4" colspan="1" auto="true">
+                        <labels>
+                          <label description="Marketing Emails" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="MARKETING_EMAILS" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_marketingemail</TargetEntityType>
+                            <ViewId>{61B813FC-8805-4EFC-8B29-8F01FA970B71}</ViewId>
+                            <ViewIds>{61B813FC-8805-4EFC-8B29-8F01FA970B71}</ViewIds>
+                            <RelationshipName>igl_msdyncrm_marketingemail_XMACampaign_Id_ig</RelationshipName>
+                            <VisualizationId>{85D6F529-CD67-E711-A824-000D3A33777B}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{af338a0c-17e2-44fa-bcb0-fdef4cce5100}" rowspan="4" colspan="1" auto="true">
+                        <labels>
+                          <label description="Social Posts" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="SOCIAL_POSTS" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_socialpost</TargetEntityType>
+                            <ViewId>{F197CD52-38EB-4421-9FED-44F57CF9D5BB}</ViewId>
+                            <ViewIds>{F197CD52-38EB-4421-9FED-44F57CF9D5BB}</ViewIds>
+                            <RelationshipName>igl_msdyncrm_socialpost_XMACampaign_Id_igl_xm</RelationshipName>
+                            <VisualizationId>{06185110-B109-EB11-A813-000D3A8C3EA6}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="INTERNET MARKETING" id="438fcdfd-36b7-479e-a47a-daafe58f1fe4" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Internet Marketing" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{298f7475-2d90-4482-a455-712a096a6cf4}" rowspan="4" colspan="1" auto="true">
+                        <labels>
+                          <label description="Marketing Forms" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="MARKETING_FORMS" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_marketingform</TargetEntityType>
+                            <ViewId>{F96ABFD5-E9D9-4AF1-9581-C0B4C1A533D0}</ViewId>
+                            <ViewIds>{5542BE2E-AE00-E611-80D4-00155DB5A209},{F96ABFD5-E9D9-4AF1-9581-C0B4C1A533D0}</ViewIds>
+                            <RelationshipName>igl_XMACampaign_msdyncrm_marketingform_ms</RelationshipName>
+                            <VisualizationId>{EFB98BBE-DFC3-E711-80E4-00155D0E2300}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{fe0812d1-e58d-4081-bfb1-dbb9ea2752b7}" rowspan="4" colspan="1" auto="true">
+                        <labels>
+                          <label description="Marketing Pages" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="MARKETING_PAGES" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_marketingpage</TargetEntityType>
+                            <ViewId>{7E2A5339-112B-484F-847F-35A87481415A}</ViewId>
+                            <ViewIds>{496BEADC-91FD-E511-80D4-00155DB5A209},{7E2A5339-112B-484F-847F-35A87481415A}</ViewIds>
+                            <RelationshipName>igl_XMACampaign_msdyncrm_marketingpage_ms</RelationshipName>
+                            <VisualizationId>{E4A34FAD-DFC3-E711-80E4-00155D0E2300}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{29fd2415-f3a7-49b6-be0a-cf97ab29227b}" rowspan="4" colspan="1" auto="true" showlabel="false">
+                        <labels>
+                          <label description="Marketing Websites" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="MARKETING_WEBSITES" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{e3815b79-56eb-e28e-c252-34a787215203}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_website</TargetEntityType>
+                            <ViewId>{7E7AD6F2-80DB-4CED-BE4B-7A50DFC00143}</ViewId>
+                            <ViewIds>{7E7AD6F2-80DB-4CED-BE4B-7A50DFC00143},{1C177C56-1321-E711-80DF-00155DB7081C}</ViewIds>
+                            <RelationshipName>igl_XMACampaign_msdyncrm_website_msdyncrm</RelationshipName>
+                            <HeaderColorCode>#F6FBF7</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="MARKETING CONTENT" id="1f246c99-a3c4-4e54-9bb4-4d572dc2c159" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Marketing Content" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{1a01607f-a4be-4d53-891d-1ac05c8848fd}" rowspan="4" colspan="1" auto="true">
+                        <labels>
+                          <label description="Personalised Pages" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="PERSONALISED_PAGES" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdyncrm_personalizedpage</TargetEntityType>
+                            <ViewId>{4085FA78-7BD5-4518-A407-18B63071E407}</ViewId>
+                            <ViewIds>{4085FA78-7BD5-4518-A407-18B63071E407}</ViewIds>
+                            <RelationshipName>igl_msdyncrm_personalizedpage_XMACampaign_Id_</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="REAL-TIME_MARKETING" id="2e22233d-7e75-49a9-ad83-8f80473e5ecc" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Real-Time Marketing" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="EMAILS" id="927d60a4-239e-4c09-9697-ac39431e1766" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Emails" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{6459a06a-36c5-41be-9dd7-1381ba299113}" rowspan="6" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1658434267365" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{91dcc0b9-c6b5-7676-0121-491c54e517c0}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>msdynmkt_email</TargetEntityType>
+                            <ViewId>{AD6EE9C4-9CDD-4E8A-8F57-E584AF01FE9E}</ViewId>
+                            <ViewIds />
+                            <RelationshipName>igl_msdynmkt_email_XMACampaign_Id_igl_xmacamp</RelationshipName>
+                            <VisualizationId />
+                            <HeaderColorCode>#F6FBF7</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <IsUserChart>false</IsUserChart>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="JOURNEYS" id="ed1480ac-5f30-47c3-a452-9e2fa4413bbf" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Journeys" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{e953789c-dea7-4762-91cf-24bd6e5c8a29}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cc5d9573-e8ec-4da1-9d2d-91951e32f5a3}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{704d8f71-b3b0-4fea-8c19-80199be7a3c7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5797df81-258f-492d-88ef-f884ffcb6ce5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4caa9865-7cd5-4e0d-860a-a5be7cd66268}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{f2e3cd96-7b28-414f-8e60-628b712f7263}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{893cd2cc-ad81-4879-9e17-28ed20cc1b1a}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{58d31c6e-554e-4a9b-a252-f92bacdd4595}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f8e071cd-d3d5-49b1-a05f-b6dbbc009d08}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c58b5036-3a0b-441f-b5e6-5d96037066bb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a13d7c4b-49a1-448c-9985-b5882e15892e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e5bdba2a-e1a7-4f23-bf5e-82765d25973b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

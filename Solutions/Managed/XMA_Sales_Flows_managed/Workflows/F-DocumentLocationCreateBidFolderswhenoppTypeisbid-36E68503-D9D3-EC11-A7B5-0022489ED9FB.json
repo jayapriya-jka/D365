@@ -1,0 +1,193 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "igl_sharedcommondataserviceforapps_922c4"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "43470fd4-a640-4b49-b629-022676334c2c"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "opportunity",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "igl_opportunitytype_code",
+              "subscriptionRequest/filterexpression": "igl_opportunitytype_code eq 824300001",
+              "subscriptionRequest/runas": 3
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Get_Opportunity_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "bb1c7cd5-e029-488a-8228-71aec91b81f6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "opportunities",
+              "recordId": "@triggerOutputs()?['body/opportunityid']",
+              "$select": "Opportunity_SharepointDocumentLocation",
+              "$expand": "Opportunity_SharepointDocumentLocation($filter=name eq 'Documents on Default Site 1';$orderby=createdon asc)"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Terminate": {
+          "runAfter": {
+            "Condition": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fd38ae53-3558-4ee5-a740-5e725bcc72d0"
+          },
+          "type": "Terminate",
+          "inputs": {
+            "runStatus": "Succeeded"
+          }
+        },
+        "Condition": {
+          "actions": {
+            "List_rows": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "cb55cdb3-3cc8-41f0-bffd-fdaf9117382a"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "sharepointdocumentlocations",
+                  "$select": "sharepointdocumentlocationid",
+                  "$filter": "_parentsiteorlocation_value eq @{outputs('Get_Opportunity_by_ID')?['body']['Opportunity_SharepointDocumentLocation'][0]['sharepointdocumentlocationid']}"
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "description": "This action lists document location records (there should only be one) which have a parent DocLoc which points to the opportunity folder in SharePoint. The presence of this record signifies that the required bid folders have already been created."
+            },
+            "Check_length_of_above_returned_rows": {
+              "actions": {
+                "Run_a_Child_Flow": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "0f3d85ab-5e31-44d8-9fed-ace1983f080f"
+                  },
+                  "type": "Workflow",
+                  "inputs": {
+                    "host": {
+                      "workflowReferenceName": "8113a9ca-c6d2-ec11-a7b5-000d3adbbc68"
+                    },
+                    "body": {
+                      "text_1": "@triggerOutputs()?['body/opportunityid']"
+                    }
+                  }
+                }
+              },
+              "runAfter": {
+                "List_rows": [
+                  "Succeeded"
+                ]
+              },
+              "else": {
+                "actions": {
+                  "Terminate_2": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "7919e6a4-6b15-44f6-8dee-0817e4d08df2"
+                    },
+                    "type": "Terminate",
+                    "inputs": {
+                      "runStatus": "Succeeded"
+                    }
+                  }
+                }
+              },
+              "expression": {
+                "less": [
+                  "@length(outputs('List_rows')?['body/value'])",
+                  1
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "94f9dd1f-1523-45ee-a214-fbb4b2917852"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {
+            "Get_Opportunity_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Terminate_3": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "9a0712a5-8e18-4fc3-a374-c0d3a4abf200"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Succeeded"
+                }
+              }
+            }
+          },
+          "expression": {
+            "greater": [
+              "@length(outputs('Get_Opportunity_by_ID')?['body']['Opportunity_SharepointDocumentLocation'])",
+              0
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f6fb8b32-d3a6-499b-b5c4-3373b7f1678a"
+          },
+          "type": "If"
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

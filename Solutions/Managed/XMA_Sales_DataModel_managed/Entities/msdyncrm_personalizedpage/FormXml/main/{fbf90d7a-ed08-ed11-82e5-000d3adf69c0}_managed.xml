@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fbf90d7a-ed08-ed11-82e5-000d3adf69c0}</formid>
+    <IntroducedVersion>1.0.0.1305</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{80e32cd6-7dbd-471a-b359-723756ae6763}" IsUserDefined="1" labelid="{bb7539da-73b5-4705-8648-bea8b7f02033}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cc6bd8aa-9a22-4850-add5-2a374d1b9a82}" labelid="{2fcf8d1a-20cc-47bf-99bd-12ede1896555}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ee1a92e8-2256-45f2-ad09-2755229b78f9}" labelid="{6f1e5ff7-5b2d-41a5-94c7-6c7fe680d855}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99714175-f5ce-4c56-b366-106742d812a5}" labelid="{534f1b1e-0159-4032-9d73-76bd73a9ce8c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40ef52da-36ac-4d1a-b73b-36a14b6eeea7}" showlabel="true" locklevel="0" availableforphone="false" rowspan="13" labelid="{9c8cc181-8d99-40e5-b0f2-fd236a69a4ff}">
+                        <labels>
+                          <label description="JavaScript code" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_javascriptcode" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_javascriptcode" uniqueid="{f860df85-a55c-4b45-894c-4398e4b4f255}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{c03b92d8-aedd-48d3-805e-77fbfe9f1c25}" IsUserDefined="0" height="auto" name="{061fdae3-37fa-4984-bf85-8540b8ffc9c9}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{b82d157c-95e8-43a7-94fa-a4184bfdfca1}">
+                  <labels>
+                    <label description="Personalized page fields" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9744b12b-1c28-49f7-b354-a4b02cc0d7ff}" showlabel="true" colspan="1" auto="false" rowspan="6" labelid="{d9fb0617-a2ec-4060-b664-e109efc9f5ca}">
+                        <labels>
+                          <label description="Fields" languagecode="1033" />
+                        </labels>
+                        <control id="Fields" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{110095d4-28b1-4163-bcea-9317b4a83c6f}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>msdyncrm_msdyncrm_personalizedpage_msdyncrm_personalizedpage</RelationshipName>
+                            <TargetEntityType>msdyncrm_personalizedpagefield</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{110095d4-28b1-4163-bcea-9317b4a83c6f}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2e007da2-81d6-488f-a630-015a638bfd18}" columns="1111" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{9d2e9775-1e7b-4c71-a9b5-425dc40b21f0}" showlabel="true" locklevel="0" labelid="{0f4f7d60-518c-4345-9207-157d4037aab9}">
+              <labels>
+                <label description="Name" languagecode="1033" />
+              </labels>
+              <control id="header_msdyncrm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_name" disabled="false" />
+            </cell>
+            <cell id="{181cc5bf-a8bc-4be7-89e5-601969244822}" showlabel="true" locklevel="0" labelid="{1785b982-9fd6-449e-9de4-17ffe03d20b0}">
+              <labels>
+                <label description="Status reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" />
+            </cell>
+            <cell id="{29b86722-9a1c-4528-9621-dfc191d80deb}" locklevel="0" colspan="1" rowspan="1" labelid="{130675cb-e6ee-406a-9881-e73a74821887}">
+              <labels>
+                <label description="XMA Campaign" languagecode="1033" />
+              </labels>
+              <control id="header_igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <controlDescriptions>
+        <controlDescription forControl="{f860df85-a55c-4b45-894c-4398e4b4f255}">
+          <customControl formFactor="2" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Marketing.LabelControl.LabelControl">
+            <parameters>
+              <value>msdyncrm_javascriptcode</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="msdyncrm_DynamicsMarketing.CrmWebResource" libraryUniqueId="{7c9c7449-968e-4a44-bcdf-c39010cf8b98}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="MSDynCrmMkt.Handlers.handleDisconnectedOrg" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{d46eb6b0-3be8-4fa5-86f0-3fe71fba0ade}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="MSDynCrmMkt.MktSvcStageSwitching.setAsReadOnly" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{7bc89eaa-93c5-4760-ba55-20ac7e08cbc7}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="MSDynCrmMkt.MktSvcStageSwitching.preventAutoSave" libraryName="msdyncrm_DynamicsMarketing.CrmWebResource" handlerUniqueId="{a14d488c-5fd4-454e-8c50-4f46c4c77f5b}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <footer id="{26038ff6-335a-4caa-ac60-cfd6d35269af}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{9fe76310-3c35-43c6-b0f4-adb231a10952}" showlabel="false" labelid="{fb67573a-ca5b-43e9-a166-d1afb563cb74}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5beffad9-11c2-4a4b-9e17-ca5d8fb78330}" showlabel="false" labelid="{9c8af90c-4b9e-46a8-bd26-c3432a8b27fe}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{75933eb7-5afc-4abe-af1c-e2d9ae7d01e8}" showlabel="false" labelid="{ed85b270-7134-4532-966b-6872b99a84cb}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="XMA Personalised Page" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

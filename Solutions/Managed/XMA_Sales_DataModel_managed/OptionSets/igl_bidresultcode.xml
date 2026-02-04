@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_bidresultcode" localizedName="Bid Result" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Bid Result" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="In Progress" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="Accepted at PQQ" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="Awaiting Decision" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="Awaiting Decision - Clarification" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004" ExternalValue="">
+      <labels>
+        <label description="Declined at PQQ" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300005" ExternalValue="">
+      <labels>
+        <label description="Lost" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300006" ExternalValue="">
+      <labels>
+        <label description="No Bid" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300007" ExternalValue="">
+      <labels>
+        <label description="Procurement Cancelled" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300008" ExternalValue="">
+      <labels>
+        <label description="Stage Complete" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300009" ExternalValue="">
+      <labels>
+        <label description="Won" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

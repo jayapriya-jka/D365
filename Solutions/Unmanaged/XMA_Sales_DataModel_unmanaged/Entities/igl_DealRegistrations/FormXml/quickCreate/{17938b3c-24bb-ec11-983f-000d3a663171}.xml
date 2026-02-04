@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{17938b3c-24bb-ec11-983f-000d3a663171}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{de87fb3d-08eb-4959-b665-7fb2ce7381a4}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{9aaf9e0d-ded5-472b-b75d-975e3a30fe69}">
+                  <labels>
+                    <label description="Section 1" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{044e2e84-ca9b-43cf-9168-44a896456dae}" locklevel="0" colspan="1" rowspan="1" labelid="{50827d22-3ad9-4f89-a76a-4eea1eba09ad}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="igl_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dc37c714-7e2d-4dd2-91f8-f460230e23ec}" locklevel="0" colspan="1" rowspan="1" labelid="{b76939e1-4046-4fd8-ac20-c76727d776c9}">
+                        <labels>
+                          <label description="Deal reference" languagecode="1033" />
+                        </labels>
+                        <control id="igl_dealreference" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="igl_dealreference" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{076748cb-76e9-438a-985a-e50795847624}" locklevel="0" colspan="1" rowspan="1" labelid="{06e42095-b382-4d8e-a8cd-be94707a61a4}">
+                        <labels>
+                          <label description="Date Of Request" languagecode="1033" />
+                        </labels>
+                        <control id="igl_dateofrequest" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_dateofrequest" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92f09c92-bd73-4666-8b3d-0aae0e377078}" locklevel="0" colspan="1" rowspan="1" labelid="{9d363891-1091-4c91-b810-23c60dd41051}">
+                        <labels>
+                          <label description="Date Of Expiry" languagecode="1033" />
+                        </labels>
+                        <control id="igl_dateofexpiry" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_dateofexpiry" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{208ad745-f4b2-4487-a3d8-76e96e835ec1}" locklevel="0" colspan="1" rowspan="1" labelid="{6c8c45e1-432c-4bba-b1bd-22d852c7f82e}">
+                        <labels>
+                          <label description="Brand" languagecode="1033" />
+                        </labels>
+                        <control id="igl_brand" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_brand" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25bfca3e-7bc1-4864-89b7-d6533d34fd25}" locklevel="0" colspan="1" rowspan="1" labelid="{7eb973f1-4a7b-4e41-9490-84cd04ca297b}">
+                        <labels>
+                          <label description="Technical Lead" languagecode="1033" />
+                        </labels>
+                        <control id="igl_technicallead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_technicallead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80a66f6b-1cc9-4756-88af-861d002b9fc3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Commercial To Action" languagecode="1033" />
+                        </labels>
+                        <control id="igl_commercialtoaction_code" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="igl_commercialtoaction_code" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69f7c5fb-0e21-45b7-833d-620bbde73a8b}" locklevel="0" colspan="1" rowspan="1" labelid="{6f07630a-7e34-4300-8ff8-c0ce5a3722f3}">
+                        <labels>
+                          <label description="Summary of Registrations" languagecode="1033" />
+                        </labels>
+                        <control id="igl_summaryofregistrations" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_summaryofregistrations" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{2d43fe9d-e394-4127-821c-5e61d6a78175}">
+                  <labels>
+                    <label description="Section 2" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae31972c-41ac-49fa-9ed4-909b7879e634}" locklevel="0" colspan="1" rowspan="1" labelid="{c6917f49-98f6-4344-a675-658a79fd1a0d}">
+                        <labels>
+                          <label description="Opportunity " languagecode="1033" />
+                        </labels>
+                        <control id="igl_opportunity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_opportunity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1eace1b-6729-448a-bf95-e5ff7d6425ef}" locklevel="0" colspan="1" rowspan="1" labelid="{2e1cec60-3484-4518-9eb0-2ade91145f9e}">
+                        <labels>
+                          <label description="Competitor" languagecode="1033" />
+                        </labels>
+                        <control id="igl_competitor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_competitor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bdc5c9c8-9c49-46aa-85e8-9cb12e9977b9}" locklevel="0" colspan="1" rowspan="1" labelid="{a39cd333-5194-4cf8-9fe4-7970bd179fd7}">
+                        <labels>
+                          <label description="Est. Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="igl_estrevenue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_estrevenue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5c4798dc-0a19-4ad0-ae88-4464ee884455}" locklevel="0" colspan="1" rowspan="1" labelid="{9ffe6829-6940-4375-abb6-e7439b9f664d}">
+                        <labels>
+                          <label description="Est. Closed Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_estcloseddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_estcloseddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c2ee3fc-8d56-49cb-b178-5b9cd28866ba}" locklevel="0" colspan="1" rowspan="1" labelid="{c77cbaf8-dc8e-4189-8d6f-cc8cf165d4aa}">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="igl_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_account" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{332ee168-f795-4141-b732-c8010156384d}" locklevel="0" colspan="1" rowspan="1" labelid="{c235b3a2-c950-4850-a1b1-f246c3e7239e}">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="igl_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_contact" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{2b78c733-2ec3-4d77-9455-be96e68dd90f}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{0468f2c4-18f7-4051-a807-44030af9a7ef}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Pricing Support quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

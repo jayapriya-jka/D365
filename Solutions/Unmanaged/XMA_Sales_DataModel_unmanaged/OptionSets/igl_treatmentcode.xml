@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_treatmentcode" localizedName="Treatment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Treatment" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="T1 - Strategic" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="T2 - Core" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="T3 - Commodity" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="T4 - Pass-Through" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004" ExternalValue="">
+      <labels>
+        <label description="T0 - Direct Award" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

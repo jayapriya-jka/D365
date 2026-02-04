@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="igl.opportunity.Button2.Button.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Save.Controls._children" Sequence="43">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:igl.opportunity.Button2.Button.Alt" Command="igl.opportunity.Command0.Command" Id="igl.opportunity.Button2.Button" Image32by32="$webresource:dnb_logo32" Image16by16="$webresource:dnb_logo16" LabelText="$LocLabels:igl.opportunity.Button2.Button.LabelText" Sequence="43" TemplateAlias="o1" ToolTipTitle="$LocLabels:igl.opportunity.Button2.Button.ToolTipTitle" ToolTipDescription="$LocLabels:igl.opportunity.Button2.Button.ToolTipDescription" ModernImage="$webresource:dnb_logo32" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="igl.opportunity.Command0.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="cloneOpportunity" Library="$webresource:igl_CloneOpportunityJS" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="igl.opportunity.Button2.Button.Alt">
+      <Titles>
+        <Title description="Clone the opportunity record." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="igl.opportunity.Button2.Button.LabelText">
+      <Titles>
+        <Title description="Clone Opportunity" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="igl.opportunity.Button2.Button.ToolTipDescription">
+      <Titles>
+        <Title description="This will clone the opportunity record." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="igl.opportunity.Button2.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Clone" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

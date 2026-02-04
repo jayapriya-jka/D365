@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{495faa74-67e5-ec11-bb3c-0022489dcf8b}" name="XMA Excel Import/Export" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendImport" level="Global" />
+    <RolePrivilege name="prvAppendImportFile" level="Global" />
+    <RolePrivilege name="prvAppendImportMap" level="Global" />
+    <RolePrivilege name="prvAppendToImport" level="Global" />
+    <RolePrivilege name="prvAppendToImportFile" level="Global" />
+    <RolePrivilege name="prvAppendToImportMap" level="Global" />
+    <RolePrivilege name="prvBulkEdit" level="Global" />
+    <RolePrivilege name="prvCreateImport" level="Global" />
+    <RolePrivilege name="prvCreateImportFile" level="Global" />
+    <RolePrivilege name="prvCreateImportMap" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeleteImport" level="Basic" />
+    <RolePrivilege name="prvDeleteImportFile" level="Basic" />
+    <RolePrivilege name="prvDeleteImportMap" level="Basic" />
+    <RolePrivilege name="prvExportToExcel" level="Global" />
+    <RolePrivilege name="prvOverrideCreatedOnCreatedBy" level="Global" />
+    <RolePrivilege name="prvReadImport" level="Global" />
+    <RolePrivilege name="prvReadImportFile" level="Global" />
+    <RolePrivilege name="prvReadImportMap" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvWriteImport" level="Global" />
+    <RolePrivilege name="prvWriteImportFile" level="Global" />
+    <RolePrivilege name="prvWriteImportMap" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

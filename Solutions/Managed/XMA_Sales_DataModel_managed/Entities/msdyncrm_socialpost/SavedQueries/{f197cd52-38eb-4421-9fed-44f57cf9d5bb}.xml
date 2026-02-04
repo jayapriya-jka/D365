@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f197cd52-38eb-4421-9fed-44f57cf9d5bb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msdyncrm_name" select="1" icon="1" preview="1">
+        <row name="result" id="msdyncrm_socialpostid">
+          <cell name="msdyncrm_name" width="300" />
+          <cell name="igl_xmacampaign_id" width="119" />
+          <cell name="msdyncrm_poststate" width="100" />
+          <cell name="msdyncrm_socialchannel" width="100" />
+          <cell name="msdyncrm_socialconfiguration" width="100" />
+          <cell name="msdyncrm_startdate" width="100" imageproviderfunctionname="Post on" imageproviderwebresource="$webresource:" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="msdyncrm_attachmentname" width="100" />
+          <cell name="msdyncrm_likecount" width="100" />
+          <cell name="msdyncrm_commentcount" width="100" />
+          <cell name="msdyncrm_impressioncount" width="100" />
+          <cell name="msdyncrm_sentiment" width="100" />
+          <cell name="modifiedon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="msdyncrm_socialpost">
+          <attribute name="msdyncrm_name" />
+          <attribute name="createdon" />
+          <attribute name="msdyncrm_startdate" />
+          <attribute name="createdby" />
+          <attribute name="msdyncrm_socialchannel" />
+          <attribute name="msdyncrm_poststate" />
+          <order attribute="msdyncrm_startdate" descending="true" />
+          <order attribute="msdyncrm_name" descending="false" />
+          <attribute name="msdyncrm_attachmentname" />
+          <attribute name="msdyncrm_socialconfiguration" />
+          <attribute name="msdyncrm_likecount" />
+          <attribute name="msdyncrm_commentcount" />
+          <attribute name="msdyncrm_impressioncount" />
+          <attribute name="msdyncrm_sentiment" />
+          <attribute name="modifiedon" />
+          <attribute name="msdyncrm_socialpostid" />
+          <attribute name="igl_xmacampaign_id" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Social posts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

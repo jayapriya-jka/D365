@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{3673a6b4-a468-e711-a824-000d3a33777b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="msdyncrm_subject">
+        <row id="msdyncrm_marketingemailid" name="result">
+          <cell name="msdyncrm_name" width="100" />
+          <cell name="msdyncrm_subject" width="150" />
+          <cell name="igl_xmacampaign_id" width="121" />
+          <cell name="msdyncrm_description" width="100" disableSorting="1" />
+          <cell name="createdon" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="false">
+        <entity name="msdyncrm_marketingemail">
+          <attribute name="msdyncrm_subject" />
+          <order descending="false" attribute="msdyncrm_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="msdyncrm_name" />
+          <attribute name="msdyncrm_description" />
+          <attribute name="createdon" />
+          <attribute name="msdyncrm_marketingemailid" />
+          <attribute name="igl_xmacampaign_id" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My team active marketing emails" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

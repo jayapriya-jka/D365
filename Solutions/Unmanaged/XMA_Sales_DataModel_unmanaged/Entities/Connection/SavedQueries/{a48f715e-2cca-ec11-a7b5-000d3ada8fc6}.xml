@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a48f715e-2cca-ec11-a7b5-000d3ada8fc6}</savedqueryid>
+    <layoutxml>
+      <grid name="connections" jump="record2id" select="1" icon="1" preview="0">
+        <row name="connection" id="connectionid">
+          <cell name="record2id" width="220" LabelId="query.FE4BC089-8901-466C-A41B-1C1090F204D4.cell.name.label" />
+          <cell name="record2roleid" width="136" LabelId="query.FE4BC089-8901-466C-A41B-1C1090F204D4.cell.role.label" />
+          <cell name="systemuser.internalemailaddress" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" distinct="false">
+        <entity name="connection">
+          <attribute name="record2id" />
+          <attribute name="record2roleid" />
+          <attribute name="connectionid" />
+          <filter type="and">
+            <condition attribute="record2objecttypecode" operator="eq" value="8" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="systemuser" from="systemuserid" to="record2id" alias="systemuser" link-type="inner">
+            <attribute name="internalemailaddress" />
+          </link-entity>
+          <order attribute="record2id" descending="false" />
+          <link-entity name="connectionrole" from="connectionroleid" to="record2roleid" alias="ac" link-type="inner">
+            <filter type="and">
+              <condition attribute="category" operator="in">
+                <value>1001</value>
+                <value>824300001</value>
+              </condition>
+            </filter>
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.5</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Sales &amp; Bid Team Members" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Selects all of the sales team category connections." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

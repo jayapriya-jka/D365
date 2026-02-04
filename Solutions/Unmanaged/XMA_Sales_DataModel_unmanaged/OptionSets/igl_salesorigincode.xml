@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_salesorigincode" localizedName="Sales Origin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Sales Origin" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="PIPO" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="EDI" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="Manual" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="Web" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004">
+      <labels>
+        <label description="ECOM" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300005">
+      <labels>
+        <label description="Email" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

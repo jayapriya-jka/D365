@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3f6d889e-6549-4025-9ce0-4c4103efb6a3}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="opportunityid">
+          <cell name="name" width="300" />
+          <cell name="customerid" width="150" />
+          <cell name="a_9674c28da7034eaeaff581838ffb36e5.accountnumber" width="232" />
+          <cell name="estimatedvalue" width="100" />
+          <cell name="estimatedclosedate" width="125" />
+          <cell name="igl_bidlead_lookup" width="100" />
+          <cell name="igl_contracttitle" width="100" />
+          <cell name="igl_leadtechnologies_opportunity_lookup" width="100" />
+          <cell name="igl_tendertypecode" width="100" />
+          <cell name="igl_bidprioritycode" width="100" />
+          <cell name="igl_treatmentcode" width="115" />
+          <cell name="igl_isthisaframeworkcode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="opportunity">
+          <attribute name="name" />
+          <attribute name="estimatedvalue" />
+          <attribute name="estimatedclosedate" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="name" operator="like" value="{0}" />
+            <condition attribute="parentaccountid" operator="like" value="{0}" />
+            <condition attribute="parentcontactid" operator="like" value="{0}" />
+          </filter>
+          <attribute name="customerid" />
+          <attribute name="opportunityid" />
+          <link-entity alias="a_9674c28da7034eaeaff581838ffb36e5" name="account" to="parentaccountid" from="accountid" link-type="outer" visible="false">
+            <attribute name="accountnumber" />
+          </link-entity>
+          <attribute name="igl_bidlead_lookup" />
+          <attribute name="igl_contracttitle" />
+          <attribute name="igl_tendertypecode" />
+          <attribute name="igl_bidprioritycode" />
+          <attribute name="igl_treatmentcode" />
+          <attribute name="igl_isthisaframeworkcode" />
+          <attribute name="igl_leadtechnologies_opportunity_lookup" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Open Opportunities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

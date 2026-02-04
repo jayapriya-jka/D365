@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>msdynce_saleshub</UniqueName>
+  <IntroducedVersion>9.1.0.0</IntroducedVersion>
+  <WebResourceId>7257d4d7-4981-e611-80d3-00155d42a122</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents />
+  <AppModuleRoleMaps>
+    <Role id="{cad52a75-568c-e611-80d4-00155d42a122}" />
+    <Role id="{c0ed2f4f-6f92-4691-92ba-78f2931e8fba}" />
+    <Role id="{a4be89ff-7c35-4d69-9900-999c3f603e6f}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{29123793-6ae5-4955-9f1a-f10ceb9705f1}" />
+  </AppModuleRoleMaps>
+  <EventHandlers>
+    <EventHandler eventname="onload" functionname="TeamsDialer.PanelManager.initializeSidePanel" libraryname="msdyn_/TeamsSidePanel.js" parameters="" enable="true" />
+  </EventHandlers>
+  <LocalizedNames>
+    <LocalizedName description="Sales Hub" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Modernize the sales experience with this mobile relationship management app" languagecode="1033" />
+  </Descriptions>
+</AppModule>

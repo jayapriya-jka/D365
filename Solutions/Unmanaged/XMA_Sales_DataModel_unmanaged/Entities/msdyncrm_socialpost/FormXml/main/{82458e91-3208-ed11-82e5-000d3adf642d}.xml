@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{82458e91-3208-ed11-82e5-000d3adf642d}</formid>
+    <IntroducedVersion>1.0.0.1305</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920" headerdensity="HighWithControls">
+      <tabs>
+        <tab name="content_tab" id="{799aed7c-28c8-493f-a8e0-a3a1bd2681e7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" visible="false" labelid="{52357063-4f2d-44f6-8660-eb4438233e7a}">
+          <labels>
+            <label description="Content" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{77d54322-9379-08a1-5cee-626e044c77ee}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{900e1e65-f45e-4a87-a4ab-e20849cf3151}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{77499e61-2163-6d31-2420-4d32b9b4376b}" showlabel="true" locklevel="0" labelid="{a97c6d18-df91-45c5-ae8b-ff04d9de4a06}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{27ccb26c-69b7-05e9-c2d9-c2c667d3be11}" showlabel="true" locklevel="0" labelid="{4c9f6b83-0448-4ffb-9287-644cd5771e13}">
+                        <labels>
+                          <label description="Select a channel" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialchannel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_socialchannel" disabled="false" uniqueid="{b8e88392-b5c5-b9ae-6cbe-c20ea81ae729}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd4e7d37-195e-4c24-b6a4-eb0d65df1e8c}" showlabel="true" locklevel="0" visible="false" labelid="{6b0bb3ee-4e80-4113-ba70-984c97019463}">
+                        <labels>
+                          <label description="Posting from" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialconfiguration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyncrm_socialconfiguration" disabled="false" uniqueid="{1c36c649-663a-3037-217a-8eaeb2bda991}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{1ec094b2-0bfb-e911-b821-00155d32fa01}</DefaultViewId>
+                            <AvailableViewIds>{1ec094b2-0bfb-e911-b821-00155d32fa01},{a9350414-0cfb-e911-b821-00155d32fa01},{0243a052-0cfb-e911-b821-00155d32fa01},{ef9e15f5-e1f6-47f7-8b6f-3f260eafc3c8}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b10b1ac-904a-4761-a79c-52184a7ce4a9}" showlabel="true" locklevel="0" labelid="{09bac085-1771-4988-b518-ac4aa8a3932f}">
+                        <labels>
+                          <label description="Posting from" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postingfrom" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_postingfrom" disabled="false" uniqueid="{8615ac6a-6b9d-b798-1d98-e69aae53be93}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6ca45202-eac0-d603-2cd3-e712b64a137d}" showlabel="true" locklevel="0" labelid="{11863d49-54ca-4439-ad4f-fc65c3461349}">
+                        <labels>
+                          <label description="Posting User Id" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postinguserid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_postinguserid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6906323c-556b-b2ad-21cb-5e55cc3b070d}" showlabel="true" locklevel="0" labelid="{bef4fdee-481b-4544-863a-8f910173bae1}">
+                        <labels>
+                          <label description="Posting User" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postinguser" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_postinguser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d1eb205d-5315-518e-6bb1-0db75e648c7c}" showlabel="true" locklevel="0" labelid="{df7374ab-67b6-449f-b439-617be75cf88f}">
+                        <labels>
+                          <label description="Post Visibility" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_linkedinvisibility" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_linkedinvisibility" disabled="false" uniqueid="{bb7d11bd-9196-4c13-7ee3-605b4ca4e676}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eabd1595-1d1a-3556-9b9c-4507d06bb725}" showlabel="true" locklevel="0" rowspan="8" labelid="{43c98d78-d222-42a1-90df-53f107752bc4}">
+                        <labels>
+                          <label description="Add post" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_posttext" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msdyncrm_posttext" disabled="false" uniqueid="{9386edd2-e7ed-a6e0-b6d0-3b2a79260c3a}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{915188e6-43cc-ec11-4442-2a158ecb7474}" showlabel="true" locklevel="0" labelid="{af1cbe63-9702-4adb-829d-a316f779ae4a}">
+                        <labels>
+                          <label description="Media" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postattachment" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_postattachment" disabled="false" uniqueid="{86b82a30-2024-baa7-c2e8-d3ce359ae1bc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{01832e79-152b-491d-b764-ce58195077ae}" showlabel="true" locklevel="0" labelid="{bd738122-6cfa-4108-b265-d63ccc96ce00}">
+                        <labels>
+                          <label description="Attachment Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_attachmentname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_attachmentname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e58eb94b-52a2-4bae-9ff6-2244e7797133}" showlabel="true" locklevel="0" visible="false" labelid="{64da3f65-5ae1-415c-8cab-01d2f208c91a}">
+                        <labels>
+                          <label description="Calendar Display Options" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_calendardisplayoptions" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msdyncrm_calendardisplayoptions" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{393655b3-329b-d75a-04a6-7ac46787e911}" showlabel="true" locklevel="0" labelid="{e9937001-9e60-483c-ac77-3630f8d0e23f}">
+                        <labels>
+                          <label description="Select scheduling" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postingperiod" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="msdyncrm_postingperiod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6da29255-07d8-a371-21b8-71c70831802d}" showlabel="true" locklevel="0" labelid="{2cc8d05e-7177-4520-894e-cc5c08c8d357}">
+                        <labels>
+                          <label description="Posted time" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msdyncrm_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c9997d2-3260-2e73-9850-bd94656835ba}" showlabel="true" locklevel="0" labelid="{a9b8934d-5166-45ac-afc2-21f4af0739e9}">
+                        <labels>
+                          <label description="Post State" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_poststate" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_poststate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="content_tab_section_2" showlabel="false" showbar="false" locklevel="0" id="{916174e1-96b3-b437-dc7e-a3a4984419e1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto" labelid="{ccead637-7876-449f-a1ac-1696b2080885}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{085c8873-b9cd-9e97-0871-355dc1c51c2b}" showlabel="false" colspan="1" auto="true" rowspan="9" labelid="{20e67081-ea50-43f4-8ef6-32a8f49cfef7}">
+                        <labels>
+                          <label description="ProTipsControl" languagecode="1033" />
+                        </labels>
+                        <control id="ProTipsControl" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" disabled="false" uniqueid="{8cbaf02d-087d-4ac3-94cd-996603aad3c4}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="new_content_tab" id="{3b6b594f-5acf-4cc9-857e-27577260644d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{6e666d56-b34c-48a9-ac1b-510595985bfa}">
+          <labels>
+            <label description="Designer" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="new_content_section_1" showlabel="false" showbar="false" locklevel="0" id="{06edb0a1-0de5-4fea-bebb-432236cf67dd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{b66df5db-5b96-48d4-a1aa-52b4755bb372}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{578e08dc-b164-480e-ac0c-4b3c4d25027f}" showlabel="false" locklevel="0" colspan="2" labelid="{7aded062-237c-44d8-ae82-7e59981cd615}">
+                        <labels>
+                          <label description="SocialPostHostControl" languagecode="1033" />
+                        </labels>
+                        <control id="SocialPostHostControl" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" disabled="false" uniqueid="{1229d47d-3947-4f25-a7fa-f0529b3f9daf}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36dfb260-9e37-4462-85f9-dddad64b21e2}" visible="false" showlabel="false" locklevel="0" labelid="{591c0195-9221-4bb6-81bc-d76bd0f323bf}">
+                        <labels>
+                          <label description="id" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialpostid" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_socialpostid" disabled="false" uniqueid="{da8fa127-31a0-42bd-b34b-fe6e5b02f4b2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6250c10-03b2-4b2e-9654-1cf1f82882ba}" visible="false" showlabel="false" locklevel="0" labelid="{25ec6657-b169-47b3-a572-cef614c09470}">
+                        <labels>
+                          <label description="name-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_name" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_name" disabled="false" uniqueid="{dc962409-a54f-4b2d-881d-9b803d4fffe6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{99ec9281-9ec2-4cdf-8097-571f3156dbb3}" visible="false" showlabel="false" locklevel="0" labelid="{a70fcdb0-8b49-4a7c-88cd-7423cb4a3050}">
+                        <labels>
+                          <label description="socialchannel-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialchannel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_socialchannel" disabled="false" uniqueid="{288337e1-d9af-4126-b58a-1f12a45b6c3f}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e50b31ca-db12-4335-bf6c-d4096d0e1d7e}" visible="false" showlabel="false" locklevel="0" labelid="{d4fe7c2a-588a-4adb-8efc-1759fb680830}">
+                        <labels>
+                          <label description="status-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_poststate" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_poststate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1f69ec06-5eea-4e22-a339-d7ad4a463aa9}" visible="false" showlabel="false" locklevel="0" labelid="{d030df7f-cfda-4a79-b32d-d4f0c77ba33f}">
+                        <labels>
+                          <label description="config-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialconfiguration" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_socialconfiguration" disabled="false" uniqueid="{2478887b-6403-4e93-a9e4-271e9b2aa074}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{1ec094b2-0bfb-e911-b821-00155d32fa01}</DefaultViewId>
+                            <AvailableViewIds>{1ec094b2-0bfb-e911-b821-00155d32fa01},{a9350414-0cfb-e911-b821-00155d32fa01},{0243a052-0cfb-e911-b821-00155d32fa01},{ef9e15f5-e1f6-47f7-8b6f-3f260eafc3c8}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{65315881-0ee1-4f53-b272-92838fd6ea50}" visible="false" showlabel="false" locklevel="0" labelid="{b26b5538-9e9e-4482-93ab-3605a404a651}">
+                        <labels>
+                          <label description="postas-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postas" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_postas" disabled="false" uniqueid="{fa73e847-d3cf-4ffb-8249-8d0af9650de6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2cf12ff9-983f-49a4-a498-8ad1a34f7f9d}" visible="false" showlabel="false" locklevel="0" labelid="{7ab0c6c3-f910-4fcf-8bba-331e6d2b6a6c}">
+                        <labels>
+                          <label description="visibility-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_linkedInvisibility" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_linkedInvisibility" disabled="false" uniqueid="{8d8445dd-aa25-49cd-87fa-e2c8cf06b42e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ae3af9d-29c6-4d48-aada-4db817bb7646}" visible="false" showlabel="false" locklevel="0" labelid="{1a4acc6b-b0bb-4935-8915-e4306e14c93a}">
+                        <labels>
+                          <label description="networkpages-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_networkpages" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyncrm_networkpages" disabled="false" uniqueid="{60b5a1ec-4bb4-40ac-926a-89b6efd3a780}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ae3af9d-29c6-4d48-aada-4db817bb7646}" visible="false" showlabel="false" locklevel="0" labelid="{2cc4652b-4521-481f-9f41-0ef13a4dcf09}">
+                        <labels>
+                          <label description="networkpages-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_networkId" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_networkId" disabled="false" uniqueid="{9998cbb2-be75-49e6-b2fc-2125d3d9ed6c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dbe9b25b-e49f-4d1c-ac9f-1b39d026cf05}" visible="false" showlabel="false" locklevel="0" labelid="{5be72725-52cd-41a1-af69-4ce44c0ee834}">
+                        <labels>
+                          <label description="text-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_posttext" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_posttext" disabled="false" uniqueid="{620ff024-dede-4057-9a4f-8fec864dbe79}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{775a5755-1f61-4336-869c-2f06b29ae84e}" visible="false" showlabel="false" locklevel="0" labelid="{b148fe17-0762-41ea-bd96-dd8743aaf856}">
+                        <labels>
+                          <label description="attachments-hidden" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_attachemnts" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_attachemnts" disabled="false" uniqueid="{24271713-b7f9-44ad-b5e3-9e2280a44ba6}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="insights_tab" id="{8f05c22e-1283-4480-b43c-4fb334779c8b}" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{aaa46a75-3c64-43a7-8424-71af81ac25c3}" expanded="true" visible="false">
+          <labels>
+            <label description="Insights" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="InsightsTab_Audience" showlabel="false" showbar="false" locklevel="0" id="{464ad3eb-575a-4d1f-9aa5-217be8bbf03b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{8e1770f9-c4df-4c42-9447-49c21e4d254f}">
+                  <labels>
+                    <label description="Social posting insights" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d2860e42-375a-4652-8d3d-99b587feb455}" showlabel="false" locklevel="0" labelid="{d9209a4a-22e2-4417-be6f-390d8fc86897}">
+                        <labels>
+                          <label description="People reached" languagecode="1033" />
+                        </labels>
+                        <control id="PostInsightsCtrl" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" disabled="false" uniqueid="{9bbe41fa-451d-462e-886b-4af8b70a9c96}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="general_tab" id="{8c373764-682d-ae6a-34b8-4acc9ce45310}" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{47137bdd-3aae-451c-9530-83bcad576a4d}" expanded="true" visible="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="true" showbar="false" locklevel="0" id="{5eb9cd91-3de3-8a70-c9c3-2886c418b8ee}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{3a16807a-7932-4229-ab77-9b4ec2d222fc}">
+                  <labels>
+                    <label description="General information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e796a936-e081-21e1-9ae7-a9c112622458}" showlabel="true" locklevel="0" labelid="{3ed77d0e-82d6-4047-83cd-ad1b4ca1fdee}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msdyncrm_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ecd68b05-a2cc-13b1-64b2-a7265062e949}" showlabel="true" locklevel="0" labelid="{bad65549-167a-418f-962c-43629071f67a}">
+                        <labels>
+                          <label description="Created on" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1247987-c123-e737-04c2-76ac2586b20a}" showlabel="true" locklevel="0" labelid="{488929ff-a0df-4835-b048-7af73822c2ab}">
+                        <labels>
+                          <label description="Post URL" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postUrl" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="msdyncrm_postUrl" disabled="true" uniqueid="{1a811c4d-307b-96b5-2672-a789041bd79e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8bd84e9d-f5c1-4846-8eeb-19a99ce3c038}" showlabel="true" locklevel="0" labelid="{c167cbc0-7903-426d-9398-14e113cc7b31}">
+                        <labels>
+                          <label description="Posted on" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="msdyncrm_startdate" disabled="true" uniqueid="{2bcf0989-8a01-4313-b20b-761be6301868}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a92836d4-1dac-5369-b9b4-55ca62ceaad5}" showlabel="true" locklevel="0" labelid="{44c4f5d6-30e7-4c1d-a4ba-f38fd69c5d9d}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_2" showlabel="true" showbar="false" locklevel="0" id="{828b4c4b-882b-615b-8e46-4bc79491e92b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{bb08ddf2-4c52-40d2-8ea2-85cfeadd7a55}">
+                  <labels>
+                    <label description="Configuration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{82087cb2-1e17-444c-96b7-5abc7dd12468}" showlabel="true" locklevel="0" labelid="{7272185f-60c0-46a5-a8f5-1a87938df800}">
+                        <labels>
+                          <label description="Channel" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialchannel" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyncrm_socialchannel" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b969d659-8da9-5462-c076-6b8a74624358}" showlabel="true" locklevel="0" labelid="{fd58cad4-d180-438f-a3b5-639892a39942}">
+                        <labels>
+                          <label description="Social configuration" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_socialconfiguration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyncrm_socialconfiguration" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{1ec094b2-0bfb-e911-b821-00155d32fa01}</DefaultViewId>
+                            <AvailableViewIds>{1ec094b2-0bfb-e911-b821-00155d32fa01},{a9350414-0cfb-e911-b821-00155d32fa01},{0243a052-0cfb-e911-b821-00155d32fa01},{ef9e15f5-e1f6-47f7-8b6f-3f260eafc3c8}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{417d376e-5465-8897-60e2-c47c01339c74}" showlabel="true" locklevel="0" labelid="{e1dac781-6be7-409e-9021-50f85d44851b}" visible="false">
+                        <labels>
+                          <label description="Post as" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_postas_GeneralTab" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_postas" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2ba941a-9b73-2cc8-00c7-d2258a77cd4c}" showlabel="true" locklevel="0" labelid="{5d9eca5c-7a1b-4012-bd6c-9c178a7e7696}" visible="false">
+                        <labels>
+                          <label description="LinkedIn visibility" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_linkedinvisibility_GeneralTab" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_linkedinvisibility" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{307dec8e-8394-4211-9cbb-91f4ee5a345a}" showlabel="true" locklevel="0" labelid="{39ff4c21-0199-41c4-a9ab-82191e633ecc}" visible="false">
+                        <labels>
+                          <label description="Page" languagecode="1033" />
+                        </labels>
+                        <control id="msdyncrm_networkpages_GeneralTab" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyncrm_networkpages" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c5659956-2f2c-489d-9074-72fdfea37dd7}" columns="111" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{341e622c-da16-598d-a0cc-75b345cbd67e}" showlabel="false" labelid="{4ac3752e-23b8-4d2b-b469-f57dbbaf1ab5}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{05c8ecef-acdd-4aae-8112-0a8752698b0e}" showlabel="true" locklevel="0" labelid="{2bbcee10-4987-4545-8216-7a05a669bae6}">
+              <labels>
+                <label description="Channel" languagecode="1033" />
+              </labels>
+              <control id="header_msdyncrm_socialchannel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_socialchannel" disabled="true" uniqueid="{4c8270c2-6363-471c-9a3b-f9cf1771a99f}" />
+            </cell>
+            <cell id="{cc4909da-7902-4792-a2e1-f26386471a18}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="XMA Campaign" languagecode="1033" />
+              </labels>
+              <control id="header_igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{4943d0b4-a49c-41eb-ab45-a3aba0cdca2f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{16411715-7885-0792-47c0-6286740424c1}" showlabel="true" locklevel="0" labelid="{cdb6cbf0-16d7-47e8-a9f1-3a800fbcaed5}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_msdyncrm_poststate" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_poststate" disabled="true" uniqueid="{3210ebdc-58d5-8be3-0c66-66db43a9c498}" />
+            </cell>
+            <cell id="{1a29efc6-b8e4-43fb-bc07-820321723b36}" showlabel="true" locklevel="0" visible="false" labelid="{76287c5b-2ac6-4d15-aedb-3eaa97e7a59a}">
+              <labels>
+                <label description="Scheduled date" languagecode="1033" />
+              </labels>
+              <control id="header_msdyncrm_statdate" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_startdate" disabled="true" uniqueid="{7344c3a6-9d88-45dd-be51-ec7ae4144158}" />
+            </cell>
+            <cell id="{049e0232-2364-d430-0a5b-776e88670b65}" showlabel="true" locklevel="0" labelid="{8ef4db14-31ba-4dab-b4c4-a50ef3562de3}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{4e395323-5879-1731-7b0a-5ad318b1e28c}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{d40fa222-5944-48fc-a0dc-6b550f12afa2}" showlabel="true" locklevel="0" labelid="{462a0904-a13f-4db5-83cb-fc8c4d1f8154}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Name" languagecode="1033" />
+              </labels>
+              <control id="header_msdyncrm_name" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_name" disabled="true" uniqueid="{93282725-bc88-46c3-bb38-d6360dec3b6e}" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{66242203-e8a5-451f-a01a-4ca39247f405}" columns="111">
+        <rows>
+          <row>
+            <cell id="{d9328979-fdf2-44c8-8ca2-36aedbc7fd4b}" showlabel="false" labelid="{f7d935ea-8426-41cc-8d02-05ececf289bc}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c34ed3a4-c0f3-4f76-8652-8ff19ef696b9}" showlabel="false" labelid="{8fa7b3c9-087f-4382-8be8-83214bf1ece5}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8e28d2bb-b4a9-16bc-10cb-0d376bc49ca6}" showlabel="true" locklevel="0" labelid="{c824d55d-9899-4b66-b9e6-b2669b321418}">
+              <labels>
+                <label description="Post State" languagecode="1033" />
+              </labels>
+              <control id="footer_msdyncrm_poststate" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="msdyncrm_poststate" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1025" Text="عام" />
+              <Title LCID="1026" Text="Общо" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Společné" />
+              <Title LCID="1030" Text="Almindelig" />
+              <Title LCID="1031" Text="Allgemein" />
+              <Title LCID="1032" Text="Κοινός" />
+              <Title LCID="3081" Text="Common" />
+              <Title LCID="4105" Text="Common" />
+              <Title LCID="2057" Text="Common" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Ühine" />
+              <Title LCID="1069" Text="Ohikoa" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="3084" Text="Commun" />
+              <Title LCID="1036" Text="Commun" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1037" Text="פריטים נפוצים" />
+              <Title LCID="1050" Text="Uobičajeno" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Umum" />
+              <Title LCID="1040" Text="Comune" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1042" Text="공통" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Vispārēji" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общее" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Skupno" />
+              <Title LCID="3098" Text="Уобичајено" />
+              <Title LCID="2074" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Standard" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Спільні" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="公用" />
+              <Title LCID="3076" Text="一般" />
+              <Title LCID="1028" Text="一般" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1025" Text="المبيعات" />
+              <Title LCID="1026" Text="Продажби" />
+              <Title LCID="1027" Text="Vendes" />
+              <Title LCID="1029" Text="Sales" />
+              <Title LCID="1030" Text="Salg" />
+              <Title LCID="1031" Text="Vertrieb" />
+              <Title LCID="1032" Text="Πωλήσεις" />
+              <Title LCID="3081" Text="Sales" />
+              <Title LCID="4105" Text="Sales" />
+              <Title LCID="2057" Text="Sales" />
+              <Title LCID="3082" Text="Sales" />
+              <Title LCID="1061" Text="Müük" />
+              <Title LCID="1069" Text="Sales" />
+              <Title LCID="1035" Text="Myynti" />
+              <Title LCID="3084" Text="Vente" />
+              <Title LCID="1036" Text="Vente" />
+              <Title LCID="1110" Text="Vendas" />
+              <Title LCID="1037" Text="Sales" />
+              <Title LCID="1050" Text="Sales" />
+              <Title LCID="1038" Text="Értékesítés" />
+              <Title LCID="1057" Text="Penjualan" />
+              <Title LCID="1040" Text="Vendite" />
+              <Title LCID="1041" Text="営業" />
+              <Title LCID="1042" Text="영업" />
+              <Title LCID="1063" Text="Pardavimas" />
+              <Title LCID="1062" Text="Pārdošana" />
+              <Title LCID="1044" Text="Sales" />
+              <Title LCID="1043" Text="Verkoop" />
+              <Title LCID="1045" Text="Sprzedaż" />
+              <Title LCID="1046" Text="Vendas" />
+              <Title LCID="2070" Text="Vendas" />
+              <Title LCID="1048" Text="Vânzări" />
+              <Title LCID="1049" Text="Продажи" />
+              <Title LCID="1051" Text="Sales" />
+              <Title LCID="1060" Text="Prodaja" />
+              <Title LCID="3098" Text="Sales" />
+              <Title LCID="2074" Text="Sales" />
+              <Title LCID="1053" Text="Försäljning" />
+              <Title LCID="1054" Text="การขาย" />
+              <Title LCID="1055" Text="Satış" />
+              <Title LCID="1058" Text="Збут" />
+              <Title LCID="1066" Text="Bán hàng" />
+              <Title LCID="2052" Text="Sales" />
+              <Title LCID="3076" Text="銷售" />
+              <Title LCID="1028" Text="銷售" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1025" Text="الخدمة" />
+              <Title LCID="1026" Text="Услуга" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1030" Text="Service" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Υπηρεσία" />
+              <Title LCID="3081" Text="Service" />
+              <Title LCID="4105" Text="Service" />
+              <Title LCID="2057" Text="Service" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="3084" Text="Service" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1037" Text="שירות" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Aptarnavimas" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługi" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Servicii" />
+              <Title LCID="1049" Text="Сервис" />
+              <Title LCID="1051" Text="Služby" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="3098" Text="Услуге" />
+              <Title LCID="2074" Text="Usluge" />
+              <Title LCID="1053" Text="Service" />
+              <Title LCID="1054" Text="การบริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Обслуговування" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1025" Text="Marketing" />
+              <Title LCID="1026" Text="Marketing" />
+              <Title LCID="1027" Text="Marketing" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Marketing" />
+              <Title LCID="3081" Text="Marketing" />
+              <Title LCID="4105" Text="Marketing" />
+              <Title LCID="2057" Text="Marketing" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Marketing" />
+              <Title LCID="1069" Text="Marketing" />
+              <Title LCID="1035" Text="Marketing" />
+              <Title LCID="3084" Text="Marketing" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Marketing" />
+              <Title LCID="1037" Text="Marketing" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Marketing" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="Marketing" />
+              <Title LCID="1042" Text="Marketing" />
+              <Title LCID="1063" Text="Marketing" />
+              <Title LCID="1062" Text="Marketing" />
+              <Title LCID="1044" Text="Marketing" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Marketing" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Marketing" />
+              <Title LCID="3098" Text="Marketing" />
+              <Title LCID="2074" Text="Marketing" />
+              <Title LCID="1053" Text="Marketing" />
+              <Title LCID="1054" Text="Marketing" />
+              <Title LCID="1055" Text="Marketing" />
+              <Title LCID="1058" Text="Marketing" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="Marketing" />
+              <Title LCID="3076" Text="Marketing" />
+              <Title LCID="1028" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+              <Title LCID="1025" Text="جلسات عمل العمليات" />
+              <Title LCID="1026" Text="Сесии на процес" />
+              <Title LCID="1027" Text="Sessions del procés" />
+              <Title LCID="1029" Text="Relace procesů" />
+              <Title LCID="1030" Text="Processessioner" />
+              <Title LCID="1031" Text="Sitzungen verarbeiten" />
+              <Title LCID="1032" Text="Περίοδοι λειτουργίας διεργασίας" />
+              <Title LCID="3081" Text="Process Sessions" />
+              <Title LCID="4105" Text="Process Sessions" />
+              <Title LCID="2057" Text="Process Sessions" />
+              <Title LCID="3082" Text="Sesiones de proceso" />
+              <Title LCID="1061" Text="Protsessiseansid" />
+              <Title LCID="1069" Text="Prozesu-saioak" />
+              <Title LCID="1035" Text="Käsittelyistunnot" />
+              <Title LCID="3084" Text="Sessions de traitement" />
+              <Title LCID="1036" Text="Sessions de traitement" />
+              <Title LCID="1110" Text="Sesións de proceso" />
+              <Title LCID="1037" Text="הפעלות תהליך" />
+              <Title LCID="1050" Text="Sesije postupka" />
+              <Title LCID="1038" Text="Feldolgozási munkamenetek" />
+              <Title LCID="1057" Text="Sesi Proses" />
+              <Title LCID="1040" Text="Sessioni di processo" />
+              <Title LCID="1041" Text="プロセス セッション" />
+              <Title LCID="1042" Text="프로세스 세션" />
+              <Title LCID="1063" Text="Procesų seansai" />
+              <Title LCID="1062" Text="Procesa sesijas" />
+              <Title LCID="1044" Text="Behandle økter" />
+              <Title LCID="1043" Text="Processessies" />
+              <Title LCID="1045" Text="Sesje procesów" />
+              <Title LCID="1046" Text="Sessões do Processo" />
+              <Title LCID="2070" Text="Sessões de Processamento" />
+              <Title LCID="1048" Text="Sesiuni de proces" />
+              <Title LCID="1049" Text="Сеансы процессов" />
+              <Title LCID="1051" Text="Relácie procesov" />
+              <Title LCID="1060" Text="Seje procesov" />
+              <Title LCID="3098" Text="Сесије процеса" />
+              <Title LCID="2074" Text="Sesije procesa" />
+              <Title LCID="1053" Text="Bearbetningssessioner" />
+              <Title LCID="1054" Text="เซสชันของกระบวนการ" />
+              <Title LCID="1055" Text="İşlem Oturumları" />
+              <Title LCID="1058" Text="Сеанси процесів" />
+              <Title LCID="1066" Text="Phiên quy trình" />
+              <Title LCID="2052" Text="流程会话" />
+              <Title LCID="3076" Text="程序工作階段" />
+              <Title LCID="1028" Text="程序工作階段" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{86b82a30-2024-baa7-c2e8-d3ce359ae1bc}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>msdyncrm_postattachment</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.ImageSelector.ImageSelector">
+            <parameters>
+              <value>msdyncrm_postattachment</value>
+              <attachmentName>msdyncrm_attachmentname</attachmentName>
+              <attachmentField>msdyncrm_postattachment</attachmentField>
+              <socialChannel>msdyncrm_socialchannel</socialChannel>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.ImageSelector.ImageSelector">
+            <parameters>
+              <value>msdyncrm_postattachment</value>
+              <attachmentName>msdyncrm_attachmentname</attachmentName>
+              <attachmentField>msdyncrm_postattachment</attachmentField>
+              <socialChannel>msdyncrm_socialchannel</socialChannel>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.ImageSelector.ImageSelector">
+            <parameters>
+              <value>msdyncrm_postattachment</value>
+              <attachmentName>msdyncrm_attachmentname</attachmentName>
+              <attachmentField>msdyncrm_postattachment</attachmentField>
+              <socialChannel>msdyncrm_socialchannel</socialChannel>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{8cbaf02d-087d-4ac3-94cd-996603aad3c4}">
+          <customControl formFactor="0" name="MscrmControls.ProTipsControl.ProTipsControl">
+            <parameters />
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.ProTipsControl.ProTipsControl">
+            <parameters />
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.ProTipsControl.ProTipsControl">
+            <parameters />
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{1229d47d-3947-4f25-a7fa-f0529b3f9daf}">
+          <customControl formFactor="0" name="MscrmControls.SocialPostHostControl.SocialPostHostControl">
+            <parameters>
+              <postId>msdyncrm_socialpostid</postId>
+              <status>msdyncrm_poststate</status>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.SocialPostHostControl.SocialPostHostControl">
+            <parameters>
+              <postId>msdyncrm_socialpostid</postId>
+              <status>msdyncrm_poststate</status>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.SocialPostHostControl.SocialPostHostControl">
+            <parameters>
+              <postId>msdyncrm_socialpostid</postId>
+              <status>msdyncrm_poststate</status>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{9bbe41fa-451d-462e-886b-4af8b70a9c96}">
+          <customControl formFactor="0" name="MscrmControls.PostInsightsHostControl.PostInsightsHostControl">
+            <parameters>
+              <channel>msdyncrm_socialchannel</channel>
+              <postAs>msdyncrm_postas</postAs>
+              <socialConfiguration>msdyncrm_socialconfiguration</socialConfiguration>
+              <networkId>msdyncrm_networkId</networkId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.PostInsightsHostControl.PostInsightsHostControl">
+            <parameters>
+              <channel>msdyncrm_socialchannel</channel>
+              <postAs>msdyncrm_postas</postAs>
+              <socialConfiguration>msdyncrm_socialconfiguration</socialConfiguration>
+              <networkId>msdyncrm_networkId</networkId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.PostInsightsHostControl.PostInsightsHostControl">
+            <parameters>
+              <channel>msdyncrm_socialchannel</channel>
+              <postAs>msdyncrm_postas</postAs>
+              <socialConfiguration>msdyncrm_socialconfiguration</socialConfiguration>
+              <networkId>msdyncrm_networkId</networkId>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="msdyncrm_socialpostingwebresources" libraryUniqueId="{0d8e9059-67c3-6664-6835-79aa4b91464d}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SocialPosting.WebResource.PostHandler.onLoad" libraryName="msdyncrm_socialpostingwebresources" handlerUniqueId="{31c27552-91a6-46a6-d1d0-9d329b11980d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="msdyncrm_socialchannel">
+          <Handlers>
+            <Handler functionName="SocialPosting.WebResource.PostHandler.onChannelChange" libraryName="msdyncrm_socialpostingwebresources" handlerUniqueId="{11e156c5-ecd7-c828-7110-1589ebcd0b4a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SocialPosting.WebResource.PostHandler.onSave" libraryName="msdyncrm_socialpostingwebresources" handlerUniqueId="{98530182-8202-9c7b-9461-a97cd49e1724}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="msdyncrm_linkedinvisibility">
+          <Handlers>
+            <Handler functionName="SocialPosting.WebResource.PostHandler.onLinkedInVisibilityChange" libraryName="msdyncrm_socialpostingwebresources" handlerUniqueId="{29926fc8-3cb9-4e28-be63-0422599744a9}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="3" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="XMA Social Post" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

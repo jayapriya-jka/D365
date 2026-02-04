@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{1ac6191b-68e5-ec11-bb3c-0022489dcf8b}" name="XMA Reporting" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendReport" level="Global" />
+    <RolePrivilege name="prvAppendToReport" level="Global" />
+    <RolePrivilege name="prvAssignReport" level="Global" />
+    <RolePrivilege name="prvAssignUserForm" level="Basic" />
+    <RolePrivilege name="prvAssignUserQuery" level="Basic" />
+    <RolePrivilege name="prvAssignUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvCreateReport" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvCreateUserForm" level="Basic" />
+    <RolePrivilege name="prvCreateUserQuery" level="Basic" />
+    <RolePrivilege name="prvCreateUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvCreateWebWizard" level="Global" />
+    <RolePrivilege name="prvCreateWizardAccessPrivilege" level="Global" />
+    <RolePrivilege name="prvCreateWizardPage" level="Global" />
+    <RolePrivilege name="prvDeleteUserForm" level="Basic" />
+    <RolePrivilege name="prvDeleteUserQuery" level="Basic" />
+    <RolePrivilege name="prvDeleteUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvPublishOrgReport" level="Global" />
+    <RolePrivilege name="prvPublishRSReport" level="Global" />
+    <RolePrivilege name="prvReadAuditPartitions" level="Global" />
+    <RolePrivilege name="prvReadAuditSummary" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadRecordAuditHistory" level="Global" />
+    <RolePrivilege name="prvReadReport" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadUserForm" level="Basic" />
+    <RolePrivilege name="prvReadUserQuery" level="Basic" />
+    <RolePrivilege name="prvReadUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvReadWebWizard" level="Global" />
+    <RolePrivilege name="prvReadWizardAccessPrivilege" level="Global" />
+    <RolePrivilege name="prvReadWizardPage" level="Global" />
+    <RolePrivilege name="prvShareReport" level="Global" />
+    <RolePrivilege name="prvShareUserForm" level="Basic" />
+    <RolePrivilege name="prvShareUserQuery" level="Basic" />
+    <RolePrivilege name="prvShareUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvWriteReport" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+    <RolePrivilege name="prvWriteUserForm" level="Basic" />
+    <RolePrivilege name="prvWriteUserQuery" level="Basic" />
+    <RolePrivilege name="prvWriteUserQueryVisualizations" level="Basic" />
+    <RolePrivilege name="prvWriteWebWizard" level="Global" />
+    <RolePrivilege name="prvWriteWizardAccessPrivilege" level="Global" />
+    <RolePrivilege name="prvWriteWizardPage" level="Global" />
+  </RolePrivileges>
+</Role>

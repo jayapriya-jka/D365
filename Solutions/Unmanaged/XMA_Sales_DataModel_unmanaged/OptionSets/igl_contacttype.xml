@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_contacttype" localizedName="Contact Type_Choice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Contact Type_Choice" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="Vendor" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001">
+      <labels>
+        <label description="Customer" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002">
+      <labels>
+        <label description="Partner" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003">
+      <labels>
+        <label description="Supplier" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004">
+      <labels>
+        <label description="Internal" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

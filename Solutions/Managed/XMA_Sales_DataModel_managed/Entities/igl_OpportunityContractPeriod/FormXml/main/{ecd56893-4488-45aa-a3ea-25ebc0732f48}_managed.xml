@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ecd56893-4488-45aa-a3ea-25ebc0732f48}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{f80c9cfc-3742-444b-b84f-a827f6f6eed2}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{372bb58a-7ede-4560-b3e0-392fdff1ba86}" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d04b7dfa-1af2-4afa-a02c-ecb3bbabbb5b}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="igl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="igl_name" />
+                      </cell>
+                      <cell id="{596741f2-996f-4615-b71e-85793fcce758}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Est Revenue" languagecode="1033" />
+                        </labels>
+                        <control id="igl_estrevenue_value" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_estrevenue_value" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75e8bf0e-1568-4ddd-9c29-b4fe30d6c637}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Est Close Date" languagecode="1033" />
+                        </labels>
+                        <control id="igl_estclosedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="igl_estclosedate" disabled="false" />
+                      </cell>
+                      <cell id="{5e8121c3-09d0-4b1d-a7ce-0aa6c198ea98}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Margin" languagecode="1033" />
+                        </labels>
+                        <control id="igl_margin_value" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="igl_margin_value" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bbe2513-0443-4865-8c05-a3b8c0cd9df7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="igl_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="igl_description" disabled="false" />
+                      </cell>
+                      <cell id="{aa441dbf-728a-4ac7-92fa-ef25a9d81b63}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="igl_opportunity_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_opportunity_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5576e1c1-c594-4917-8206-501db1b86df4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Forecast Category" languagecode="1033" />
+                        </labels>
+                        <control id="igl_forecastcategory_code" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="igl_forecastcategory_code" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{438d0968-16fa-4c61-9119-1615fe924b15}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8d740c07-260b-41b2-b5d2-213deaa5af39}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{191f9efe-e05e-4c3a-911d-1c9149cebc95}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{92c8c1fc-a46c-4635-bebb-4e1f9a88bcf5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{15d2c6cf-ac2b-4560-9dd1-9515d4c913b2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a1d8ec41-db7d-4d63-9734-d085976ae70d}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{cb7ace72-bdfd-493a-913f-bc9d864d9dad}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3a7ccbe9-5183-4a33-bea1-9ce02a35b09c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9d550550-f0d8-44b4-ab76-456e5842244b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{54f17905-574d-4eaa-8a87-0a60578f35e2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

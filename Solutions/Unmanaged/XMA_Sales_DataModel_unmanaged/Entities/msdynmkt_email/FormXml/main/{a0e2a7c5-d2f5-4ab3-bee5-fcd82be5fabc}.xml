@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a0e2a7c5-d2f5-4ab3-bee5-fcd82be5fabc}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" solutionaction="Modified">
+      <tabs>
+        <tab verticallayout="true" id="{ab58b287-6c6e-4337-9ad6-abf4d3f8ac68}" contenttype="expandAvailableSpace" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="{ab58b287-6c6e-4337-9ad6-abf4d3f8ac68}_section_2" showlabel="false" showbar="false" locklevel="0" id="{d3d493ab-856d-860c-4d20-b509b749eb81}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false" ordinalvalue="1">
+                  <rows>
+                    <row>
+                      <cell id="{b67053e1-ba0d-8d3b-d0e8-0251bc9650ce}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10021" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{9355a3eb-c3e1-4795-a5b7-92d4d988e997}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10023" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{87c646ec-4d9d-4408-8237-4b22bcaa175a}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10024" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{d664ba34-cbdb-4104-a428-10486d16e37f}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10022" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{b5d67468-6e17-69d5-9ea6-1dd13b55199c}" showlabel="true" locklevel="0" ordinalvalue="10020" solutionaction="Added">
+                        <labels>
+                          <label description="XMA Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{1FF20C3C-FB91-4C7A-BC57-2503410222EA}" solutionaction="Modified">
+          <customControl formFactor="0" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_to</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_to</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_to</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{8679259A-A0C4-4C16-98F0-5B45A03C700A}" solutionaction="Modified">
+          <customControl formFactor="0" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_replytoemail</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_replytoemail</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_replytoemail</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <isReadOnly static="true" type="Enum">false</isReadOnly>
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">true</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+              <inlinedActionsBar static="true" type="Enum">true</inlinedActionsBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{2A650417-D893-4B25-9B87-382E8D842225}" solutionaction="Modified">
+          <customControl formFactor="0" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MsdynmktControls.RichTextControl.RichTextControl">
+            <parameters>
+              <value>msdynmkt_textpart</value>
+              <placeholder static="true" type="SingleLine.Text" />
+              <emojiPickerEnabled static="true" type="Enum">false</emojiPickerEnabled>
+              <isSingleLine static="true" type="Enum">false</isSingleLine>
+              <personalizationEnabled static="true" type="Enum">true</personalizationEnabled>
+              <personalizationPlaceholders>msdynmkt_placeholders</personalizationPlaceholders>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <footer id="{16ca6cc1-697f-4e2e-b2a1-0cab21988466}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left" solutionaction="Added">
+        <rows></rows>
+      </footer>
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

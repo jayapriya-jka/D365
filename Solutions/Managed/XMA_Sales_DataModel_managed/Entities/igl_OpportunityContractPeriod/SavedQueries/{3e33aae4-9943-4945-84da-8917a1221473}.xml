@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3e33aae4-9943-4945-84da-8917a1221473}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="igl_name" select="1" icon="1" preview="1">
+        <row name="result" id="igl_opportunitycontractperiodid">
+          <cell name="igl_name" width="173" />
+          <cell name="igl_estclosedate" width="132" />
+          <cell name="igl_estrevenue_value" width="100" />
+          <cell name="igl_margin_value" width="100" />
+          <cell name="igl_forecastcategory_code" width="161" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="igl_opportunitycontractperiod">
+          <attribute name="igl_opportunitycontractperiodid" />
+          <attribute name="igl_name" />
+          <attribute name="createdon" />
+          <attribute name="igl_estclosedate" />
+          <attribute name="igl_estrevenue_value" />
+          <attribute name="igl_margin_value" />
+          <attribute name="igl_forecastcategory_code" />
+          <attribute name="createdby" />
+          <order attribute="igl_estclosedate" descending="false" />
+          <order attribute="igl_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Opportunity Contract Periods" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

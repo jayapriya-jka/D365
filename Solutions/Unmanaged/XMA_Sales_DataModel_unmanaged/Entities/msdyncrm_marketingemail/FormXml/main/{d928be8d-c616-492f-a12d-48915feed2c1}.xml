@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d928be8d-c616-492f-a12d-48915feed2c1}</formid>
+    <IntroducedVersion>1.0.541.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="designTab" id="{e318b8e7-70e6-49b1-8d37-a9c4000f8072}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" contenttype="singleComponent" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="DesignSection" showlabel="false" showbar="false" locklevel="0" id="{d895c49d-715c-41e5-9c97-5e17200ce09a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{91c893ec-337c-4430-8d8d-85d862983b0b}" showlabel="false" locklevel="0" colspan="2" ordinalvalue="10001">
+                        <control id="msdyncrm_subject" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_subject" disabled="false" uniqueid="{76766137-B9B5-4D20-AB65-7D880017134C}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd021e3d-d5dc-4f8b-905b-a25ac0cfc0d7}" showlabel="false" ordinalvalue="20003" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{3415e43b-d233-45f7-8a00-04d53c61b4eb}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10007" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{97ad9671-1c58-4f9d-9288-d66d4974f6bd}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10009" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{b1c23cf7-0cd4-402a-8b3a-e733e8f1f360}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10011" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{3d92d306-cfa2-43f0-8976-77114926be0d}" visible="false" showlabel="true" locklevel="0" ordinalvalue="10013" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{9b4a46e7-5103-4184-877e-ada5bb9ee10d}" visible="false" showlabel="true" locklevel="0" ordinalvalue="10015" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{7e7ae7f3-eb28-4f78-b21d-42f8b066be37}" visible="false" showlabel="true" locklevel="0" rowspan="2" labelid="{886c6e91-4125-45ca-8117-2133c4ac6535}" ordinalvalue="10017" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{5ffb947e-4744-406e-9d86-95f938e9c6dc}" showlabel="true" visible="false" locklevel="0" ordinalvalue="20006" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{2890f6d9-2dcf-402c-9533-0afcc00bbbfe}" showlabel="true" visible="false" locklevel="0" ordinalvalue="10020" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{6e301282-0901-483b-aed1-4f70bab5be77}" showlabel="true" visible="false" locklevel="0" ordinalvalue="10022" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{110e8561-1329-4f9b-92dc-3952c063c8c1}" showlabel="true" visible="false" locklevel="0" rowspan="6" labelid="{0b3b5862-c4f2-430a-9692-360d47f9ea24}" ordinalvalue="10024" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{41020d0b-baca-4e59-9e2b-d215d5269c2a}" showlabel="false" locklevel="1" labelid="{720c0cab-71a4-4ac9-adcb-bf5acd7fb1db}" visible="false" ordinalvalue="20008" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{a30d0cf3-c308-4e56-b894-d1b9bdfd32ad}" showlabel="true" locklevel="0" visible="false" ordinalvalue="20010" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{2fb55d23-f14c-4dc3-94cf-cc956f0a04f3}" showlabel="true" locklevel="0" visible="false" ordinalvalue="20012" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{e6193459-7808-4ec8-8e7c-c6e71799bcd0}" showlabel="true" locklevel="0" visible="false" ordinalvalue="20014" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{456a977e-f6fb-4fbb-b64b-67af048546be}" showlabel="false" locklevel="0" visible="false" ordinalvalue="20016" solutionaction="Modified">
+                        <labels>
+                          <label description="Test Configuration" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{128d4f53-3588-4db9-9132-a9ef9744075b}" showlabel="false" locklevel="0" visible="false" ordinalvalue="10031" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{1e116628-0999-4950-88eb-123333bf50ac}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10033" solutionaction="Modified">
+                        <control id="msdyncrm_contentsettingscompanyaddress" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_contentsettingscompanyaddress" disabled="false" uniqueid="{2271713E-16CF-406D-AD20-41F63BA7FBC0}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cbb6987e-e5f2-4c17-ad06-aa3c9d3196e8}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10035" solutionaction="Modified">
+                        <control id="msdyncrm_templateid" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_templateid" disabled="false" uniqueid="{A270D83F-ED60-4CFA-BC87-EB9BA23CCC13}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b69018d-3db0-6a2d-6dc0-09ca9381e558}" showlabel="true" locklevel="0" ordinalvalue="20018" solutionaction="Added">
+                        <labels>
+                          <label description="XMA Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="igl_xmacampaign_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="igl_xmacampaign_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0b897daa-2a95-4b55-b899-89cd7973556d}" ordinalvalue="20019" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c035da8b-8034-4567-9491-8a1ad1208216}" ordinalvalue="20021" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82da45eb-bca1-4dcb-b40f-d1d7eb0c6ff5}" ordinalvalue="20023" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f5ef5247-3d4a-46f2-9a2a-ec04d8f8cd78}" ordinalvalue="20025" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5072b83-eae7-4014-9f7a-d09cbeea48cd}" ordinalvalue="20026" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d71b8af-7073-4fdd-9c5a-c65434a42264}" ordinalvalue="20027" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{95162e28-6d94-4c5e-b063-da36a4a2e4f3}" ordinalvalue="20028" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d3b636e-f269-4251-a301-b29a1197b1cd}" ordinalvalue="20029" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e5a41f8f-65a8-4651-b6f1-7dd82dba7e7c}" ordinalvalue="20030" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1f13fb6d-dc6d-4be5-afa2-290405113556}" ordinalvalue="20032" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36a08012-dec4-43e5-b1b4-c092dffe6d47}" ordinalvalue="20034" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e814ac3-b4ea-4ccc-bc6d-c923f4637391}" ordinalvalue="20036" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ee36b0af-ccc4-40dd-9ece-1e37c61d6790}" columns="111" labelwidth="250" celllabelalignment="Left" celllabelposition="Top" showcommandbar="false" showbody="false" showtabnavigator="false">
+        <rows>
+          <row>
+            <cell id="{19abb146-444d-709c-0566-ed74c3931120}" showlabel="true" locklevel="0" ordinalvalue="30002">
+              <control id="header_msdyncrm_subject" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_subject" disabled="false" uniqueid="{085AD248-FD8A-4EAA-97CD-B99A5808643A}" solutionaction="Modified" />
+            </cell>
+            <cell id="{692c5518-63c0-56b6-5982-9535ed214e59}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Modified" />
+            <cell id="{3f941460-c26d-43f6-81be-f81e7aa35726}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10006" solutionaction="Modified">
+              <control id="header_msdyncrm_subject_upgrade_hotfix" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="msdyncrm_subject" disabled="false" uniqueid="{02520697-0402-2C0D-52AA-291DDA641C7B}" solutionaction="Modified" />
+            </cell>
+          </row>
+          <row>
+            <cell id="{d934b0df-6085-41ca-8726-8188d8e45249}" ordinalvalue="20004" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8bd4da33-f069-4046-899e-b1eccfa036ee}" ordinalvalue="30005" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+          <row>
+            <cell id="{7826f504-3545-496d-a6ff-909f9f15b3c2}" ordinalvalue="20007" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d6b0b166-2fe8-45de-97ff-0edf3bd7c32e}" ordinalvalue="30008" solutionaction="Added">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <controlDescriptions>
+        <controlDescription forControl="{085AD248-FD8A-4EAA-97CD-B99A5808643A}" solutionaction="Modified">
+          <customControl formFactor="0" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{A270D83F-ED60-4CFA-BC87-EB9BA23CCC13}" solutionaction="Modified">
+          <customControl id="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+            <parameters>
+              <datafieldname>msdyncrm_templateid</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.TemplatePickerControl.TemplatePickerControl">
+            <parameters>
+              <value>
+                <BindAttribute>msdyncrm_templateid</BindAttribute>
+                <DefaultViewId>{B4878C66-5243-E611-80D6-00155DB852EB}</DefaultViewId>
+                <FilterRelationshipName />
+                <DependentAttributeName />
+                <DependentAttributeType />
+                <AvailableViewIds />
+                <AllowFilterOff>false</AllowFilterOff>
+                <DisableQuickFind>false</DisableQuickFind>
+                <DisableViewPicker>false</DisableViewPicker>
+              </value>
+              <FilterFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</FilterFormId>
+              <PropertiesFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</PropertiesFormId>
+              <TitleAttribute static="true" type="SingleLine.Text">msdyncrm_name</TitleAttribute>
+              <HtmlAttribute static="true" type="SingleLine.Text">msdyncrm_emailbody</HtmlAttribute>
+              <LabelAttribute static="true" type="SingleLine.Text">msdyncrm_label</LabelAttribute>
+              <DefaultLanguageFilterAttribute static="true" type="SingleLine.Text">msdyncrm_language</DefaultLanguageFilterAttribute>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.TemplatePickerControl.TemplatePickerControl">
+            <parameters>
+              <value>
+                <BindAttribute>msdyncrm_templateid</BindAttribute>
+                <DefaultViewId>{B4878C66-5243-E611-80D6-00155DB852EB}</DefaultViewId>
+                <FilterRelationshipName />
+                <DependentAttributeName />
+                <DependentAttributeType />
+                <AvailableViewIds />
+                <AllowFilterOff>false</AllowFilterOff>
+                <DisableQuickFind>false</DisableQuickFind>
+                <DisableViewPicker>false</DisableViewPicker>
+              </value>
+              <FilterFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</FilterFormId>
+              <PropertiesFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</PropertiesFormId>
+              <TitleAttribute static="true" type="SingleLine.Text">msdyncrm_name</TitleAttribute>
+              <HtmlAttribute static="true" type="SingleLine.Text">msdyncrm_emailbody</HtmlAttribute>
+              <LabelAttribute static="true" type="SingleLine.Text">msdyncrm_label</LabelAttribute>
+              <DefaultLanguageFilterAttribute static="true" type="SingleLine.Text">msdyncrm_language</DefaultLanguageFilterAttribute>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.TemplatePickerControl.TemplatePickerControl">
+            <parameters>
+              <value>
+                <BindAttribute>msdyncrm_templateid</BindAttribute>
+                <DefaultViewId>{B4878C66-5243-E611-80D6-00155DB852EB}</DefaultViewId>
+                <FilterRelationshipName />
+                <DependentAttributeName />
+                <DependentAttributeType />
+                <AvailableViewIds />
+                <AllowFilterOff>false</AllowFilterOff>
+                <DisableQuickFind>false</DisableQuickFind>
+                <DisableViewPicker>false</DisableViewPicker>
+              </value>
+              <FilterFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</FilterFormId>
+              <PropertiesFormId static="true" type="SingleLine.Text">8247FF67-46D8-4D4D-802F-6E07401D51E7</PropertiesFormId>
+              <TitleAttribute static="true" type="SingleLine.Text">msdyncrm_name</TitleAttribute>
+              <HtmlAttribute static="true" type="SingleLine.Text">msdyncrm_emailbody</HtmlAttribute>
+              <LabelAttribute static="true" type="SingleLine.Text">msdyncrm_label</LabelAttribute>
+              <DefaultLanguageFilterAttribute static="true" type="SingleLine.Text">msdyncrm_language</DefaultLanguageFilterAttribute>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{76766137-B9B5-4D20-AB65-7D880017134C}" solutionaction="Modified">
+          <customControl formFactor="2" name="MscrmControls.Marketing.EmailFormControl.EmailFormControl">
+            <parameters>
+              <testConfig type="Multiple">msdyncrm_testconfiguration</testConfig>
+              <formToSave>msdyncrm_formtosave</formToSave>
+              <preheaderValue type="SingleLine.Text">msdyncrm_previewtext</preheaderValue>
+              <subject type="SingleLine.Text">msdyncrm_subject</subject>
+              <fromName type="SingleLine.Text">msdyncrm_fromname</fromName>
+              <fromEmail type="SingleLine.Text">msdyncrm_fromemail</fromEmail>
+              <to type="SingleLine.Text">msdyncrm_to</to>
+              <htmlPart type="Multiple">msdyncrm_designerhtml</htmlPart>
+              <uiVersion static="true" type="SingleLine.Text">v2</uiVersion>
+              <statusCode type="OptionSet">statuscode</statusCode>
+              <configurationName static="true" type="SingleLine.Text">emaileditor</configurationName>
+              <v1FormId static="true" type="SingleLine.Text">b4b344dd-5e56-49ce-af8d-79fd84be37d9</v1FormId>
+              <v2FormId static="true" type="SingleLine.Text">d928be8d-c616-492f-a12d-48915feed2c1</v2FormId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Marketing.EmailFormControl.EmailFormControl">
+            <parameters>
+              <testConfig type="Multiple">msdyncrm_testconfiguration</testConfig>
+              <formToSave>msdyncrm_formtosave</formToSave>
+              <preheaderValue type="SingleLine.Text">msdyncrm_previewtext</preheaderValue>
+              <subject type="SingleLine.Text">msdyncrm_subject</subject>
+              <fromName type="SingleLine.Text">msdyncrm_fromname</fromName>
+              <fromEmail type="SingleLine.Text">msdyncrm_fromemail</fromEmail>
+              <to type="SingleLine.Text">msdyncrm_to</to>
+              <htmlPart type="Multiple">msdyncrm_designerhtml</htmlPart>
+              <uiVersion static="true" type="SingleLine.Text">v2</uiVersion>
+              <statusCode type="OptionSet">statuscode</statusCode>
+              <configurationName static="true" type="SingleLine.Text">emaileditor</configurationName>
+              <v1FormId static="true" type="SingleLine.Text">b4b344dd-5e56-49ce-af8d-79fd84be37d9</v1FormId>
+              <v2FormId static="true" type="SingleLine.Text">d928be8d-c616-492f-a12d-48915feed2c1</v2FormId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Marketing.EmailFormControl.EmailFormControl">
+            <parameters>
+              <testConfig type="Multiple">msdyncrm_testconfiguration</testConfig>
+              <formToSave>msdyncrm_formtosave</formToSave>
+              <preheaderValue type="SingleLine.Text">msdyncrm_previewtext</preheaderValue>
+              <subject type="SingleLine.Text">msdyncrm_subject</subject>
+              <fromName type="SingleLine.Text">msdyncrm_fromname</fromName>
+              <fromEmail type="SingleLine.Text">msdyncrm_fromemail</fromEmail>
+              <to type="SingleLine.Text">msdyncrm_to</to>
+              <htmlPart type="Multiple">msdyncrm_designerhtml</htmlPart>
+              <uiVersion static="true" type="SingleLine.Text">v2</uiVersion>
+              <statusCode type="OptionSet">statuscode</statusCode>
+              <configurationName static="true" type="SingleLine.Text">emaileditor</configurationName>
+              <v1FormId static="true" type="SingleLine.Text">b4b344dd-5e56-49ce-af8d-79fd84be37d9</v1FormId>
+              <v2FormId static="true" type="SingleLine.Text">d928be8d-c616-492f-a12d-48915feed2c1</v2FormId>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{02520697-0402-2C0D-52AA-291DDA641C7B}" solutionaction="Modified">
+          <customControl formFactor="0" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.AssistEditControlV2.AssistEditControlV2">
+            <parameters>
+              <value type="SingleLine.Text">msdyncrm_subject</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{2271713E-16CF-406D-AD20-41F63BA7FBC0}" solutionaction="Modified">
+          <customControl formFactor="0" name="MsdynmktControls.CompanyAddressControl.CompanyAddressControl">
+            <parameters>
+              <value>msdyncrm_contentsettingscompanyaddress</value>
+              <useMktVersion static="true" type="Enum">true</useMktVersion>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MsdynmktControls.CompanyAddressControl.CompanyAddressControl">
+            <parameters>
+              <value>msdyncrm_contentsettingscompanyaddress</value>
+              <useMktVersion static="true" type="Enum">true</useMktVersion>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MsdynmktControls.CompanyAddressControl.CompanyAddressControl">
+            <parameters>
+              <value>msdyncrm_contentsettingscompanyaddress</value>
+              <useMktVersion static="true" type="Enum">true</useMktVersion>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="New editing experience" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The new full page designer form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

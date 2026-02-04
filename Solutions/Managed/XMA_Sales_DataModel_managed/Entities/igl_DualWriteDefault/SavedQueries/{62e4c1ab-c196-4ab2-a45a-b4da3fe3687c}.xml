@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{62e4c1ab-c196-4ab2-a45a-b4da3fe3687c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="igl_name" select="1" icon="1" preview="1">
+        <row name="result" id="igl_dualwritedefaultid">
+          <cell name="igl_name" width="100" />
+          <cell name="igl_company_id" width="100" />
+          <cell name="igl_salestaxgroup_id" width="140" />
+          <cell name="igl_customergroup_id" width="160" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="igl_dualwritedefault">
+          <attribute name="igl_dualwritedefaultid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="igl_company_id" />
+          <attribute name="igl_salestaxgroup_id" />
+          <attribute name="igl_customergroup_id" />
+          <attribute name="igl_name" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Dual Write Defaults" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

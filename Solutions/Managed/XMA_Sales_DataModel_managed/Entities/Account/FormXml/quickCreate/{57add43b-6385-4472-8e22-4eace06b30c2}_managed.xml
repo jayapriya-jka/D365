@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{57add43b-6385-4472-8e22-4eace06b30c2}</formid>
+    <IntroducedVersion>2.4.6.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{ef200ce3-a1f0-49c0-8bc7-ab1beb78868a}" name="tab_1" showlabel="false" expanded="true" locklevel="0" ordinalvalue="0">
+          <columns>
+            <column width="33%" id="0">
+              <sections>
+                <section id="{4cc0d36b-5343-4778-83cb-bdd60c8345dc}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{2b7c756c-c1c4-5056-0036-b17dcdd2370a}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{36d323e5-ce93-08ec-34c3-d43dbd8da3d4}" showlabel="true" locklevel="0" ordinalvalue="10005" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{da379376-7392-e87a-167a-a9a45a14d987}" showlabel="true" locklevel="0" ordinalvalue="10006" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{b269c657-1796-d827-b7da-130dccb01e85}" showlabel="true" locklevel="0" ordinalvalue="10007" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{eb60db7a-707b-2192-d767-57a528954878}" showlabel="true" locklevel="0" ordinalvalue="10008" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{8801e5aa-d0ae-1d97-ab38-a346cb57c909}" showlabel="true" locklevel="0" ordinalvalue="10009" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{a3d132d9-cb24-668d-422d-2d8669eb0a6d}" showlabel="true" locklevel="0" ordinalvalue="10010" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{ebd535aa-8de1-2ea1-1e80-d4293826882a}" showlabel="true" locklevel="0" ordinalvalue="10011" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{6834359d-44b2-46ed-a808-2081581910a5}" locklevel="0" colspan="1" rowspan="1" visible="false" ordinalvalue="10001" solutionaction="Added">
+                        <labels>
+                          <label description="Company" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_company" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_company" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dfe508a8-2366-4d1c-91ca-b4d7d586968a}" locklevel="0" colspan="1" rowspan="1" visible="false" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="Customer Group Id" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_customergroupid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_customergroupid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ee6c12a-652e-4805-b015-66e04cefeb2b}" locklevel="0" colspan="1" rowspan="1" visible="false" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="Sales Tax Group" languagecode="1033" />
+                        </labels>
+                        <control id="msdyn_salestaxgroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msdyn_salestaxgroup" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="D&amp;B Account Quick Create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Quick form to create a new Account record." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

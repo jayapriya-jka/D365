@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f93461df-bd6b-e711-a826-000d3a337469}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msdyncrm_subject" select="1" icon="1" preview="1">
+        <row name="result" id="msdyncrm_marketingemailid">
+          <cell name="msdyncrm_name" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="msdyncrm_subject" width="300" />
+          <cell name="igl_xmacampaign_id" width="120" />
+          <cell name="msdyncrm_description" width="100" disableSorting="1" />
+          <cell name="createdon" width="125" />
+          <cell name="ownerid" width="100" />
+          <cell name="msdyncrm_fromemail" width="100" />
+          <cell name="msdyncrm_templateid" width="100" />
+          <cell name="modifiedby" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="msdyncrm_replytoemail" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msdyncrm_marketingemail">
+          <attribute name="msdyncrm_subject" />
+          <attribute name="createdon" />
+          <order attribute="msdyncrm_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msdyncrm_name" />
+          <attribute name="msdyncrm_description" />
+          <attribute name="statuscode" />
+          <attribute name="ownerid" />
+          <attribute name="msdyncrm_templateid" />
+          <attribute name="msdyncrm_fromemail" />
+          <attribute name="msdyncrm_replytoemail" />
+          <attribute name="modifiedon" />
+          <attribute name="modifiedby" />
+          <attribute name="msdyncrm_marketingemailid" />
+          <attribute name="igl_xmacampaign_id" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active marketing emails (dashboard)" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

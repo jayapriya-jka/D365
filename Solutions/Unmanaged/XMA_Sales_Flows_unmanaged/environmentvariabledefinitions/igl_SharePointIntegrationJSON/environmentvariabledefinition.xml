@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="igl_SharePointIntegrationJSON">
+  <defaultvalue>{     "sharepointURL": "https://xmalimited.sharepoint.com/sites/DynamicsXMADev",     "dynamicsBaseURL":"https://xma-dev.crm4.dynamics.com",     "bidFolderNames": [         "Clarification",         "Control Docs",         "Our Response",         "Post Submission Clarification",         "Decision and Feedback",         "Handover"     ] }</defaultvalue>
+  <displayname default="SharePoint Integration JSON">
+    <label description="SharePoint Integration JSON" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000003</type>
+</environmentvariabledefinition>

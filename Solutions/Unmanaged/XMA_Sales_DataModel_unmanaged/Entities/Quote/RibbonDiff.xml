@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="igl.Mscrm.Form.quote.ActivateQuote.Hide" Location="Mscrm.Form.quote.ActivateQuote" />
+    <HideCustomAction HideActionId="igl.Mscrm.Form.quote.CloseQuote.Hide" Location="Mscrm.Form.quote.CloseQuote" />
+    <HideCustomAction HideActionId="igl.Mscrm.Form.quote.CreateOrder.Hide" Location="Mscrm.Form.quote.CreateOrder" />
+    <HideCustomAction HideActionId="igl.Mscrm.Form.quote.ReviseQuote.Hide" Location="Mscrm.Form.quote.ReviseQuote" />
+    <CustomAction Id="igl.quote.ConvertOrderButton.CustomAction" Location="Mscrm.Form.quote.MainTab.Save.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Command="igl.quote.ConvertToOrderCommand" Id="igl.quote.ConvertOrderButton" Image32by32="$webresource:dnb_logo32" LabelText="$LocLabels:igl.quote.ConvertOrderButton.LabelText" Sequence="95" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="igl.quote.ConvertToOrderCommand">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="igl.quote.ConvertToOrderDisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="execute" Library="$webresource:igl_XMA_Convert_To_Order">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="igl.quote.ConvertToOrderDisplayRule">
+        <ValueRule Field="statuscode" Value="2" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="igl.quote.ConvertOrderButton.LabelText">
+      <Titles>
+        <Title description="Convert To order" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

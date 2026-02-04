@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{276899a8-d3fd-ec11-82e5-000d3adf237f}" name="XMA Support" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendigl_Brand" level="Global" />
+    <RolePrivilege name="prvAppendigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvAppendigl_Framework" level="Global" />
+    <RolePrivilege name="prvAppendigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvAppendToigl_Brand" level="Global" />
+    <RolePrivilege name="prvAppendToigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvAppendToigl_Framework" level="Global" />
+    <RolePrivilege name="prvAppendToigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvAssignigl_Brand" level="Global" />
+    <RolePrivilege name="prvAssignigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvAssignigl_Framework" level="Global" />
+    <RolePrivilege name="prvAssignigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvCreateAccount" level="Global" />
+    <RolePrivilege name="prvCreateigl_Brand" level="Global" />
+    <RolePrivilege name="prvCreateigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvCreateigl_Framework" level="Global" />
+    <RolePrivilege name="prvCreateigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeleteigl_Brand" level="Global" />
+    <RolePrivilege name="prvDeleteigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvDeleteigl_Framework" level="Global" />
+    <RolePrivilege name="prvDeleteigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvReadAccount" level="Global" />
+    <RolePrivilege name="prvReadigl_Brand" level="Global" />
+    <RolePrivilege name="prvReadigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvReadigl_Framework" level="Global" />
+    <RolePrivilege name="prvReadigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvShareigl_Brand" level="Global" />
+    <RolePrivilege name="prvShareigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvShareigl_Framework" level="Global" />
+    <RolePrivilege name="prvShareigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvWriteAccount" level="Global" />
+    <RolePrivilege name="prvWriteigl_Brand" level="Global" />
+    <RolePrivilege name="prvWriteigl_DealRegistrations" level="Global" />
+    <RolePrivilege name="prvWriteigl_Framework" level="Global" />
+    <RolePrivilege name="prvWriteigl_Leadtechnologies" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

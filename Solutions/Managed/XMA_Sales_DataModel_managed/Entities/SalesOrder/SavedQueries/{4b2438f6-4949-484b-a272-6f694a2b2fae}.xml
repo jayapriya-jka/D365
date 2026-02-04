@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4b2438f6-4949-484b-a272-6f694a2b2fae}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="salesorderid">
+          <cell name="msdyn_salesordernumber" width="100" />
+          <cell name="name" width="300" />
+          <cell name="msdyn_customersorderreference" width="130" />
+          <cell name="msdyn_processingstatus" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="totalamount" width="100" />
+          <cell name="customerid" width="150" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="salesorder">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <attribute name="totalamount" />
+          <attribute name="statuscode" />
+          <attribute name="customerid" />
+          <attribute name="salesorderid" />
+          <attribute name="msdyn_salesordernumber" />
+          <attribute name="msdyn_processingstatus" />
+          <attribute name="createdby" />
+          <attribute name="ownerid" />
+          <attribute name="msdyn_customersorderreference" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Orders" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

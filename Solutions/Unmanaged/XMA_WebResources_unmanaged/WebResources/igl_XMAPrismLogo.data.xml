@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{3dc6c3f5-71c5-ec11-a7b6-000d3adaf5bd}</WebResourceId>
+  <Name>igl_XMAPrismLogo</Name>
+  <DisplayName>XMA Prism Logo</DisplayName>
+  <Description>Custom logo for XMA theme</Description>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/igl_XMAPrismLogo3DC6C3F5-71C5-EC11-A7B6-000D3ADAF5BD</FileName>
+</WebResource>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityMap>
+    <EntitySource>lead</EntitySource>
+    <EntityTarget>contact</EntityTarget>
+    <AttributeMaps>
+      <AttributeMap>
+        <AttributeSource>igl_contacttype_code</AttributeSource>
+        <AttributeTarget>igl_contacttype_code</AttributeTarget>
+      </AttributeMap>
+      <AttributeMap>
+        <AttributeSource>igl_jobfunction_code</AttributeSource>
+        <AttributeTarget>igl_jobfunction_code</AttributeTarget>
+      </AttributeMap>
+      <AttributeMap>
+        <AttributeSource>igl_jobseniority_code</AttributeSource>
+        <AttributeTarget>igl_jobseniority_code</AttributeTarget>
+      </AttributeMap>
+    </AttributeMaps>
+  </EntityMap>
+</EntityMaps>

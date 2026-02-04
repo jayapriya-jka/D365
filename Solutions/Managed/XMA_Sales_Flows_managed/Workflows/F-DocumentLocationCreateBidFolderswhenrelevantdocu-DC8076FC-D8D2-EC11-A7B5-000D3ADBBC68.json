@@ -1,0 +1,151 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "igl_sharedcommondataserviceforapps_922c4"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "d3081349-635b-4b39-badb-b764d6c88381"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 1,
+              "subscriptionRequest/entityname": "sharepointdocumentlocation",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filterexpression": "_regardingobjectid_value ne null"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Check_if_Opp_is_Bid": {
+              "actions": {
+                "Run_a_Child_Flow": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "9f3a5f5b-27ca-43ca-9777-52c170fd2159"
+                  },
+                  "type": "Workflow",
+                  "inputs": {
+                    "host": {
+                      "workflowReferenceName": "8113a9ca-c6d2-ec11-a7b5-000d3adbbc68"
+                    },
+                    "body": {
+                      "text_1": "@triggerOutputs()?['body/_regardingobjectid_value']"
+                    }
+                  }
+                }
+              },
+              "runAfter": {
+                "Get_a_opportunity_by_ID": [
+                  "Succeeded"
+                ]
+              },
+              "else": {
+                "actions": {
+                  "Terminate": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "d338779d-e6af-4f57-99fb-49c83ebe1c90"
+                    },
+                    "type": "Terminate",
+                    "inputs": {
+                      "runStatus": "Cancelled"
+                    }
+                  }
+                }
+              },
+              "expression": {
+                "equals": [
+                  "@outputs('Get_a_opportunity_by_ID')?['body/igl_opportunitytype_code']",
+                  824300001
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "8ebe6e4a-5817-4b59-bf64-fa95e5e19030"
+              },
+              "type": "If"
+            },
+            "Get_a_opportunity_by_ID": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "464d0e8e-3862-4ae3-bd56-22fe9da09204"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "GetItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "opportunities",
+                  "recordId": "@triggerOutputs()?['body/_regardingobjectid_value']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {
+              "Terminate_2": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "89bd0b40-2b9b-42b5-832d-690f6af0ba48"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Cancelled"
+                }
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@triggerOutputs()?['body/_regardingobjectid_value@Microsoft.Dynamics.CRM.lookuplogicalname']",
+              "opportunity"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "86478813-ec7e-4655-908c-f0efd4bd228d"
+          },
+          "type": "If"
+        }
+      },
+      "outputs": {}
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

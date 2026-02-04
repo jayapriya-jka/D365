@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_wonqualityfeedbackcode" localizedName="Won Quality Feedback" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Won Quality Feedback" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="Closest match to specification" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="Exceeded specification" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="Quality scores exceeds competition" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="Strong customer pre-engagement" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004" ExternalValue="">
+      <labels>
+        <label description="Was not the cheapest option" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300005" ExternalValue="">
+      <labels>
+        <label description="Other (please specify)" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

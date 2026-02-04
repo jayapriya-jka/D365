@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2a9b9b42-8d9f-49e3-a61d-3388662fa2c2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="igl_name" select="1" icon="1" preview="1">
+        <row name="result" id="igl_brandid">
+          <cell name="igl_name" width="300" />
+          <cell name="igl_description" width="100" />
+          <cell name="statecode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="igl_brand">
+          <attribute name="igl_brandid" />
+          <attribute name="igl_name" />
+          <order attribute="igl_name" descending="false" />
+          <attribute name="igl_description" />
+          <attribute name="statecode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Brands" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

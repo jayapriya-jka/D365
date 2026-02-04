@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5071121a-6bf1-ec11-bb3d-000d3ab3ae16}</WebResourceId>
+  <Name>igl_XMA_Convert_To_Order</Name>
+  <DisplayName>XMA Convert To Order</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.1190</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/igl_XMA_Convert_To_Order5071121A-6BF1-EC11-BB3D-000D3AB3AE16</FileName>
+</WebResource>

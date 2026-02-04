@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="igl_nobidqualityfeedbackcode" localizedName="No Bid Quality Feedback" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="No Bid Quality Feedback" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="824300000" ExternalValue="">
+      <labels>
+        <label description="Bid written for a supplier" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300001" ExternalValue="">
+      <labels>
+        <label description="Delivery or other customer dissatisfactions issues" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300002" ExternalValue="">
+      <labels>
+        <label description="Lack of customer engagement" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300003" ExternalValue="">
+      <labels>
+        <label description="No Commercial engagement or interest" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300004" ExternalValue="">
+      <labels>
+        <label description="No Commercial Resource Available" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300005" ExternalValue="">
+      <labels>
+        <label description="No Technical Resource Available" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300006" ExternalValue="">
+      <labels>
+        <label description="No Bid Resource Available" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300007" ExternalValue="">
+      <labels>
+        <label description="Not Core Business" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300008" ExternalValue="">
+      <labels>
+        <label description="Unable to supply" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="824300009" ExternalValue="">
+      <labels>
+        <label description="Other (please specify)" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

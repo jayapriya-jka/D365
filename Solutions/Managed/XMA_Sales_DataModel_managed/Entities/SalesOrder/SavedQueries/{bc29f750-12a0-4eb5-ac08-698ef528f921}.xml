@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bc29f750-12a0-4eb5-ac08-698ef528f921}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="salesorderid">
+          <cell name="msdyn_salesordernumber" width="100" />
+          <cell name="name" width="300" />
+          <cell name="msdyn_customersorderreference" width="195" />
+          <cell name="msdyn_processingstatus" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="totalamount" width="100" />
+          <cell name="customerid" width="150" />
+          <cell name="ownerid" width="100" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="salesorder">
+          <order attribute="name" descending="false" />
+          <attribute name="name" />
+          <attribute name="totalamount" />
+          <attribute name="statuscode" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq-userid" />
+            <condition attribute="statecode" operator="in">
+              <value>0</value>
+              <value>1</value>
+            </condition>
+          </filter>
+          <attribute name="customerid" />
+          <attribute name="salesorderid" />
+          <attribute name="msdyn_salesordernumber" />
+          <attribute name="msdyn_processingstatus" />
+          <attribute name="createdby" />
+          <attribute name="ownerid" />
+          <attribute name="msdyn_customersorderreference" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Orders" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
