@@ -1,0 +1,14 @@
+<entities >
+  <entity name="igl_matrixrule" displayname="Matrix Rule" etc="11329" primaryidfield="igl_matrixruleid" primarynamefield="igl_name" disableplugins="false">
+    <fields>
+      <field displayname="Amount" name="igl_amount" type="money" customfield="true" />
+      <field displayname="Amount (Base)" name="igl_amount_base" type="money" customfield="true" />
+      <field displayname="Department" name="igl_department" type="optionsetvalue" customfield="true" />
+      <field displayname="Funded By" name="igl_fundedby" type="bool" customfield="true" />
+      <field displayname="Matrix Rule" name="igl_matrixruleid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="igl_name" type="string" customfield="true" />
+      <field displayname="Operator" name="igl_operator" type="optionsetvalue" customfield="true" />
+      <field displayname="Order" name="igl_order" type="number" customfield="true" />
+    </fields>
+  </entity>
+</entities>

@@ -1,0 +1,53 @@
+<entities >
+  <entity name="msdyncrm_marketingformtemplate" displayname="Marketing form template" etc="10568" primaryidfield="msdyncrm_marketingformtemplateid" primarynamefield="msdyncrm_name" disableplugins="false">
+    <fields>
+      <field displayname="Confirmation message" name="msdyncrm_confirmationmessage" type="string" customfield="true" />
+      <field displayname="Created by" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created by (delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" customfield="true" />
+      <field displayname="Error image URL" name="msdyncrm_errorimageurl" type="string" customfield="true" />
+      <field displayname="Error Message" name="msdyncrm_errormessage" type="string" customfield="true" />
+      <field displayname="Form control mapping" name="msdyncrm_formcontrolmapping" type="string" customfield="true" />
+      <field displayname="Form definition" name="msdyncrm_formdefinition" type="string" customfield="true" />
+      <field displayname="Form Field Mapping" name="msdyncrm_formfieldmapping" type="string" customfield="true" />
+      <field displayname="Form to save" name="msdyncrm_formtosave" type="bool" customfield="true" />
+      <field displayname="Form type" name="msdyncrm_validforpagetype" type="optionsetvalue" customfield="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Label" name="msdyncrm_label" type="optionsetvalue" customfield="true" />
+      <field displayname="Language" name="msdyncrm_language" type="optionsetvalue" customfield="true" />
+      <field displayname="Limit Exceeded Message" name="msdyncrm_limitexceededmessage" type="string" customfield="true" />
+      <field displayname="Marketing form template" name="msdyncrm_marketingformtemplateid" type="guid" primaryKey="true" />
+      <field displayname="Marketing provided" name="msdyncrm_marketingprovided" type="bool" customfield="true" />
+      <field displayname="Modified by" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified by (delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyncrm_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning business unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning user" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Purpose" name="msdyncrm_purpose" type="optionsetvalue" customfield="true" />
+      <field displayname="Record created on" name="overriddencreatedon" type="datetime" />
+      <field displayname="Redirect URL" name="msdyncrm_redirecturl" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Success image URL" name="msdyncrm_successimageurl" type="string" customfield="true" />
+      <field displayname="Tag" name="msdyncrm_tag" type="optionsetvalue" customfield="true" />
+      <field displayname="Thumbnail" name="entityimage" type="imagedata" customfield="true" />
+      <field displayname="Time-zone rule version number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Update contacts/leads" name="msdyncrm_entityupdatebehavioronsubmit" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC conversion time-zone code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Visual style" name="msdyncrm_visualstyle" type="optionsetvalue" customfield="true" />
+    </fields>
+    <relationships>
+      <relationship name="msdyncrm_formtemplate_marketingformfield" manyToMany="true" relatedEntityName="msdyncrm_formtemplate_marketingformfield" m2mTargetEntity="msdyncrm_marketingformfield" m2mTargetEntityPrimaryKey="msdyncrm_marketingformfieldid" />
+      <relationship name="msdyncrm_maktformtemp_msevtmgt_customregfield" manyToMany="true" relatedEntityName="msdyncrm_maktformtemp_msevtmgt_customregfield" m2mTargetEntity="msevtmgt_customregistrationfield" m2mTargetEntityPrimaryKey="msevtmgt_customregistrationfieldid" />
+    </relationships>
+    <filter> &lt;filter type="and"&gt;
+      &lt;condition attribute="statecode" operator="eq" value="0" /&gt;
+      &lt;condition attribute="msdyncrm_name" operator="like" value="%XMA%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>

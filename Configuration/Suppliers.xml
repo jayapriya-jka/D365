@@ -1,0 +1,8 @@
+<entities >
+  <entity name="igl_supplier" displayname="Supplier" etc="10826" primaryidfield="igl_supplierid" primarynamefield="igl_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="igl_name" type="string" customfield="true" />
+      <field displayname="Supplier" name="igl_supplierid" type="guid" primaryKey="true" />
+    </fields>
+  </entity>
+</entities>

@@ -1,0 +1,53 @@
+<entities >
+  <entity name="msdyncrm_marketingemailtemplate" displayname="Marketing email template" etc="10560" primaryidfield="msdyncrm_marketingemailtemplateid" primarynamefield="msdyncrm_name" disableplugins="false">
+    <fields>
+      <field displayname="Automatically generate text part" name="msdyncrm_automaticallygeneratetextpart" type="bool" customfield="true" />
+      <field displayname="Content type" name="msdyncrm_email_contenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Created by" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created by (delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Designer HTML" name="msdyncrm_designerhtml" type="string" customfield="true" />
+      <field displayname="Email body" name="msdyncrm_emailbody" type="string" customfield="true" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" customfield="true" />
+      <field displayname="Form to save" name="msdyncrm_formtosave" type="bool" customfield="true" />
+      <field displayname="From Email" name="msdyncrm_fromemail" type="string" customfield="true" />
+      <field displayname="From Name" name="msdyncrm_fromname" type="string" customfield="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Label" name="msdyncrm_label" type="optionsetvalue" customfield="true" />
+      <field displayname="Language" name="msdyncrm_language" type="optionsetvalue" customfield="true" />
+      <field displayname="Legal designation" name="msdyncrm_messagedesignation" type="optionsetvalue" customfield="true" />
+      <field displayname="Market type" name="msdyncrm_email_template_market_type_optionset" type="optionsetvalue" customfield="true" />
+      <field displayname="Marketing email template" name="msdyncrm_marketingemailtemplateid" type="guid" primaryKey="true" />
+      <field displayname="Marketing provided" name="msdyncrm_marketingprovided" type="bool" customfield="true" />
+      <field displayname="Modified by" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified by (delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyncrm_name" type="string" customfield="true" />
+      <field displayname="Optimized for" name="msdyncrm_email_template_optimizedfor_optionset" type="optionsetvalue" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning business unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning user" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Plain text" name="msdyncrm_textpart" type="string" customfield="true" />
+      <field displayname="Preview Text" name="msdyncrm_previewtext" type="string" customfield="true" />
+      <field displayname="Purpose" name="msdyncrm_email_template_purpose_optionset" type="optionsetvalue" customfield="true" />
+      <field displayname="Record created on" name="overriddencreatedon" type="datetime" />
+      <field displayname="Reply-to address" name="msdyncrm_replytoemail" type="string" customfield="true" />
+      <field displayname="Source email ID" name="msdyncrm_sourceemailid" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Subject" name="msdyncrm_subject" type="string" customfield="true" />
+      <field displayname="Tag" name="msdyncrm_tag" type="optionsetvalue" customfield="true" />
+      <field displayname="Thumbnail" name="entityimage" type="imagedata" customfield="true" />
+      <field displayname="Time-zone rule version number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="To" name="msdyncrm_to" type="string" customfield="true" />
+      <field displayname="UTC conversion time-zone code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Visual style" name="msdyncrm_email_template_visual_style_optionset" type="optionsetvalue" customfield="true" />
+    </fields>
+    <relationships />
+    <filter>   &lt;filter type="and"&gt;
+      &lt;condition attribute="msdyncrm_name" operator="like" value="%XMA Open%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>

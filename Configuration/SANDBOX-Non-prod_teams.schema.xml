@@ -1,0 +1,41 @@
+<entities >
+  <entity name="team" displayname="Team" etc="9" primaryidfield="teamid" primarynamefield="name" disableplugins="false">
+    <fields>
+      <field displayname="(Deprecated) Process Stage" name="stageid" type="guid" />
+      <field displayname="(Deprecated) Traversed Path" name="traversedpath" type="string" />
+      <field displayname="Administrator" name="administratorid" type="entityreference" lookupType="systemuser" />
+      <field displayname="Business Unit" name="businessunitid" type="entityreference" lookupType="businessunit" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Default Queue" name="queueid" type="entityreference" lookupType="queue" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Email" name="emailaddress" type="string" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is Default" name="isdefault" type="bool" />
+      <field displayname="Is System Managed" name="systemmanaged" type="bool" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Process" name="processid" type="guid" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Team" name="teamid" type="guid" primaryKey="true" />
+      <field displayname="Team Name" name="name" type="string" />
+      <field displayname="Team Template Identifier" name="teamtemplateid" type="entityreference" lookupType="teamtemplate" />
+      <field displayname="Team Type" name="teamtype" type="optionsetvalue" />
+      <field displayname="Yomi Name" name="yominame" type="string" />
+    </fields>
+    <relationships>
+      <relationship name="teamroles" manyToMany="true" relatedEntityName="teamroles" m2mTargetEntity="role" m2mTargetEntityPrimaryKey="roleid" />
+      <relationship name="teammembership" manyToMany="true" relatedEntityName="teammembership" m2mTargetEntity="systemuser" m2mTargetEntityPrimaryKey="systemuserid" />
+      <relationship name="teamsyncattributemappingprofiles" manyToMany="true" relatedEntityName="teamsyncattributemappingprofiles" m2mTargetEntity="syncattributemappingprofile" m2mTargetEntityPrimaryKey="syncattributemappingprofileid" />
+      <relationship name="teamprofiles" manyToMany="true" relatedEntityName="teamprofiles" m2mTargetEntity="fieldsecurityprofile" m2mTargetEntityPrimaryKey="fieldsecurityprofileid" />
+    </relationships>
+    <filter>    &lt;filter type="and"&gt;
+      &lt;condition attribute="teamtype" operator="ne" value="1" /&gt;
+      &lt;condition attribute="name" operator="like" value="XMA%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>

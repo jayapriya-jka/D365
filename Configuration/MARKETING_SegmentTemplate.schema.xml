@@ -1,0 +1,41 @@
+<entities >
+  <entity name="msdyncrm_segmenttemplate" displayname="Segment Template" etc="10580" primaryidfield="msdyncrm_segmenttemplateid" primarynamefield="msdyncrm_segmentname" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyncrm_description" type="string" customfield="true" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" customfield="true" />
+      <field displayname="Filter query" name="msdyncrm_segmentfilterquery" type="string" customfield="true" />
+      <field displayname="Icon" name="entityimage" type="imagedata" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Label" name="msdyncrm_label" type="optionsetvalue" customfield="true" />
+      <field displayname="Language" name="msdyncrm_language" type="optionsetvalue" customfield="true" />
+      <field displayname="Member IDs" name="msdyncrm_segmentmemberids" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyncrm_segmentname" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Query definition" name="msdyncrm_segmentquery" type="string" customfield="true" />
+      <field displayname="Query type" name="msdyncrm_querytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Segment Template" name="msdyncrm_segmenttemplateid" type="guid" primaryKey="true" />
+      <field displayname="Segment type" name="msdyncrm_segmenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Tag" name="msdyncrm_tag" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter> &lt;filter type="and"&gt;
+      &lt;condition attribute="statecode" operator="eq" value="0" /&gt;
+      &lt;condition attribute="msdyncrm_segmentname" operator="like" value="%XMA%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>

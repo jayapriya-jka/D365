@@ -1,0 +1,40 @@
+<entities >
+  <entity name="msdyncrm_contentblock" displayname="Content block" etc="10483" primaryidfield="msdyncrm_contentblockid" primarynamefield="msdyncrm_name" disableplugins="false">
+    <fields>
+      <field displayname="Available in" name="msdyncrm_available_in" type="optionsetvaluecollection" customfield="true" />
+      <field displayname="Content block" name="msdyncrm_contentblockid" type="guid" primaryKey="true" />
+      <field displayname="Created by" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created by (delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created on" name="createdon" type="datetime" />
+      <field displayname="Designer HTML" name="msdyncrm_designerhtml" type="string" customfield="true" />
+      <field displayname="Entity image" name="entityimage" type="imagedata" customfield="true" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" customfield="true" />
+      <field displayname="Finalized HTML" name="msdyncrm_finalizedhtml" type="string" customfield="true" />
+      <field displayname="Import sequence number" name="importsequencenumber" type="number" />
+      <field displayname="Modified by" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified by (delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified on" name="modifiedon" type="datetime" />
+      <field displayname="msdyncrm_thumbnailimageid" name="msdyncrm_thumbnailimageid" type="guid" customfield="true" />
+      <field displayname="Name" name="msdyncrm_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning business unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning user" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Protected" name="msdyncrm_protected" type="bool" customfield="true" />
+      <field displayname="Record created on" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status reason" name="statuscode" type="status" />
+      <field displayname="Tags" name="msdyncrm_tags" type="string" customfield="true" />
+      <field displayname="Thumbnail image" name="msdyncrm_thumbnailimage" type="imagedata" customfield="true" />
+      <field displayname="Time zone rule version number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC conversion time zone code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyncrm_msdyncrm_tag_msdyncrm_contentblock" manyToMany="true" relatedEntityName="msdyncrm_msdyncrm_tag_msdyncrm_contentblock" m2mTargetEntity="msdyncrm_tag" m2mTargetEntityPrimaryKey="msdyncrm_tagid" />
+    </relationships>
+    <filter> &lt;filter type="and"&gt;
+      &lt;condition attribute="msdyncrm_name" operator="like" value="%XMA%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>

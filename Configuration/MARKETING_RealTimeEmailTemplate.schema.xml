@@ -1,0 +1,34 @@
+<entities >
+  <entity name="msdynmkt_emailtemplate" displayname="Email template" etc="10727" primaryidfield="msdynmkt_emailtemplateid" primarynamefield="msdynmkt_name" disableplugins="false">
+    <fields>
+      <field displayname="Automatically generate text part" name="msdynmkt_automaticallygeneratetextpart" type="bool" customfield="true" />
+      <field displayname="Designer HTML" name="msdynmkt_designerhtml" type="string" customfield="true" />
+      <field displayname="Email body" name="msdynmkt_emailbody" type="string" customfield="true" />
+      <field displayname="Email template" name="msdynmkt_emailtemplateid" type="guid" primaryKey="true" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" customfield="true" />
+      <field displayname="Form to save" name="msdynmkt_formtosave" type="bool" customfield="true" />
+      <field displayname="From email" name="msdynmkt_fromemail" type="string" customfield="true" />
+      <field displayname="From name" name="msdynmkt_fromname" type="string" customfield="true" />
+      <field displayname="Label" name="msdynmkt_label" type="optionsetvalue" customfield="true" />
+      <field displayname="Language" name="msdynmkt_language" type="optionsetvalue" customfield="true" />
+      <field displayname="Marketing provided" name="msdynmkt_marketingprovided" type="bool" customfield="true" />
+      <field displayname="Message designation" name="msdynmkt_messagedesignation" type="optionsetvalue" customfield="true" />
+      <field displayname="msdynmkt_entityimageid" name="msdynmkt_entityimageid" type="guid" customfield="true" />
+      <field displayname="Name" name="msdynmkt_name" type="string" customfield="true" />
+      <field displayname="Placeholders" name="msdynmkt_placeholders" type="string" customfield="true" />
+      <field displayname="Plain text" name="msdynmkt_textpart" type="string" customfield="true" />
+      <field displayname="Preview text" name="msdynmkt_previewtext" type="string" customfield="true" />
+      <field displayname="Reply-to email" name="msdynmkt_replytoemail" type="string" customfield="true" />
+      <field displayname="Source email ID" name="msdynmkt_sourceemailid" type="string" customfield="true" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Subject" name="msdynmkt_subject" type="string" customfield="true" />
+      <field displayname="Thumbnail" name="entityimage" type="imagedata" customfield="true" />
+      <field displayname="Thumbnail (deprecated)" name="msdynmkt_entityimage" type="imagedata" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+    <filter>    &lt;filter type="and"&gt;
+      &lt;condition attribute="msdynmkt_name" operator="like" value="%XMA%" /&gt;
+    &lt;/filter&gt;</filter>
+  </entity>
+</entities>
