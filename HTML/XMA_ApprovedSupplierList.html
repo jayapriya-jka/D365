@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approved Vendor List Query</title>
+    <script src="ClientGlobalContext.js.aspx"></script>
+</head>
+<body>
+    <table id="resultsTable" border="1">
+        <thead><tr><th>Vendor Name</th><th>Item Id</th></tr></thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        function loadRecords(executionContext) {
+		const formContext = executionContext.getFormContext();
+        const itemName = formContext.getAttribute("xma_itemnumber");
+    var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'><entity name='mserp_purchproductapprovedvendorentity'><attribute name='mserp_approvedvendoraccountnumber'/><attribute name='mserp_itemnumber'/><order attribute='mserp_itemnumber' /></entity></fetch>";
+    var clientUrl = Xrm.Utility.getGlobalContext().getClientUrl();
+    var url = clientUrl + "/api/data/v9.2/mserp_purchproductapprovedvendorentities?fetchXml=" + encodeURIComponent(fetchXml);
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function() {
+        if (this.readyState === 4) {
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                var tbody = document.getElementById("resultsTable").querySelector("tbody");
+                tbody.innerHTML = "";
+                data.value.forEach(function(record) {
+                    var row = tbody.insertRow();
+                    row.insertCell(0).textContent = record.mserp_approvedvendoraccountnumber;
+                    row.insertCell(1).textContent = record.mserp_itemnumber;
+                });
+            } else {
+                console.error("Error: " + this.statusText);
+            }
+        }
+    };
+    req.send();
+}
+loadRecords(); // Auto-run on load
+
+    </script>
+</body>
+</html>

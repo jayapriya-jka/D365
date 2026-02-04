@@ -1,0 +1,100 @@
+
+
+
+function execute(primaryControl) {
+
+    var formContext = primaryControl;
+    var recordID = formContext.data.entity.getId();
+    var entityName = formContext.data.entity.getEntityName();//No longer needed
+    var getStatusValue = formContext.getControl("msdyn_salesquotationconfirmationdate").getAttribute().getValue();
+    var getStatusValue1 = formContext.getAttribute("msdyn_salesquotationconfirmationdate").getValue();
+    var WorkflowId = "3bbc2a11-64f8-ec11-bb3d-000d3adf209d";
+    var alertOptions = { height: 120, width: 260 };
+    var alertStrings;
+
+
+    console.log(getStatusValue1 + " here is getStatusValue1 blah")
+    console.log(getStatusValue + " here is getStatusValue blah")
+
+    if (getStatusValue == null) {
+
+        return HTTPRequestCall(recordID, WorkflowId, alertOptions, alertStrings).then(result => console.log(result));
+
+
+
+    } else {
+
+        alertStrings = { confirmButtonLabel: "Ok", text: "An Order has already been requested, please chase with the F&SCM team.", title: "An Order has already been requested" };
+
+        return dialog(alertStrings, alertOptions)
+
+    }
+};
+
+async function dialog(alertStrings, alertOptions) {
+
+    return await Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(
+        function (result) {
+            console.log(result)
+        }
+    ).catch(function (err) {
+        console.log(err); return err
+    }
+    )
+};
+
+async function HTTPRequestCall(recordID, workflowId, alertOptions, alertStrings) {
+
+
+    var entity = {
+        "EntityId": recordID //this should be the id of the account
+    };
+    var testingVar = "start";
+    var WorkflowId = workflowId;
+    alertOptions = { height: 120, width: 260 };
+    var req = new XMLHttpRequest();
+    req.open("POST", Xrm.Page.context.getClientUrl() + "/api/data/v9.2/workflows(" + WorkflowId + ")/Microsoft.Dynamics.CRM.ExecuteWorkflow", true);
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.onreadystatechange = async function () {
+
+        console.log(req);
+
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+
+            if (this.status >= 200 && this.status <= 400) {
+                var result = this.response;
+                console.log(result);
+
+                alertStrings = { confirmButtonLabel: "Ok", text: "Your request for an Order has been recieved and will be processed by an F&SCM user.", title: "Order Requested" };
+
+                testingVar = "end!!!!";
+                console.log(testingVar)
+
+                dialog(alertStrings, alertOptions);
+
+                return "returned1";
+
+            } else {
+
+                alertStrings = { confirmButtonLabel: "Ok", text: "Please contact a system admin and report the error.", title: "WHOOPS Something Went Wrong" };
+
+                testingVar = "end!!!!222";
+                console.log(testingVar)
+
+                dialog(alertStrings, alertOptions);
+
+                return "returned2";
+            }
+        }
+    };
+    req.send(JSON.stringify(entity));
+
+    console.log(testingVar)
+    console.log("end of call" + testingVar)
+
+    return "end of call" + testingVar
+}

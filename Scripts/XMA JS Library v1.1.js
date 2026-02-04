@@ -1,0 +1,310 @@
+
+
+
+function ShowHideNewButton(){
+
+    //var formContext = executionContext.getFormContext();
+    var userSettings = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    var userSettings2 = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var hasSysAdminRole = false;
+    //var showHideButton=false;
+
+    console.log("HELLO!!")
+
+    for (const property in userSettings2._collection) {
+
+        console.log(userSettings2._collection[property].name + " Prop name")
+        if (userSettings2._collection[property].name == "System Administrator") { hasSysAdminRole = true; console.log("Sys Admin Role Found!"); break;};
+
+    };
+
+    console.log(userSettings)
+    console.log(userSettings2)
+
+    console.log("Button available?: "+(userSettings.indexOf("276899a8-d3fd-ec11-82e5-000d3adf237f") > -1 || hasSysAdminRole))
+
+    if (userSettings.indexOf("276899a8-d3fd-ec11-82e5-000d3adf237f") > -1 || hasSysAdminRole) {
+
+        //do nothing
+        console.log("Create New Allowed")
+        return true;
+
+    }else{
+
+        console.log("Create New Disallowed")
+        return false;
+
+    }
+
+
+}
+
+///////////////////////***********ACCOUNT ONLOAD **************////////////////////
+
+function EnableDisableAddressFields(executionContext){
+
+    var formContext = executionContext.getFormContext();
+    var userSettings = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    var userSettings2 = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var hasSysAdminRole = false;
+    const xmaSupportRole = "276899a8-d3fd-ec11-82e5-000d3adf237f";
+
+    for (const property in userSettings2._collection) {
+
+        if (userSettings2._collection[property].name == "System Administrator") { hasSysAdminRole = true; console.log("Sys Admin Role Found!"); break;};
+
+    };
+
+    if (userSettings.indexOf(xmaSupportRole) > -1 || hasSysAdminRole) return;
+
+    formContext.getControl("address1_line1").setDisabled(true);
+    formContext.getControl("address1_line2").setDisabled(true);
+    formContext.getControl("address1_line3").setDisabled(true);
+    formContext.getControl("address1_city").setDisabled(true);
+    formContext.getControl("address1_postalcode").setDisabled(true);
+    formContext.getControl("address1_country").setDisabled(true);
+
+}
+
+
+function EnableDisableTransactionalOwnerField(executionContext){
+
+    var formContext = executionContext.getFormContext();
+    var userSettings = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    var userSettings2 = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var hasSysAdminRole = false;
+    const xmaSalesManagerRole = "3e4d78f0-61eb-ec11-bb3d-000d3adb0650";
+
+    for (const property in userSettings2._collection) {
+
+        if (userSettings2._collection[property].name == "System Administrator") { hasSysAdminRole = true; console.log("Sys Admin Role Found!"); break;};
+
+    };
+
+    if (userSettings.indexOf(xmaSalesManagerRole) > -1 || hasSysAdminRole) return;
+
+    formContext.getControl("igl_transactionalownerid").setDisabled(true);
+    formContext.getControl("igl_insidesalesownerid").setDisabled(true);
+    formContext.getControl("igl_transactionalownerid").setDisabled(true);
+    formContext.getControl("igl_clientmanagerownerid").setDisabled(true);
+
+}
+
+///////////////////////***********QUOTE ONLOAD **************////////////////////
+function QuoteOnLoad(executionContext) {
+
+    console.log(arguments)
+    var formContext = executionContext.getFormContext();  //, "?$select=name,igl_dualwritedefaultid"
+
+    if (formContext.getAttribute("customerid").getValue("customerid")==null) {
+
+        formContext.getAttribute("customerid").addOnChange(function (executionContext) {
+
+
+            console.log("Fired!!");
+            var formContextOnChange = executionContext.getFormContext();
+            console.log(formContextOnChange)
+            var customer = formContextOnChange.getAttribute("customerid").getValue("customerid")
+
+            console.log(customer);
+    if(customer!=null ){
+            customer.id = customer[0].id.replace(/[{()}]/g, '').toLowerCase();
+
+            console.log(customer);
+
+            
+                Xrm.WebApi.retrieveRecord("account", customer.id, "?$select=name,_msdyn_company_value,msdyn_language").then( // ,"?$select=name,_msdyn_company_id_value,msdyn_language"
+                function (result) {
+                    console.log(result)
+
+                    result.msdyn_language == null ? result.msdyn_language = 192350015: "";
+
+                    return { companyName:result.name,companyID: "{"+result._msdyn_company_value.toUpperCase()+"}", language: result.msdyn_language }
+                }
+            ).then(
+                function (result) {
+
+                    console.log("Log the result below:")
+                    console.log(result)
+
+                    lookupArray = [{
+                        entityType: "cdm_company",
+                        id: result.companyID,
+                        name:result.companyName
+                    }]
+
+                    console.log("Set Company & Language")
+                    console.log(lookupArray)
+                    console.log(result.language)
+
+                    formContextOnChange.getAttribute("msdyn_company").setValue(lookupArray);
+                    formContextOnChange.getAttribute("msdyn_language").setValue(result.language);
+
+                    console.log("Success")
+                    return "Success"
+                }
+            ).catch(
+                function (error) { console.log(error) }
+            )
+
+
+            }
+
+        })
+
+    }
+};
+
+///////////////////////***********OPPORTUNITY ONLOAD **************////////////////////
+function OpportunityOnLoad(executionContext) {
+
+    var formContext = executionContext.getFormContext();
+    var tabObj = formContext.ui.tabs.get("BidTab");
+    var userSettings = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    var userSettings2 = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var hasSysAdminRole = false;
+    var qualCalcFieldArray = [
+        { name: "igl_existingxmarelationshipcode", val: 1 },
+        { name: "igl_existingcompetitionrelationshipcode", val: 0 },
+        { name: "igl_anypreengagementonthistendercode", val: 1 },
+        { name: "igl_istenderscopewithinourcapabilitycode", val: 1 },
+        { name: "igl_canwebecompliantwithrequirementscode", val: 1 },
+        { name: "igl_companywideresourceestimationcode", val: 0 },
+        { name: "igl_commercialpositionpriceresponsecode", val: 1 },
+        { name: "igl_strengthofsolutionserviceresponsecode", val: 1 },
+        { name: "igl_whatisourriskpositioncode", val: 0 }
+    ];
+    var valueArr = [{ OppVal: 824300000, val1: 5, val0: 0 }, { OppVal: 824300001, val1: 3, val0: -1 }, { OppVal: 824300002, val1: 1, val0: -3 }, { OppVal: 824300003, val1: 0, val0: -5 }];
+    var qualScore = formContext.getAttribute("igl_qualificationscore").getValue();
+
+    qualCalcFieldArray.forEach(function (element) {
+
+        console.log(element.name)
+
+        formContext.getAttribute(element.name).addOnChange(
+            function (executionContext) {
+                var formContextOnChange = executionContext.getFormContext();
+                var total = calculate(qualCalcFieldArray, executionContext, valueArr);
+                qualScore = total;
+
+                console.log(total);
+
+                formContextOnChange.getAttribute("igl_qualificationscore").setValue(qualScore);
+                console.log(formContextOnChange.getAttribute("igl_qualificationscore").getValue());
+            }
+        );
+
+
+    });
+
+    console.log("This Code Ran");
+    console.log(tabObj);
+    ShowHideTab(executionContext, "igl_opportunitytype_code", 824300001, tabObj)
+
+    formContext.getAttribute("igl_opportunitytype_code").addOnChange(
+        function (executionContext) {
+            ShowHideTab(executionContext, "igl_opportunitytype_code", 824300001, tabObj)
+        }
+    );
+
+    //Below locks the Bids Tab based on the user's security roles.
+    for (const property in userSettings2._collection) {
+
+        console.log(userSettings2._collection[property].name + " Prop name")
+        if (userSettings2._collection[property].name == "System Administrator") { hasSysAdminRole = true; console.log("Sys Admin Role Found!") };
+
+    };
+
+    console.log(userSettings)
+    console.log(userSettings2)
+
+    if (userSettings.indexOf("94407128-60eb-ec11-bb3d-000d3adb0650") > -1 || hasSysAdminRole) {
+
+        //do nothing
+        console.log("Bids Tab Unlocked")
+
+    } else {
+        disableTabFields(executionContext, "BidTab")
+        formContext.getControl("igl_opportunitytype_code").setDisabled(true);
+    };
+
+};
+
+
+/***************************FUNCTION***********************************/
+
+//The below show/hides the bid tab
+function ShowHideTab(executionContext, fieldName, checkValue, tabObj) {
+
+    var formContextOnChange = executionContext.getFormContext();
+
+    if (formContextOnChange.getAttribute(fieldName).getValue() == checkValue) {
+
+        tabObj.setVisible(true)
+
+    } else {
+        tabObj.setVisible(false)
+    }
+
+};
+
+
+//var valueArr = [{ OppVal: 824300000, val1: 5, val0: 0 }, { OppVal: 824300001, val1: 3, val0: -1 }, { OppVal: 824300000, val1: 1, val0: -3 }, { OppVal: 824300000, val1: 0, val0: -5 }];
+//The below calculates the bid qualification score
+function calculate(objArr, executionContext, valueArr) {
+
+
+    var formContextOnChange = executionContext.getFormContext();
+    var total = 0;
+
+    for (var i = 0; i < objArr.length; i++) {
+
+        var obj = objArr[i]
+
+        console.log(obj.name)
+
+        var attVal = formContextOnChange.getAttribute(obj.name).getValue();
+        console.log(attVal + " Here is attVal");
+
+        valueArr.forEach(function (value) {
+
+            if (attVal == value.OppVal && obj.val == 1) {
+
+                console.log(value.val1)
+                total += value.val1
+
+            } else if (attVal == value.OppVal && obj.val == 0) {
+
+                total += value.val0
+            }
+
+        })
+
+    }
+    return (total / 30) * 100;
+
+};
+
+function disableTabFields(executionContext, tabName) {
+    var formContext = executionContext.getFormContext();
+    var summaryObj = formContext.ui.tabs.get(tabName);
+    var summarySections = summaryObj.sections.get()
+    for (var i = 0; i < summarySections.length; i++) {
+        var sectionFields = summarySections[i].controls.get();
+        for (var j = 0; j < sectionFields.length; j++) {
+            sectionFields[j].setDisabled(true);
+        }
+    }
+};
+
+
+
+//igl_ExistingXMARelationshipcode--> 5 max
+//igl_ExistingCompetitionRelationshipcode--> 0 max
+//igl_anypreengagementonthistendercode--> 5 max
+//igl_istenderscopewithinourcapabilitycode--> 5 max
+//igl_canwebecompliantwithrequirementscode--> 5 max
+//igl_companywideresourceestimationcode--> 0 max
+//igl_ourcommercialpositionpriceresponsecode--> 5 max
+//igl_strengthofsolutionserviceresponsecode--> 5 max
+//igl_whatisourriskpositioncode --> 0 max
